@@ -1,0 +1,105 @@
+{
+  "header": {
+    "nav": {
+      "about": "Über mich",
+      "skills": "Fähigkeiten",
+      "work": "Meine Projekte"
+    },
+    "language": {
+      "de": "DE",
+      "en": "EN"
+    }
+  },
+  "hero": {
+    "intro": "Hallo! Ich bin",
+    "name": "Simon",
+    "role": "FullStack <br>ENTWICKLER",
+    "scroll": "Scrollen"
+  },
+  "about": {
+    "title": "Lass uns<br>zusammenarbeiten",
+    "iam": "Ich bin",
+    "location": "ansässig in<br>Frankfurt",
+    "remote": "offen für<br>Remote-Arbeit",
+    "relocate": "offen für<br>Umzug",
+    "text1": "Schreibe einige IT-bezogene Informationen über dich. Warum bist du begeistert vom Programmieren? Was ist deine Inspirationsquelle, um deine Coding-Skills zu verbessern? Zeige deine Bereitschaft, neue Technologien zu lernen.",
+    "text2": "Beschreibe deinen Ansatz zur Problemlösung. Lernst du aus jeder Herausforderung, um die effizienteste oder eleganteste Lösung zu finden? Du kannst Eigenschaften wie analytisches Denken, Kreativität, Ausdauer und Teamarbeit hervorheben.",
+    "button": "Nachricht senden"
+  },
+  "skills": {
+    "title": "Fähigkeiten"
+  },
+  "work": {
+    "title": "Meine Projekte",
+    "intro": "Entdecke hier eine Auswahl meiner Arbeiten – interagiere mit den Projekten, um meine Skills in Aktion zu sehen.",
+    "projects": {
+      "bookstore": {
+        "title": "BookStore",
+        "description": "Interaktives BookStore-Projekt mit JavaScript, HTML, CSS und API-Nutzung.",
+        "button": "Projekt ansehen"
+      },
+      "pollo": {
+        "title": "El Pollo Loco",
+        "description": "Spielbare Version von El Pollo Loco direkt im Browser.",
+        "button": "El Pollo Loco spielen"
+      },
+      "pokedex": {
+        "title": "Pokédex",
+        "description": "Interaktives Pokédex-Projekt mit JavaScript, HTML, CSS und API-Nutzung.",
+        "button": "Projekt ansehen"
+      }
+    }
+  },
+  "team": {
+    "title": "Du suchst einen Teamplayer?",
+    "subtitle": "Das sagen meine Kolleg:innen über mich",
+    "items": {
+      "james": {
+        "name": "James Rugman",
+        "role": "Projekt Join",
+        "quote": "Sofia ist eine zuverlässige und freundliche Person. Sie arbeitet strukturiert und schreibt sauberen Code. Ich kann sie als Kollegin sehr empfehlen."
+      },
+      "evelyn": {
+        "name": "Evelyn Marx",
+        "role": "Projekt DA Bubble",
+        "quote": "Sofia ist eine vertrauenswürdige Teamplayerin und kommt mit Termindruck gut zurecht. Strukturierte Arbeit und klarer Code."
+      },
+      "noah": {
+        "name": "Noah Müller",
+        "role": "Projekt Pollo Loco",
+        "quote": "Sofia hat Inhalte gemeinsam mit dem Team entwickelt, formatiert und ausgeliefert. Sie ist eine zuverlässige und freundliche Person."
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Ein Problem zu lösen?",
+    "description": "Motiviere Menschen, dich zu kontaktieren, und beschreibe, nach welcher Rolle du suchst.",
+    "cta": "Du brauchst einen Frontend-Entwickler? Du kannst mir eine Nachricht über das Formular senden oder",
+    "ctaLink": "direkt per E-Mail schreiben",
+    "form": {
+      "name": "Dein Name",
+      "email": "Deine E-Mail",
+      "message": "Deine Nachricht",
+      "privacyText": "Ich habe die",
+      "privacyLink": "Datenschutzerklärung",
+      "privacySuffix": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu",
+      "submit": "Sag Hallo 👋"
+    },
+    "messages": {
+      "invalid": "Bitte fülle alle erforderlichen Felder korrekt aus.",
+      "success": "Danke! Deine Nachricht wurde versendet. 💌",
+      "error": "Ups! Etwas ist schiefgelaufen."
+    }
+  },
+  "footer": {
+    "legal": "Impressum",
+    "copyright": "© Simon Bonardi 2022"
+  },
+  "legal": {
+    "title": "Impressum",
+    "text1": "Hier steht der rechtliche Hinweistext für deine Website. Du kannst diesen Text z. B. von einem Impressum-Generator erstellen und einfügen.",
+    "text2": "Anbieter: Dein Name / Firma<br>Adresse: Straße, Stadt, Land<br>E-Mail: dein@email.com<br>Telefon: +49 123 456789",
+    "back": "← Zurück zum Start"
+  }
+}

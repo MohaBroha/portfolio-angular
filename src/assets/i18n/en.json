@@ -1,0 +1,105 @@
+{
+  "header": {
+    "nav": {
+      "about": "About me",
+      "skills": "Skill set",
+      "work": "My work"
+    },
+    "language": {
+      "de": "DE",
+      "en": "EN"
+    }
+  },
+  "hero": {
+    "intro": "Hello! I am",
+    "name": "Simon",
+    "role": "FullStack <br>DEVELOPER",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "title": "Let's work<br>together",
+    "iam": "I am",
+    "location": "located in<br>Frankfurt",
+    "remote": "open to work<br>remote",
+    "relocate": "open to<br>relocate",
+    "text1": "Write some information about yourself that is IT related. Why are you passionate about programming? What is your source of inspiration for improving your coding skills? Show a desire to learn new technologies.",
+    "text2": "Describe your approach to problem solving. Do you learn from each challenge to find the most efficient or elegant solution? You can include some key attributes such as: analytical thinking, creativity, persistence and collaboration.",
+    "button": "Send a message"
+  },
+  "skills": {
+    "title": "Skill Set"
+  },
+  "work": {
+    "title": "My Work",
+    "intro": "Explore a selection of my work here – Interact with projects to see my skills in action.",
+    "projects": {
+      "bookstore": {
+        "title": "BookStore",
+        "description": "Interactive BookStore project showcasing JavaScript, HTML, CSS, and API usage.",
+        "button": "View Project"
+      },
+      "pollo": {
+        "title": "El Pollo Loco",
+        "description": "Playable version of El Pollo Loco directly in the browser.",
+        "button": "Play El Pollo Loco"
+      },
+      "pokedex": {
+        "title": "Pokédex",
+        "description": "Interactive Pokédex project showcasing JavaScript, HTML, CSS, and API usage.",
+        "button": "View Project"
+      }
+    }
+  },
+  "team": {
+    "title": "Need a teamplayer?",
+    "subtitle": "Here what my colleagues said about me",
+    "items": {
+      "james": {
+        "name": "James Rugman",
+        "role": "Project Join",
+        "quote": "Sofia is a reliable and friendly person. Work in a structured way and write a clear code. I highly recommend her as a colleague."
+      },
+      "evelyn": {
+        "name": "Evelyn Marx",
+        "role": "Project DA Bubble",
+        "quote": "Sofia is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code."
+      },
+      "noah": {
+        "name": "Noah Müller",
+        "role": "Project Pollo Loco",
+        "quote": "Sofia had to develop, format and deliver content in collaboration with the team members. She is a reliable and friendly person."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Got a problem to solve?",
+    "description": "Encourage people to contact you and describe what role you're looking for.",
+    "cta": "Need a Frontend developer? You can send me a message using the form or",
+    "ctaLink": "directly via email",
+    "form": {
+      "name": "Your name",
+      "email": "Your email",
+      "message": "Your message",
+      "privacyText": "I've read the",
+      "privacyLink": "privacy policy",
+      "privacySuffix": "and agree to the processing of my data as outlined",
+      "submit": "Say hello 👋"
+    },
+    "messages": {
+      "invalid": "Please fill in all required fields correctly.",
+      "success": "Thank you! Your message has been sent. 💌",
+      "error": "Oops! Something went wrong."
+    }
+  },
+  "footer": {
+    "legal": "Legal Notice",
+    "copyright": "© Simon Bonardi 2022"
+  },
+  "legal": {
+    "title": "Legal Notice / Impressum",
+    "text1": "Here is the legal notice text for your website. You can create and insert this text using an imprint generator.",
+    "text2": "Provider: Your name / company<br>Address: Street, City, Country<br>E-mail: dein@email.com<br>Phone: +49 123 456789",
+    "back": "← Back to Start"
+  }
+}

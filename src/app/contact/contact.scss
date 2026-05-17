@@ -1,0 +1,312 @@
+.contact {
+    position: relative;
+    padding: 80px 60px;
+    background: #f8f9fb;
+    overflow: hidden;
+
+    /* decorative circles */
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #756cf0 0%, #3f56e6 100%);
+        z-index: 0;
+        transform: scale(1.25) translateY(30px) rotate(4deg);
+        opacity: 0.9;
+        transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.6s ease, filter 0.6s ease;
+        filter: drop-shadow(0 20px 40px rgba(108, 142, 240, 0.35));
+        animation: float 6s ease-in-out infinite;
+    }
+
+    &::before {
+        width: 180px;
+        height: 180px;
+        top: 80px;
+        right: 120px;
+    }
+
+    &::after {
+        width: 70px;
+        height: 70px;
+        bottom: 80px;
+        left: 159px;
+
+    }
+
+
+
+}
+
+.contact {
+    position: relative; // hast du bereits ✔
+}
+
+.contact__scroll-top {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background: url('/assets/images/Property 1=Default (2).png') no-repeat center / contain;
+    border: none;
+    cursor: pointer;
+
+    left: 0; // ganz links
+    bottom: 10%;
+    transform: translateY(-50%);
+
+    &:hover,
+    &:active,
+    &:focus {
+        transform: translateY(-50%);
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+
+
+.contact__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+
+    /* small decorative circle on left */
+    &::before {
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        left: -120px;
+        bottom: 120px;
+        border-radius: 50%;
+
+        z-index: 0;
+        transform: scale(0.9) translateY(-20px) rotate(-20deg);
+        opacity: 0.6;
+    }
+}
+
+.contact__content {
+    flex: 0 0 45%;
+    padding-top: 12px;
+}
+
+.contact__title {
+    margin: 0 0 8px;
+    font-size: 48px;
+    font-weight: 800;
+    color: #6c8ef0;
+    line-height: 1.1;
+}
+
+.contact__subtitle {
+    margin: 0 0 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #6c8ef0;
+    line-height: 1.3;
+}
+
+.contact__description {
+    margin: 0 0 24px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #333;
+    max-width: 380px;
+}
+
+.contact__cta {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.contact__link {
+    color: #6c8ef0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.contact__form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact__input,
+.contact__textarea {
+    padding: 12px 16px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+    background: #fff;
+    color: #333;
+    transition: border-color 0.2s ease;
+
+    &::placeholder {
+        color: #999;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: #6c8ef0;
+    }
+}
+
+.contact__textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact__checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+.contact__checkbox-input {
+    margin-top: 3px;
+    cursor: pointer;
+    accent-color: #6c8ef0;
+}
+
+.contact__checkbox-label {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #666;
+    cursor: pointer;
+}
+
+.contact__privacy-link {
+    color: #6c8ef0;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.contact__button {
+    padding: 12px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #6c8ef0 0%, #3f56e6 100%);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(63, 86, 230, 0.3);
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(63, 86, 230, 0.4);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+    .contact {
+        padding: 60px 40px;
+
+        &::before {
+            width: 140px;
+            height: 140px;
+            top: 60px;
+            right: 80px;
+            animation: float 6s ease-in-out infinite;
+
+        }
+
+        &::after {
+            width: 80px;
+            height: 80px;
+            bottom: 40px;
+            right: 50px;
+            animation: float 6s ease-in-out infinite;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 12px rgba(63, 86, 230, 0.3);
+
+        }
+    }
+
+    .contact__container {
+        gap: 60px;
+
+        &::before {
+            width: 50px;
+            height: 50px;
+            left: -100px;
+            bottom: 100px;
+        }
+    }
+
+    .contact__content {
+        flex: 0 0 40%;
+    }
+
+    .contact__title {
+        font-size: 40px;
+    }
+}
+
+.contact__success {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #28a745; // grüner Text für Erfolg
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 40px 24px;
+
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+
+    .contact__container {
+        flex-direction: column;
+        gap: 40px;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .contact__content {
+        flex: 1 1 auto;
+    }
+
+    .contact__title {
+        font-size: 32px;
+    }
+
+    .contact__subtitle {
+        font-size: 18px;
+    }
+
+    .contact__form {
+        gap: 12px;
+    }
+}

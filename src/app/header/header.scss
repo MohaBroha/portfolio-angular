@@ -1,0 +1,149 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 80px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+    background: #f8f9fc;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -150px;
+        left: -200px;
+        width: 800px;
+        height: 800px;
+        background: linear-gradient(135deg, #5b7ec3 0%, #4169e1 100%);
+        border-radius: 50%;
+        z-index: -1; // Kreis bleibt Hintergrund
+        pointer-events: none;
+    }
+}
+
+/* linker Bereich: Logo */
+.header__logo {
+    width: 120px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    img {
+        width: 240px;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+/* rechter Bereich: Navigation */
+.header__nav ul {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.header__nav li {
+    font-size: 14px;
+    font-weight: 400;
+    color: #5b7ec3;
+
+    a {
+        text-decoration: none;
+        color: #5b7ec3;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #3d5fa3;
+        }
+    }
+
+    &.active a {
+        font-weight: 500;
+        border-bottom: 2px solid #5b7ec3;
+        padding-bottom: 2px;
+    }
+}
+
+.header__nav a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header__nav a:hover {
+    opacity: 0.7;
+}
+
+/* Language selector styling */
+.header__nav li:last-child {
+    display: flex;
+    gap: 8px;
+    font-size: 13px;
+
+    a {
+        color: #5b7ec3;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &.active {
+            font-weight: 600;
+            border-bottom: 2px solid #5b7ec3;
+            padding-bottom: 2px;
+        }
+
+        &:hover {
+            color: #3d5fa3;
+        }
+    }
+}
+
+/* Profilkreis & Social Icons rechts oben (Hero) */
+.header__profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    top: 50%;
+    right: 80px;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #5b7ec3;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 12px;
+
+        a {
+            display: block;
+
+            img {
+                width: 24px;
+                height: 24px;
+                object-fit: contain;
+                filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.1));
+                transition: transform 0.2s;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+<section id="contact" class="contact">
+    <div class="contact__container">
+        <div class="contact__content">
+            <h2 class="contact__title">Contact</h2>
+            <h3 class="contact__subtitle">Got a problem to solve?</h3>
+            <p class="contact__description">
+                Encourage people to contact you and describe what role you're looking for.
+            </p>
+
+            <p class="contact__cta">
+                Need a Frontend developer? You can send me a message using the form or
+                <a href="mailto:yourservice@mail.com?subject=Frontend%20Inquiry" class="contact__link">
+                    directly via email
+                </a>.
+            </p>
+        </div>
+
+        <form id="contact-form" class="contact__form" (ngSubmit)="sendEmail(contactForm)" #contactForm="ngForm">
+            <input type="text" name="name" placeholder="Your name" class="contact__input" required ngModel>
+            <input type="email" name="email" placeholder="Your email" class="contact__input" required ngModel>
+            <textarea name="message" placeholder="Your message" class="contact__textarea" rows="6" required
+                ngModel></textarea>
+
+            <div class="contact__checkbox">
+                <input type="checkbox" id="privacy" class="contact__checkbox-input" required ngModel name="privacy">
+                <label for="privacy" class="contact__checkbox-label">
+                    I've read the <a href="#" class="contact__privacy-link">privacy policy</a> and agree to the
+                    processing of my data as outlined
+                </label>
+            </div>
+
+            <!-- Success / Error Messages -->
+            <p class="contact__success" *ngIf="successMessage">{{ successMessage }}</p>
+            <p class="contact__error" *ngIf="errorMessage">{{ errorMessage }}</p>
+
+            <button type="submit" class="contact__button">Say hello 👋</button>
+            <button type="button" class="contact__scroll-top" aria-label="Scroll to top" (click)="scrollTop()">
+            </button>
+        </form>
+    </div>
+</section>

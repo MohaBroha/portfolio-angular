@@ -1,0 +1,234 @@
+.projects {
+    padding: 100px 60px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.projects__title {
+    margin: 0 0 24px 0;
+    font-size: 96px;
+    color: #6c8ef0;
+    font-weight: 800;
+    line-height: 0.95;
+}
+
+.projects__intro {
+    max-width: 640px;
+    margin: 16px 0 56px 0;
+    color: #111;
+    font-size: 18px;
+}
+
+/* Projekt-Block */
+.project {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    margin-bottom: 120px;
+    position: relative;
+
+    /* Kreis direkt hinter Bild */
+    &::before {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #6c8ef0 0%, #3f56e6 100%);
+        z-index: 0;
+        /* unter Bild */
+    }
+}
+
+/* Bild */
+.project__image {
+    position: relative;
+    width: 620px;
+    height: 380px;
+    flex-shrink: 0;
+
+    background: rgb(239, 240, 243) center / cover;
+    border-radius: 12px;
+    border: 1px solid rgba(225, 211, 211, 0.04);
+
+    z-index: 1;
+    /* über Kreis */
+}
+
+/* Text */
+.project__content {
+    max-width: 520px;
+}
+
+/* Gespiegeltes Layout */
+.project--reverse {
+    flex-direction: row-reverse;
+}
+
+/* -----------------------------------
+   Kreis-Varianten PRO Projekt
+   ----------------------------------- */
+
+
+.project:nth-child(3)::before {
+    width: 420px;
+    height: 420px;
+    bottom: -160px;
+    left: -180px;
+}
+
+.project:nth-child(4)::before {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    right: -120px;
+}
+
+.project:nth-child(5)::before {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    left: -180px;
+}
+
+.projects {
+    position: relative;
+    overflow: hidden; // Kreise bleiben innerhalb der Sektion
+
+    /* ---------------------------
+       Drei zusätzliche kleine dekorative Kreise
+       --------------------------- */
+    & .projects__circle-1 {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 50px;
+        left: 50%;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #6c8ef0 0%, #3f56e6 100%);
+        z-index: 0;
+        animation: float 6s ease-in-out infinite;
+
+    }
+
+    & .projects__circle-2 {
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 200px;
+        right: 25%;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #6c8ef0 0%, #3f56e6 100%);
+        z-index: 0;
+        animation: float 6s ease-in-out infinite;
+
+    }
+
+    & .projects__circle-3 {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        bottom: 120px;
+        left: 40%;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #6c8ef0 0%, #3f56e6 100%);
+        z-index: 0;
+        transition:
+            transform 1.2s cubic-bezier(0.22, 1, 0.36, 1),
+            opacity 0.6s ease,
+            filter 0.6s ease;
+        filter: drop-shadow(0 20px 40px rgba(108, 142, 240, 0.35));
+        animation: float 6s ease-in-out infinite;
+
+
+
+    }
+}
+
+
+.project__btn {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    background: #5b7ec3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: #4169e1;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(63, 86, 230, 0.2);
+    }
+}
+
+.project__image img {
+    width: 100%;
+    /* Bild füllt die Breite des Containers */
+    height: 100%;
+    /* Bild füllt die Höhe des Containers */
+    object-fit: cover;
+    /* Zuschneiden, damit es in den Container passt */
+    border-radius: 12px;
+    /* optional, abgerundete Ecken */
+}
+
+.project__image img.project__screenshot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* passt das Bild in den Container */
+    border-radius: 12px;
+}
+
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .projects__title {
+        font-size: 64px;
+    }
+
+    .project__image {
+        width: 520px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 800px) {
+    .projects {
+        padding: 40px 24px;
+    }
+
+    .projects__title {
+        font-size: 42px;
+    }
+
+    .projects__intro {
+        max-width: 100%;
+    }
+
+    .project {
+        flex-direction: column;
+        gap: 24px;
+
+        &::before {
+            display: none;
+            /* Kreise auf mobile ausblenden */
+        }
+    }
+
+    .project__image {
+        width: 100%;
+        height: 260px;
+    }
+
+    .project__content {
+        max-width: 100%;
+    }
+}
