@@ -11,7 +11,9 @@ import { LanguageService } from '../language.service';
   styleUrls: ['./header.scss']
 })
 export class HeaderComponent {
-  constructor(private languageService: LanguageService) {}
+  menuOpen = false;
+
+  constructor(private languageService: LanguageService) { }
 
   get currentLang() {
     return this.languageService.currentLang;
@@ -20,4 +22,13 @@ export class HeaderComponent {
   switchLanguage(lang: 'de' | 'en') {
     this.languageService.use(lang);
   }
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  closeMenu() {
+    this.menuOpen = false;
+  }
+
 }

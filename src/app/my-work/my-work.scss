@@ -1,226 +1,314 @@
-.projects {
-    padding: 100px 60px;
-    box-sizing: border-box;
+/* =========================
+   MY WORK / PROJECTS (FINAL CLEAN SYSTEM)
+========================= */
+
+.my-work {
     position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    box-sizing: border-box;
+    padding: 220px clamp(24px, 5vw, 90px) 240px;
+    padding-top: 220px;
+    padding-bottom: 220px;
 }
 
+.my-work>* {
+    position: relative;
+    z-index: 2;
+}
+
+.project:first-of-type {
+    margin-top: 20px;
+}
+
+.project:last-of-type {
+    margin-bottom: 0;
+}
+
+
+
+.project {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================
+   HERO GLOW SYSTEM (SECTION LEVEL)
+   → bewusst INSIDE content area
+========================= */
+
+.my-work::before,
+.my-work::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+
+    background: radial-gradient(circle at 35% 35%,
+            rgba(62, 123, 255, 0.95) 0%,
+            rgba(89, 126, 255, 0.85) 42%,
+            rgba(245, 247, 250, 0) 80%);
+
+    filter: drop-shadow(0 20px 40px rgba(108, 142, 240, 0.25));
+    animation: heroGlowFloat 12s ease-in-out infinite;
+    will-change: transform;
+}
+
+/* bewusst INS CONTENT FELD gesetzt (nicht Rand) */
+.my-work::before {
+    width: 260px;
+    height: 260px;
+
+    top: 180px;
+    left: 15%;
+}
+
+.my-work::after {
+    width: 140px;
+    height: 140px;
+
+    top: 520px;
+    right: 20%;
+}
+
+/* =========================
+   TITLE + INTRO
+========================= */
+
 .projects__title {
-    margin: 0 0 24px 0;
     font-size: 96px;
-    color: #6c8ef0;
     font-weight: 800;
-    line-height: 0.95;
+    color: #6c8ef0;
+    position: relative;
+    z-index: 2;
+    margin: 0 0 50px;
+    margin-top: 40px;
+    text-align: left;
 }
 
 .projects__intro {
-    max-width: 640px;
-    margin: 16px 0 56px 0;
+    max-width: 720px;
+    margin-bottom: 40px;
+    font-size: 20px;
     color: #111;
-    font-size: 18px;
+    position: relative;
+    z-index: 2;
+    /* kontrollierter Abstand zu Projekten */
+    text-align: left;
+    /* explizit linksbündig */
 }
 
-/* Projekt-Block */
+/* =========================
+   PROJECT CARD
+========================= */
+
 .project {
     display: flex;
     align-items: center;
     gap: 64px;
-    margin-bottom: 120px;
+    margin-bottom: 140px;
     position: relative;
+    z-index: 2;
 
-    /* Kreis direkt hinter Bild */
-    &::before {
-        content: '';
-        position: absolute;
-        border-radius: 50%;
-        background: linear-gradient(135deg, #6c8ef0 0%, #3f56e6 100%);
-        z-index: 0;
-        /* unter Bild */
-    }
+    transition: transform 0.4s ease;
 }
 
-/* Bild */
+.project:hover {
+    transform: translateY(-8px);
+}
+
+/* =========================
+   PROJECT GLOWS (INSIDE FLOW)
+   → verteilt sich zwischen Content-Blöcken
+========================= */
+
+.project::before,
+.project::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+
+    background: radial-gradient(circle at 35% 35%,
+            rgba(62, 123, 255, 0.85) 0%,
+            rgba(89, 126, 255, 0.75) 42%,
+            rgba(245, 247, 250, 0) 80%);
+
+    animation: heroGlowFloat 14s ease-in-out infinite;
+}
+
+/* große "zwischen Projekt 1/2" Atmosphäre */
+.project::before {
+    width: 380px;
+    height: 380px;
+
+    top: -120px;
+    left: 10%;
+    opacity: 0.8;
+}
+
+/* kleine Accent Glow */
+.project::after {
+    width: 160px;
+    height: 160px;
+
+    bottom: -80px;
+    right: 15%;
+    opacity: 0.5;
+}
+
+/* Variation damit NICHT alles gleich aussieht */
+.project:nth-child(even)::before {
+    left: auto;
+    right: 10%;
+}
+
+.project:nth-child(even)::after {
+    right: auto;
+    left: 20%;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
 .project__image {
-    position: relative;
     width: 620px;
     height: 380px;
     flex-shrink: 0;
-
-    background: rgb(239, 240, 243) center / cover;
-    border-radius: 12px;
-    border: 1px solid rgba(225, 211, 211, 0.04);
-
-    z-index: 1;
-    /* über Kreis */
-}
-
-/* Text */
-.project__content {
-    max-width: 520px;
-}
-
-/* Gespiegeltes Layout */
-.project--reverse {
-    flex-direction: row-reverse;
-}
-
-/* -----------------------------------
-   Kreis-Varianten PRO Projekt
-   ----------------------------------- */
-
-
-.project:nth-child(3)::before {
-    width: 420px;
-    height: 420px;
-    bottom: -160px;
-    left: -180px;
-}
-
-.project:nth-child(4)::before {
-    width: 300px;
-    height: 300px;
-    top: -100px;
-    right: -120px;
-}
-
-.project:nth-child(5)::before {
-    width: 300px;
-    height: 300px;
-    top: -100px;
-    left: -180px;
-}
-
-.projects {
     position: relative;
-    overflow: hidden; // Kreise bleiben innerhalb der Sektion
+    z-index: 2;
 
-    /* ---------------------------
-       Drei zusätzliche kleine dekorative Kreise
-       --------------------------- */
-    & .projects__circle-1 {
-        content: '';
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        top: 50px;
-        left: 50%;
-        border-radius: 50%;
-        background: linear-gradient(135deg, #6c8ef0 0%, #3f56e6 100%);
-        z-index: 0;
-        animation: float 6s ease-in-out infinite;
+    border-radius: 14px;
+    overflow: hidden;
 
-    }
-
-    & .projects__circle-2 {
-        content: '';
-        position: absolute;
-        width: 60px;
-        height: 60px;
-        top: 200px;
-        right: 25%;
-        border-radius: 50%;
-        background: linear-gradient(135deg, #6c8ef0 0%, #3f56e6 100%);
-        z-index: 0;
-        animation: float 6s ease-in-out infinite;
-
-    }
-
-    & .projects__circle-3 {
-        content: '';
-        position: absolute;
-        width: 80px;
-        height: 80px;
-        bottom: 120px;
-        left: 40%;
-        border-radius: 50%;
-        background: linear-gradient(135deg, #6c8ef0 0%, #3f56e6 100%);
-        z-index: 0;
-        transition:
-            transform 1.2s cubic-bezier(0.22, 1, 0.36, 1),
-            opacity 0.6s ease,
-            filter 0.6s ease;
-        filter: drop-shadow(0 20px 40px rgba(108, 142, 240, 0.35));
-        animation: float 6s ease-in-out infinite;
-
-
-
-    }
-}
-
-
-.project__btn {
-    display: inline-block;
-    margin-top: 24px;
-    padding: 12px 28px;
-    border-radius: 12px;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-    background: #5b7ec3;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-
-    &:hover {
-        background: #4169e1;
-        transform: translateY(-2px);
-        box-shadow: 0 6px 18px rgba(63, 86, 230, 0.2);
-    }
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .project__image img {
     width: 100%;
-    /* Bild füllt die Breite des Containers */
-    height: 100%;
-    /* Bild füllt die Höhe des Containers */
-    object-fit: cover;
-    /* Zuschneiden, damit es in den Container passt */
-    border-radius: 12px;
-    /* optional, abgerundete Ecken */
-}
-
-.project__image img.project__screenshot {
-    width: 100%;
     height: 100%;
     object-fit: cover;
-    /* passt das Bild in den Container */
-    border-radius: 12px;
 }
 
+.project:hover .project__image {
+    transform: scale(1.03);
+    box-shadow: 0 25px 60px rgba(63, 86, 230, 0.25);
+}
 
-/* Responsive */
+/* =========================
+   CONTENT
+========================= */
+
+.project__content {
+    max-width: 520px;
+    z-index: 2;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.project__btn {
+    margin-top: 24px;
+    padding: 12px 28px;
+    border-radius: 12px;
+    background: #5b7ec3;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project__btn:hover {
+    background: #4169e1;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   LAYOUT SWITCH
+========================= */
+
+.project--reverse {
+    flex-direction: row-reverse;
+}
+
+/* =========================
+   ANIMATION SYSTEM
+========================= */
+
+@keyframes heroGlowFloat {
+    0% {
+        transform: translateY(0px) scale(1);
+    }
+
+    50% {
+        transform: translateY(18px) scale(1.05);
+    }
+
+    100% {
+        transform: translateY(0px) scale(1);
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+
 @media (max-width: 1100px) {
+
     .projects__title {
         font-size: 64px;
+    }
+
+    .project {
+        gap: 40px;
     }
 
     .project__image {
         width: 520px;
         height: 320px;
     }
+
+    .my-work::before {
+        width: 200px;
+        height: 200px;
+        top: 160px;
+        left: 10%;
+    }
+
+    .my-work::after {
+        width: 100px;
+        height: 100px;
+        top: 420px;
+        right: 10%;
+    }
 }
 
+/* =========================
+   MOBILE (FULL CENTER SYSTEM)
+========================= */
+
 @media (max-width: 800px) {
-    .projects {
-        padding: 40px 24px;
+
+    .my-work {
+        padding: 60px 24px;
     }
 
-    .projects__title {
-        font-size: 42px;
-    }
-
+    .projects__title,
     .projects__intro {
-        max-width: 100%;
+        text-align: center;
+        margin: 0 auto 20px;
     }
 
     .project {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
         gap: 24px;
-
-        &::before {
-            display: none;
-            /* Kreise auf mobile ausblenden */
-        }
     }
 
     .project__image {
@@ -230,5 +318,83 @@
 
     .project__content {
         max-width: 100%;
+    }
+
+    /* MOBILE GLOWS → bewusst INS CONTENT FELD */
+    .my-work::before {
+        width: 160px;
+        height: 160px;
+
+        top: 120px;
+        left: 60%;
+    }
+
+    .my-work::after {
+        width: 120px;
+        height: 120px;
+
+        top: 420px;
+        left: 20%;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .my-work {
+        padding: 50px 18px;
+    }
+
+    .projects__title,
+    .projects__intro {
+        text-align: center;
+        margin: 0 auto 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .pr
+    /* =========================
+       GLOWS – ULTRA SAFE MOBILE
+       → verhindert JEGLICHEN Scroll Overflow
+    ========================= */
+
+    .my-work::before {
+        width: 120px;
+        height: 120px;
+
+        top: 90px;
+        left: 55%;
+
+        transform: translateX(-50%);
+        opacity: 0.55;
+        filter: blur(0.2px) drop-shadow(0 10px 20px rgba(108, 142, 240, 0.2));
+    }
+
+    .my-work::after {
+        width: 80px;
+        height: 80px;
+
+        top: 320px;
+        left: 20%;
+
+        opacity: 0.4;
+        filter: blur(0.3px);
+    }
+
+    /* PROJECT GLOWS ebenfalls entschärfen */
+    .project::before {
+        width: 220px;
+        height: 220px;
+        top: -80px;
+        left: 10%;
+        opacity: 0.35;
+    }
+
+    .project::after {
+        width: 120px;
+        height: 120px;
+        bottom: -60px;
+        right: 10%;
+        opacity: 0.25;
     }
 }
