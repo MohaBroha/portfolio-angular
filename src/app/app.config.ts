@@ -2,7 +2,7 @@ import { ApplicationConfig, importProvidersFrom, provideZoneChangeDetection } fr
 import { HttpClient, provideHttpClient } from '@angular/common/http';
 import { provideRouter } from '@angular/router';
 import { AppComponent } from './app';
-import { LegalNoticeComponent } from './legal-notice/legal-notice/legal-notice';
+import { LegalNoticeComponent } from './legal-notice/legal-notice';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HeroComponent } from './hero/hero';

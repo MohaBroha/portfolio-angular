@@ -1,41 +1,63 @@
 <section id="about" class="about">
+
     <div class="about__left">
 
-        <h2 class="about__title">Let's work<br>together</h2>
+        <h2 class="about__title">
+            <span [innerHTML]="'about.title' | translate"></span>
+        </h2>
 
-        <p class="about__iam">I am</p>
+        <p class="about__iam">
+            {{ 'about.iam' | translate }}
+        </p>
 
         <div class="about__meta">
+
             <div class="meta-item">
                 <img src="assets/images/Group-60.png" alt="location">
-                <div class="meta-label">located in Frankfurt</div>
+
+                <div class="meta-label">
+                    <span [innerHTML]="'about.location' | translate"></span>
+                </div>
             </div>
 
             <div class="meta-item">
                 <img src="assets/images/Icon Remote.png" alt="remote">
-                <div class="meta-label">open to work remote</div>
+
+                <div class="meta-label">
+                    <span [innerHTML]="'about.remote' | translate"></span>
+                </div>
             </div>
 
             <div class="meta-item">
                 <img src="assets/images/Group 24.png" alt="relocate">
-                <div class="meta-label">open to relocate</div>
+
+                <div class="meta-label">
+                    <span [innerHTML]="'about.relocate' | translate"></span>
+                </div>
             </div>
+
         </div>
+
     </div>
+
     <div class="about__right">
+
         <div class="about__content">
+
             <p>
-                Write some information about yourself that is IT related. Why are you passionate about programming? What
-                is your source of inspiration for improving your coding skills? Show a desire to learn new technologies.
+                {{ 'about.text1' | translate }}
             </p>
 
             <p>
-                Describe your approach to problem solving. Do you learn from each challenge to find the most efficient
-                or elegant solution? You can include some key attributes such as: analytical thinking, creativity,
-                persistence and collaboration.
+                {{ 'about.text2' | translate }}
             </p>
 
-            <a href="#contact" class="btn btn--outline">Send a message</a>
+            <a href="#contact" class="btn btn--outline">
+                {{ 'about.button' | translate }}
+            </a>
+
         </div>
+
     </div>
+
 </section>

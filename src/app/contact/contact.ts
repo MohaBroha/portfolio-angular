@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-import { CommonModule } from '@angular/common'; // ✅ WICHTIG für ngIf
+import { CommonModule } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule], // ✅ CommonModule hinzufügen
+  imports: [FormsModule, CommonModule, TranslateModule],
   templateUrl: './contact.html',
   styleUrls: ['./contact.scss']
 })
@@ -15,29 +16,39 @@ export class ContactComponent {
   successMessage = '';
   errorMessage = '';
 
+  constructor(private translate: TranslateService) { }
+
   sendEmail(form: NgForm) {
+
     if (!form.valid) {
       this.successMessage = '';
-      this.errorMessage = 'Please fill in all required fields correctly.';
+      this.errorMessage = this.translate.instant('contact.messages.invalid');
       return;
     }
 
     const formElement = document.getElementById('contact-form') as HTMLFormElement;
+
     if (!formElement) return;
 
     emailjs.sendForm(
       'service_5auolr6',
-      'template_isntjdq', formElement,
+      'template_isntjdq',
+      formElement,
       'cKmxg22XtA_5jd9zm'
     ).then(
       (result: EmailJSResponseStatus) => {
-        this.successMessage = 'Thank you! Your message has been sent. 💌';
+
+        this.successMessage = this.translate.instant('contact.messages.success');
         this.errorMessage = '';
+
         form.resetForm();
+
       },
       (error) => {
-        this.errorMessage = 'Oops! Something went wrong.';
+
+        this.errorMessage = this.translate.instant('contact.messages.error');
         this.successMessage = '';
+
       }
     );
   }
