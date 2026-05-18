@@ -89,7 +89,8 @@
     "messages": {
       "invalid": "Please fill in all required fields correctly.",
       "success": "Thank you! Your message has been sent. 💌",
-      "error": "Oops! Something went wrong."
+      "error": "Oops! Something went wrong.",
+      "fieldRequired": "This field is required."
     }
   },
   "footer": {
@@ -97,9 +98,17 @@
     "copyright": "© Simon Bonardi 2022"
   },
   "legal": {
-    "title": "Legal Notice / Impressum",
-    "text1": "Here is the legal notice text for your website. You can create and insert this text using an imprint generator.",
-    "text2": "Provider: Your name / company<br>Address: Street, City, Country<br>E-mail: dein@email.com<br>Phone: +49 123 456789",
-    "back": "← Back to Start"
+    "title": "Legal Notice",
+    "intro1": "This portfolio is created for demonstration purposes as part of a job application.",
+    "intro2": "All content and projects are fictional or educational and do not represent real commercial services.",
+    "disclaimerTitle": "Disclaimer",
+    "disclaimerText": "This portfolio website was created for demonstration purposes. All content, images and projects are part of a fictional or educational showcase.",
+    "contactTitle": "Contact",
+    "contactText": "Email: your@email.com | Location: Frankfurt, Germany",
+    "copyrightTitle": "Copyright & Usage",
+    "copyright1": "© 2026 Simon Bonardi. All rights reserved.",
+    "copyright2": "All content on this website is protected by copyright.",
+    "copyright3": "Unauthorized use, reproduction or distribution is not permitted without prior written consent.",
+    "back": "← Back to Home"
   }
 }

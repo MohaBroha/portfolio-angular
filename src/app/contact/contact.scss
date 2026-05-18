@@ -137,6 +137,101 @@
 }
 
 /* =========================
+   VALIDATION
+========================= */
+
+.contact__validation {
+    min-height: 18px;
+    font-size: 13px;
+    color: #d93025;
+    margin-top: -8px;
+}
+
+/* =========================
+   SUCCESS / ERROR AREA
+========================= */
+
+.contact__messages {
+    min-height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.contact__success {
+    color: #1f9d55;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contact__error {
+    color: #d93025;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* =========================
+   DISABLED BUTTON
+========================= */
+
+.contact__button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* =========================
+   AUTOFILL FIX (WEBKIT)
+========================= */
+
+.contact__input:-webkit-autofill,
+.contact__input:-webkit-autofill:hover,
+.contact__input:-webkit-autofill:focus,
+.contact__textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    -webkit-text-fill-color: #333;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* =========================
+   MOBILE IMPROVEMENTS
+========================= */
+
+@media (max-width: 640px) {
+
+    .contact {
+        padding: 48px 20px;
+    }
+
+    .contact__title {
+        font-size: 30px;
+    }
+
+    .contact__subtitle {
+        font-size: 17px;
+    }
+
+    .contact__description {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .contact__input,
+    .contact__textarea {
+        font-size: 16px;
+    }
+
+    .contact__button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact__scroll-top {
+        align-self: center;
+    }
+}
+
+/* =========================
    BUTTON SYSTEM
 ========================= */
 

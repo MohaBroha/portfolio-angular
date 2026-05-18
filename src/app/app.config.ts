@@ -6,6 +6,7 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HeroComponent } from './hero/hero';
+import { HomeComponent } from './home/home';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
@@ -28,9 +29,8 @@ export const appConfig: ApplicationConfig = {
       })
     ),
     provideRouter([
-      { path: '', redirectTo: 'home', pathMatch: 'full' },
-      { path: 'home', component: HeroComponent },
-      { path: 'legal-notice', component: LegalNoticeComponent },
-    ]),
+      { path: '', component: HomeComponent },
+      { path: 'legal-notice', component: LegalNoticeComponent }
+    ])
   ]
 };

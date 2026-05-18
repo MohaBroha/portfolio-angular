@@ -17,7 +17,7 @@
     "scroll": "Scrollen"
   },
   "about": {
-    "title": "Lass uns<br>zusammenarbeiten",
+    "title": "Lass uns <span class='break'>zusammen arbeiten</span>",
     "iam": "Ich bin",
     "location": "ansässig in<br>Frankfurt",
     "remote": "offen für<br>Remote-Arbeit",
@@ -98,8 +98,16 @@
   },
   "legal": {
     "title": "Impressum",
-    "text1": "Hier steht der rechtliche Hinweistext für deine Website. Du kannst diesen Text z. B. von einem Impressum-Generator erstellen und einfügen.",
-    "text2": "Anbieter: Dein Name / Firma<br>Adresse: Straße, Stadt, Land<br>E-Mail: dein@email.com<br>Telefon: +49 123 456789",
-    "back": "← Zurück zum Start"
+    "intro1": "Dieses Portfolio dient ausschließlich zu Demonstrationszwecken im Rahmen einer Bewerbung.",
+    "intro2": "Alle Inhalte und Projekte sind fiktiv oder zu Ausbildungszwecken erstellt und stellen keine realen Geschäftsangebote dar.",
+    "disclaimerTitle": "Disclaimer",
+    "disclaimerText": "Dieses Portfolio wurde zu Demonstrationszwecken erstellt. Alle Inhalte, Bilder und Projekte sind Teil eines fiktiven oder edukativen Showcase.",
+    "contactTitle": "Kontakt",
+    "contactText": "E-Mail: your@email.com | Standort: Frankfurt, Deutschland",
+    "copyrightTitle": "Copyright & Nutzung",
+    "copyright1": "© 2026 Simon Bonardi. Alle Rechte vorbehalten.",
+    "copyright2": "Alle Inhalte dieser Website sind urheberrechtlich geschützt.",
+    "copyright3": "Jegliche Nutzung, Vervielfältigung oder Verbreitung ist ohne vorherige schriftliche Genehmigung untersagt.",
+    "back": "← Zurück zur Startseite"
   }
 }

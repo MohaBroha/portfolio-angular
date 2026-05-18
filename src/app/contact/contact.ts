@@ -1,13 +1,26 @@
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import { RouterModule } from '@angular/router';
+
+import {
+  TranslateModule,
+  TranslateService
+} from '@ngx-translate/core';
+
+import emailjs, {
+  EmailJSResponseStatus
+} from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule, TranslateModule],
+  imports: [
+    FormsModule,
+    CommonModule,
+    TranslateModule,
+    RouterModule
+  ],
   templateUrl: './contact.html',
   styleUrls: ['./contact.scss']
 })
@@ -16,19 +29,42 @@ export class ContactComponent {
   successMessage = '';
   errorMessage = '';
 
-  constructor(private translate: TranslateService) { }
+  isSending = false;
 
-  sendEmail(form: NgForm) {
+  constructor(
+    private translate: TranslateService
+  ) { }
 
-    if (!form.valid) {
+  sendEmail(form: NgForm): void {
+
+    if (!form.valid || this.isSending) {
+
       this.successMessage = '';
-      this.errorMessage = this.translate.instant('contact.messages.invalid');
+
+      this.errorMessage = this.translate.instant(
+        'contact.messages.invalid'
+      );
+
       return;
     }
 
-    const formElement = document.getElementById('contact-form') as HTMLFormElement;
+    const formElement = document.getElementById(
+      'contact-form'
+    ) as HTMLFormElement;
 
-    if (!formElement) return;
+    if (!formElement) {
+
+      this.errorMessage = this.translate.instant(
+        'contact.messages.error'
+      );
+
+      return;
+    }
+
+    this.isSending = true;
+
+    this.successMessage = '';
+    this.errorMessage = '';
 
     emailjs.sendForm(
       'service_5auolr6',
@@ -36,24 +72,40 @@ export class ContactComponent {
       formElement,
       'cKmxg22XtA_5jd9zm'
     ).then(
+
       (result: EmailJSResponseStatus) => {
 
-        this.successMessage = this.translate.instant('contact.messages.success');
+        this.successMessage = this.translate.instant(
+          'contact.messages.success'
+        );
+
         this.errorMessage = '';
 
         form.resetForm();
 
+        this.isSending = false;
       },
+
       (error) => {
 
-        this.errorMessage = this.translate.instant('contact.messages.error');
+        console.error('EmailJS Error:', error);
+
+        this.errorMessage = this.translate.instant(
+          'contact.messages.error'
+        );
+
         this.successMessage = '';
 
+        this.isSending = false;
       }
     );
   }
 
-  scrollTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  scrollTop(): void {
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   }
 }

@@ -20,36 +20,81 @@
 
                 {{ 'contact.cta' | translate }}
 
-                <a href="mailto:yourservice@mail.com?subject=Frontend%20Inquiry" class="contact__link">
+                <a routerLink="/legal-notice" class="contact__link">
+
                     {{ 'contact.ctaLink' | translate }}
-                </a>.
+
+                </a>
 
             </p>
 
         </div>
 
-        <form id="contact-form" class="contact__form" (ngSubmit)="sendEmail(contactForm)" #contactForm="ngForm">
+        <!-- FORM -->
 
-            <input type="text" name="name" [placeholder]="'contact.form.name' | translate" class="contact__input"
-                required ngModel>
+        <form id="contact-form" class="contact__form" #contactForm="ngForm" (ngSubmit)="sendEmail(contactForm)"
+            autocomplete="on">
 
-            <input type="email" name="email" [placeholder]="'contact.form.email' | translate" class="contact__input"
-                required ngModel>
+            <!-- NAME -->
 
-            <textarea name="message" [placeholder]="'contact.form.message' | translate" class="contact__textarea"
-                rows="6" required ngModel>
-            </textarea>
+            <input type="text" name="name" class="contact__input" [placeholder]="'contact.form.name' | translate"
+                required minlength="2" ngModel #name="ngModel" autocomplete="name">
+
+            <div class="contact__validation">
+
+                <span *ngIf="name.invalid && name.touched">
+
+                    {{ 'contact.validation.name' | translate }}
+
+                </span>
+
+            </div>
+
+            <!-- EMAIL -->
+
+            <input type="email" name="email" class="contact__input" [placeholder]="'contact.form.email' | translate"
+                required email ngModel #email="ngModel" autocomplete="email">
+
+            <div class="contact__validation">
+
+                <span *ngIf="email.invalid && email.touched">
+
+                    {{ 'contact.validation.email' | translate }}
+
+                </span>
+
+            </div>
+
+            <!-- MESSAGE -->
+
+            <textarea name="message" class="contact__textarea" rows="6" required minlength="10" ngModel
+                #message="ngModel" [placeholder]="'contact.form.message' | translate"></textarea>
+
+            <div class="contact__validation">
+
+                <span *ngIf="message.invalid && message.touched">
+
+                    {{ 'contact.validation.message' | translate }}
+
+                </span>
+
+            </div>
+
+            <!-- PRIVACY -->
 
             <div class="contact__checkbox">
 
-                <input type="checkbox" id="privacy" class="contact__checkbox-input" required ngModel name="privacy">
+                <input type="checkbox" id="privacy" name="privacy" class="contact__checkbox-input" required ngModel
+                    #privacy="ngModel">
 
                 <label for="privacy" class="contact__checkbox-label">
 
                     {{ 'contact.form.privacyText' | translate }}
 
-                    <a href="#" class="contact__privacy-link">
+                    <a routerLink="/legal-notice" class="contact__privacy-link">
+
                         {{ 'contact.form.privacyLink' | translate }}
+
                     </a>
 
                     {{ 'contact.form.privacySuffix' | translate }}
@@ -58,22 +103,49 @@
 
             </div>
 
-            <!-- Success / Error Messages -->
+            <div class="contact__validation">
 
-            <p class="contact__success" *ngIf="successMessage">
-                {{ successMessage }}
-            </p>
+                <span *ngIf="privacy.invalid && privacy.touched">
 
-            <p class="contact__error" *ngIf="errorMessage">
-                {{ errorMessage }}
-            </p>
+                    {{ 'contact.validation.privacy' | translate }}
 
-            <button type="submit" class="contact__button">
-                {{ 'contact.form.submit' | translate }}
+                </span>
+
+            </div>
+
+            <!-- SUCCESS / ERROR -->
+
+            <div class="contact__messages">
+
+                <p class="contact__success" *ngIf="successMessage">
+
+                    {{ successMessage }}
+
+                </p>
+
+                <p class="contact__error" *ngIf="errorMessage">
+
+                    {{ errorMessage }}
+
+                </p>
+
+            </div>
+
+            <!-- BUTTON -->
+
+            <button type="submit" class="contact__button" [disabled]="!contactForm.valid || isSending">
+
+                {{
+                isSending
+                ? ('contact.form.sending' | translate)
+                : ('contact.form.submit' | translate)
+                }}
+
             </button>
 
-            <button type="button" class="contact__scroll-top" aria-label="Scroll to top" (click)="scrollTop()">
-            </button>
+            <!-- SCROLL TOP -->
+
+            <button type="button" class="contact__scroll-top" aria-label="Scroll to top" (click)="scrollTop()"></button>
 
         </form>
 

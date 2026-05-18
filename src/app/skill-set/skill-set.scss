@@ -102,3 +102,19 @@
         height: 90px;
     }
 }
+
+@media (max-width: 460px) {
+    .skills__title {
+        font-size: 38px;
+    }
+
+    .skills__grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .skill__icon img {
+        width: 80px;
+        height: 80px;
+    }
+}
