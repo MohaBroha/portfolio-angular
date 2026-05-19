@@ -257,6 +257,58 @@
     box-shadow: 0 10px 28px rgba(63, 86, 230, 0.35);
 }
 
+.contact__button {
+    display: inline-block;
+
+    margin-top: 24px;
+    padding: 14px 28px;
+
+    border-radius: 12px;
+    border: 2px solid rgba(99, 115, 255, 0.35);
+
+    background: transparent;
+    color: #5b7ec3;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    box-shadow: 0 6px 18px rgba(63, 86, 230, 0.12);
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        opacity 0.3s ease;
+}
+
+/* HOVER */
+
+.contact__button:hover:not(:disabled) {
+    background: #5b7ec3;
+    color: #fff;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 10px 28px rgba(63, 86, 230, 0.35);
+}
+
+/* DISABLED */
+
+.contact__button:disabled {
+    opacity: 0.45;
+
+    cursor: not-allowed;
+    pointer-events: none;
+
+    border-color: rgba(99, 115, 255, 0.15);
+
+    box-shadow: none;
+    transform: none;
+}
+
 /* =========================
    SCROLL TOP BUTTON (FIXED)
    👉 jetzt unter Send Button

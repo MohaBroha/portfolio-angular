@@ -8,19 +8,51 @@
         {{ 'work.intro' | translate }}
     </p>
 
-    <!-- Projekt 1: BookStore -->
-    <div class="project project--normal">
+    <!-- PROJECT 1: JOIN -->
+    <div class="project project--reverse">
 
         <div class="project__image">
-            <img src="assets/images/Screenshot 2026-02-11 051847.png" alt="BookStore Screenshot"
-                class="project__image-screenshot">
+            <img src="assets\images\join.png" alt="Join Screenshot">
         </div>
 
         <div class="project__content">
 
-            <h3>
+            <h3 class="project__title">
+                {{ 'work.projects.join.title' | translate }}
+            </h3>
+
+            <p class="project__stack">
+                Angular | TypeScript | SCSS | REST API | Bootstrap 5
+            </p>
+
+            <p>
+                {{ 'work.projects.join.description' | translate }}
+            </p>
+
+            <a href="DEIN_JOIN_LINK" target="_blank" rel="noopener noreferrer" class="project__btn">
+                {{ 'work.projects.join.button' | translate }}
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- PROJECT 2: BOOKSTORE -->
+    <div class="project project--normal">
+
+        <div class="project__image">
+            <img src="assets/images/Screenshot 2026-02-11 051847.png" alt="BookStore Screenshot">
+        </div>
+
+        <div class="project__content">
+
+            <h3 class="project__title">
                 {{ 'work.projects.bookstore.title' | translate }}
             </h3>
+
+            <p class="project__stack">
+                HTML | CSS | JavaScript
+            </p>
 
             <p>
                 {{ 'work.projects.bookstore.description' | translate }}
@@ -37,7 +69,7 @@
 
     </div>
 
-    <!-- Projekt 2: El Pollo Loco -->
+    <!-- PROJECT 3: EL POLLO LOCO -->
     <div class="project project--reverse">
 
         <div class="project__image">
@@ -46,9 +78,13 @@
 
         <div class="project__content">
 
-            <h3>
+            <h3 class="project__title">
                 {{ 'work.projects.pollo.title' | translate }}
             </h3>
+
+            <p class="project__stack">
+                JavaScript | HTML5 Canvas | OOP | CSS | Game Logic
+            </p>
 
             <p>
                 {{ 'work.projects.pollo.description' | translate }}
@@ -66,19 +102,22 @@
 
     </div>
 
-    <!-- Projekt 3: Pokédex -->
+    <!-- PROJECT 4: POKÉDEX -->
     <div class="project project--normal">
 
         <div class="project__image">
-            <img src="assets/images/Screenshot 2026-02-11 050930.png" alt="Pokédex Screenshot"
-                class="project__image-screenshot">
+            <img src="assets/images/Screenshot 2026-02-11 050930.png" alt="Pokédex Screenshot">
         </div>
 
         <div class="project__content">
 
-            <h3>
+            <h3 class="project__title">
                 {{ 'work.projects.pokedex.title' | translate }}
             </h3>
+
+            <p class="project__stack">
+                HTML | CSS (Flexbox) | JavaScript (Fetch API, DOM) | PokéAPI
+            </p>
 
             <p>
                 {{ 'work.projects.pokedex.description' | translate }}
@@ -95,6 +134,7 @@
 
     </div>
 
+    <!-- decorative circles -->
     <div class="projects__circle-1"></div>
     <div class="projects__circle-2"></div>
     <div class="projects__circle-3"></div>

@@ -17,65 +17,71 @@
     "scroll": "Scroll"
   },
   "about": {
-    "title": "Let's work<br>together",
+    "title": "Let's work together",
     "iam": "I am",
-    "location": "located in<br>Frankfurt",
-    "remote": "open to work<br>remote",
-    "relocate": "open to<br>relocate",
-    "text1": "Write some information about yourself that is IT related. Why are you passionate about programming? What is your source of inspiration for improving your coding skills? Show a desire to learn new technologies.",
-    "text2": "Describe your approach to problem solving. Do you learn from each challenge to find the most efficient or elegant solution? You can include some key attributes such as: analytical thinking, creativity, persistence and collaboration.",
-    "button": "Send a message"
+    "location": "based in Frankfurt",
+    "remote": "open to remote work",
+    "relocate": "open to relocation",
+    "text1": "I am a junior full-stack developer currently in training, focusing on modern web applications and practical software development. I started in frontend development using Angular, TypeScript, and modern UI concepts. During this time, I learned how to write clean, structured, and maintainable code while building user-focused interfaces.",
+    "text2": "Throughout my training, I gradually expanded my knowledge into backend development. This includes initial experience with Django and Django REST Framework, API design, as well as basic server and deployment processes. I also gained hands-on experience in setting up and managing servers, which helped me understand the full lifecycle of an application from development to production deployment.",
+    "team": "An important part of my growth has also been working in team projects. I have contributed to two collaborative projects: Join and Kochwelt. In Join, I worked closely with other developers across frontend and backend, gaining valuable experience in API integration and team collaboration.",
+    "button": "Send message"
   },
   "skills": {
     "title": "Skill Set"
   },
   "work": {
-    "title": "My Work",
-    "intro": "Explore a selection of my work here – Interact with projects to see my skills in action.",
+    "title": "My Projects",
+    "intro": "Here are some projects I worked on during my training and in collaborative team environments. These projects allowed me to gain experience in both frontend development and initial backend workflows.",
     "projects": {
+      "join": {
+        "title": "Join",
+        "description": "Join is a collaborative Kanban tool developed as a team project. During this project, I gained practical experience working between frontend and backend systems, including APIs, component architecture, and modern Angular workflows.",
+        "button": "View project"
+      },
       "bookstore": {
         "title": "BookStore",
-        "description": "Interactive BookStore project showcasing JavaScript, HTML, CSS, and API usage.",
-        "button": "View Project"
+        "description": "A modern web application for browsing and managing books. The focus was on clean UI structure, responsive design, and maintainable frontend architecture.",
+        "button": "View project"
       },
       "pollo": {
         "title": "El Pollo Loco",
-        "description": "Playable version of El Pollo Loco directly in the browser.",
-        "button": "Play El Pollo Loco"
+        "description": "A 2D jump-and-run game developed with vanilla JavaScript. The project includes object-oriented programming, game physics, collision detection, animations, and keyboard-based controls. It helped me deepen my understanding of game architecture and browser-based rendering.",
+        "button": "View project"
       },
       "pokedex": {
         "title": "Pokédex",
-        "description": "Interactive Pokédex project showcasing JavaScript, HTML, CSS, and API usage.",
-        "button": "View Project"
+        "description": "An interactive Pokédex application connected to an external API. The project improved my understanding of asynchronous data handling, dynamic rendering, and structured API integration.",
+        "button": "View project"
       }
     }
   },
   "team": {
-    "title": "Need a teamplayer?",
-    "subtitle": "Here what my colleagues said about me",
+    "title": "Looking for a team player?",
+    "subtitle": "What my teammates say about me",
     "items": {
       "james": {
-        "name": "James Rugman",
+        "name": "Mischa König",
         "role": "Project Join",
-        "quote": "Sofia is a reliable and friendly person. Work in a structured way and write a clear code. I highly recommend her as a colleague."
+        "quote": "Simon works reliably, in a structured and solution-oriented way. In the Join project, he stood out through clean code and clear communication within the team."
       },
       "evelyn": {
-        "name": "Evelyn Marx",
-        "role": "Project DA Bubble",
-        "quote": "Sofia is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code."
+        "name": "Fritz Neumann",
+        "role": "Project Join",
+        "quote": "Simon is a very dependable team player. Even under time pressure, he stays focused and delivers well-structured, high-quality results."
       },
       "noah": {
-        "name": "Noah Müller",
-        "role": "Project Pollo Loco",
-        "quote": "Sofia had to develop, format and deliver content in collaboration with the team members. She is a reliable and friendly person."
+        "name": "Hannelore Müller",
+        "role": "Project Join",
+        "quote": "Simon actively contributed to feature development and integrated well into the team. His structured way of working was especially valuable throughout the project."
       }
     }
   },
   "contact": {
     "title": "Contact",
     "subtitle": "Got a problem to solve?",
-    "description": "Encourage people to contact you and describe what role you're looking for.",
-    "cta": "Need a Frontend developer? You can send me a message using the form or",
+    "description": "I’m always open to connecting about exciting projects, collaborative teamwork, and opportunities in frontend or full-stack development. Currently, I’m looking for a position where I can continue growing my skills and gain practical experience with modern web technologies.",
+    "cta": "Looking for a junior full-stack developer? You can send me a message using the form or",
     "ctaLink": "directly via email",
     "form": {
       "name": "Your name",
@@ -85,6 +91,12 @@
       "privacyLink": "privacy policy",
       "privacySuffix": "and agree to the processing of my data as outlined",
       "submit": "Say hello 👋"
+    },
+    "validation": {
+      "name": "Please enter your name.",
+      "email": "Please enter a valid email address.",
+      "message": "Please enter a message.",
+      "privacy": "Please accept the privacy policy."
     },
     "messages": {
       "invalid": "Please fill in all required fields correctly.",

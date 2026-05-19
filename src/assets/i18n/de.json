@@ -13,17 +13,18 @@
   "hero": {
     "intro": "Hallo! Ich bin",
     "name": "Simon",
-    "role": "FullStack <br>ENTWICKLER",
+    "role": "FullStack ENTWICKLER",
     "scroll": "Scrollen"
   },
   "about": {
-    "title": "Lass uns <span class='break'>zusammen arbeiten</span>",
+    "title": "Lass uns zusammen arbeiten",
     "iam": "Ich bin",
-    "location": "ansässig in<br>Frankfurt",
-    "remote": "offen für<br>Remote-Arbeit",
-    "relocate": "offen für<br>Umzug",
-    "text1": "Schreibe einige IT-bezogene Informationen über dich. Warum bist du begeistert vom Programmieren? Was ist deine Inspirationsquelle, um deine Coding-Skills zu verbessern? Zeige deine Bereitschaft, neue Technologien zu lernen.",
-    "text2": "Beschreibe deinen Ansatz zur Problemlösung. Lernst du aus jeder Herausforderung, um die effizienteste oder eleganteste Lösung zu finden? Du kannst Eigenschaften wie analytisches Denken, Kreativität, Ausdauer und Teamarbeit hervorheben.",
+    "location": "ansässig in Frankfurt",
+    "remote": "offen für Remote-Arbeit",
+    "relocate": "offen für Umzug",
+    "text1": "Ich bin angehender Fullstack-Entwickler in der Ausbildung mit Fokus auf moderne Webanwendungen und praxisnahe Softwareentwicklung. Mein Einstieg lag im Frontend mit Angular, TypeScript und modernen UI-Konzepten. Dabei habe ich gelernt, sauberen, strukturierten und wartbaren Code zu schreiben sowie Benutzeroberflächen gezielt umzusetzen.",
+    "text2": "Im Laufe meiner Ausbildung habe ich mein Wissen zunehmend in Richtung Backend erweitert. Dazu gehören erste Erfahrungen mit Django und Django REST Framework, API-Design sowie grundlegende Server- und Deployment-Prozesse. Zusätzlich habe ich praktische Erfahrung im Einrichten und Verwalten von Servern gesammelt, wodurch ich den gesamten Weg einer Anwendung von der Entwicklung bis zum Live-Betrieb besser verstehe.",
+    "team": "Ein wichtiger Teil meiner Entwicklung war auch die Arbeit in Teamprojekten. Ich habe bereits an zwei gemeinsamen Projekten mitgearbeitet: Join sowie Kochwelt. Besonders im Projekt Join konnte ich eng mit anderen Entwicklern im Frontend- und Backend-Bereich zusammenarbeiten und Erfahrungen in der Schnittstellenkommunikation sammeln.",
     "button": "Nachricht senden"
   },
   "skills": {
@@ -31,51 +32,56 @@
   },
   "work": {
     "title": "Meine Projekte",
-    "intro": "Entdecke hier eine Auswahl meiner Arbeiten – interagiere mit den Projekten, um meine Skills in Aktion zu sehen.",
+    "intro": "Hier findest du Projekte, an denen ich während meiner Ausbildung und in Teamarbeit gearbeitet habe. Dabei konnte ich sowohl Frontend- als auch erste Backend-Erfahrungen sammeln.",
     "projects": {
+      "join": {
+        "title": "Join",
+        "description": "Join ist ein kollaboratives Kanban-Tool, das im Team entwickelt wurde. Ich habe dabei eng mit Frontend- und Backend-Entwicklung gearbeitet und Erfahrung in API-Kommunikation und Komponentenarchitektur gesammelt.",
+        "button": "Projekt ansehen"
+      },
       "bookstore": {
         "title": "BookStore",
-        "description": "Interaktives BookStore-Projekt mit JavaScript, HTML, CSS und API-Nutzung.",
+        "description": "Eine moderne Webanwendung zum Durchsuchen und Verwalten von Büchern. Fokus auf sauberes UI, responsives Design und strukturierte Frontend-Architektur.",
         "button": "Projekt ansehen"
       },
       "pollo": {
         "title": "El Pollo Loco",
-        "description": "Spielbare Version von El Pollo Loco direkt im Browser.",
-        "button": "El Pollo Loco spielen"
+        "description": "Ein 2D-Jump-and-Run-Spiel, entwickelt mit Vanilla JavaScript. Das Projekt beinhaltet objektorientierte Programmierung, Spielphysik, Kollisionsabfragen, Animationen sowie tastaturbasierte Steuerung. Dabei konnte ich meine Kenntnisse in der Strukturierung von Spiellogik und browserbasierter Rendering-Logik deutlich vertiefen.",
+        "button": "Projekt ansehen"
       },
       "pokedex": {
         "title": "Pokédex",
-        "description": "Interaktives Pokédex-Projekt mit JavaScript, HTML, CSS und API-Nutzung.",
+        "description": "Eine API-basierte Pokédex-App mit dynamischem Rendering und Fetch API. Fokus auf asynchrone Datenverarbeitung und DOM-Manipulation.",
         "button": "Projekt ansehen"
       }
     }
   },
   "team": {
     "title": "Du suchst einen Teamplayer?",
-    "subtitle": "Das sagen meine Kolleg:innen über mich",
+    "subtitle": "Das sagen meine Teamkolleg:innen über mich",
     "items": {
       "james": {
-        "name": "James Rugman",
+        "name": "Mischa König",
         "role": "Projekt Join",
-        "quote": "Sofia ist eine zuverlässige und freundliche Person. Sie arbeitet strukturiert und schreibt sauberen Code. Ich kann sie als Kollegin sehr empfehlen."
+        "quote": "Simon arbeitet zuverlässig, strukturiert und sehr lösungsorientiert. Besonders im Projekt Join hat er durch sauberen Code und klare Kommunikation überzeugt."
       },
       "evelyn": {
-        "name": "Evelyn Marx",
-        "role": "Projekt DA Bubble",
-        "quote": "Sofia ist eine vertrauenswürdige Teamplayerin und kommt mit Termindruck gut zurecht. Strukturierte Arbeit und klarer Code."
+        "name": "Fritz Neumann",
+        "role": "Projekt Join",
+        "quote": "Simon ist ein sehr verlässlicher Teamplayer. Auch unter Zeitdruck behält er den Überblick und liefert saubere, gut durchdachte Ergebnisse."
       },
       "noah": {
-        "name": "Noah Müller",
-        "role": "Projekt Pollo Loco",
-        "quote": "Sofia hat Inhalte gemeinsam mit dem Team entwickelt, formatiert und ausgeliefert. Sie ist eine zuverlässige und freundliche Person."
+        "name": "Hannelore Müller",
+        "role": "Projekt Join",
+        "quote": "Simon hat aktiv an der Entwicklung von Features mitgearbeitet und sich gut ins Team integriert. Seine strukturierte Arbeitsweise war besonders wertvoll."
       }
     }
   },
   "contact": {
     "title": "Kontakt",
     "subtitle": "Ein Problem zu lösen?",
-    "description": "Motiviere Menschen, dich zu kontaktieren, und beschreibe, nach welcher Rolle du suchst.",
-    "cta": "Du brauchst einen Frontend-Entwickler? Du kannst mir eine Nachricht über das Formular senden oder",
+    "description": "Ich bin angehender Fullstack-Entwickler und offen für spannende Projekte im Frontend und Backend. Wenn du jemanden suchst, der sauber, strukturiert und praxisnah arbeitet, freue ich mich auf deine Nachricht.",
+    "cta": "Du suchst einen angehenden Fullstack-Entwickler? Du kannst mir über das Formular eine Nachricht senden oder",
     "ctaLink": "direkt per E-Mail schreiben",
     "form": {
       "name": "Dein Name",
@@ -83,31 +89,37 @@
       "message": "Deine Nachricht",
       "privacyText": "Ich habe die",
       "privacyLink": "Datenschutzerklärung",
-      "privacySuffix": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu",
-      "submit": "Sag Hallo 👋"
+      "privacySuffix": "gelesen und stimme der Verarbeitung meiner Daten zu",
+      "submit": "Nachricht senden"
+    },
+    "validation": {
+      "name": "Bitte gib deinen Namen ein.",
+      "email": "Bitte gib eine gültige E-Mail-Adresse ein.",
+      "message": "Bitte schreibe eine Nachricht.",
+      "privacy": "Bitte akzeptiere die Datenschutzerklärung."
     },
     "messages": {
-      "invalid": "Bitte fülle alle erforderlichen Felder korrekt aus.",
+      "invalid": "Bitte fülle alle Felder korrekt aus.",
       "success": "Danke! Deine Nachricht wurde versendet. 💌",
       "error": "Ups! Etwas ist schiefgelaufen."
     }
   },
   "footer": {
     "legal": "Impressum",
-    "copyright": "© Simon Bonardi 2022"
+    "copyright": "© 2026 Simon Bonardi"
   },
   "legal": {
     "title": "Impressum",
     "intro1": "Dieses Portfolio dient ausschließlich zu Demonstrationszwecken im Rahmen einer Bewerbung.",
-    "intro2": "Alle Inhalte und Projekte sind fiktiv oder zu Ausbildungszwecken erstellt und stellen keine realen Geschäftsangebote dar.",
+    "intro2": "Alle Inhalte und Projekte sind zu Ausbildungszwecken erstellt.",
     "disclaimerTitle": "Disclaimer",
-    "disclaimerText": "Dieses Portfolio wurde zu Demonstrationszwecken erstellt. Alle Inhalte, Bilder und Projekte sind Teil eines fiktiven oder edukativen Showcase.",
+    "disclaimerText": "Dieses Portfolio ist ein Showcase-Projekt. Alle Inhalte sind nicht kommerziell.",
     "contactTitle": "Kontakt",
-    "contactText": "E-Mail: your@email.com | Standort: Frankfurt, Deutschland",
+    "contactText": "E-Mail: your@email.com | Frankfurt, Deutschland",
     "copyrightTitle": "Copyright & Nutzung",
-    "copyright1": "© 2026 Simon Bonardi. Alle Rechte vorbehalten.",
-    "copyright2": "Alle Inhalte dieser Website sind urheberrechtlich geschützt.",
-    "copyright3": "Jegliche Nutzung, Vervielfältigung oder Verbreitung ist ohne vorherige schriftliche Genehmigung untersagt.",
+    "copyright1": "© 2026 Simon Bonardi",
+    "copyright2": "Alle Inhalte sind urheberrechtlich geschützt.",
+    "copyright3": "Keine Nutzung ohne Erlaubnis.",
     "back": "← Zurück zur Startseite"
   }
 }
