@@ -384,5 +384,5 @@ All showcased projects are educational, personal, or collaborative training proj
 
 # © Copyright
 
-© 2026 Simon Bonardi
+© 2026 Moha Broha
 All rights reserved.
