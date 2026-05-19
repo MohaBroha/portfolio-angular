@@ -8,7 +8,6 @@
     box-sizing: border-box;
 
     background-color: #f5f7fa;
-    /* fallback */
     overflow: hidden;
 }
 
@@ -19,7 +18,6 @@
     display: none !important;
 }
 
-/* Linke Seite - Bild mit blauem Hintergrund */
 .hero__left {
     width: 50%;
     display: flex;
@@ -30,7 +28,7 @@
 
 .hero__image-placeholder {
     position: relative;
-    z-index: 20; // 🔹 viel höher als Kreis (-1)
+    z-index: 20;
     width: 350px;
     height: 480px;
     display: flex;
@@ -42,13 +40,12 @@
         height: 100%;
         object-fit: cover;
         border-radius: 20px;
-        z-index: 20; // sicherstellen
+        z-index: 20;
         position: relative;
     }
 }
 
 
-/* Rechte Seite - Text */
 .hero__right {
     width: 50%;
     padding: 0 60px;
@@ -82,7 +79,6 @@
     letter-spacing: -1px;
 }
 
-/* Scroll Hinweis */
 .hero__scroll {
     position: absolute;
     bottom: 40px;
@@ -142,7 +138,7 @@
                 rgba(245, 247, 250, 0) 80%);
         z-index: 0;
 
-        /* ✅ NUR HINZUGEFÜGT */
+
         animation: heroGlowFloat 10s ease-in-out infinite;
     }
 

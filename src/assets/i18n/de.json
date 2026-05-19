@@ -12,7 +12,7 @@
   },
   "hero": {
     "intro": "Hallo! Ich bin",
-    "name": "Simon",
+    "name": "Moha ",
     "role": "FullStack ENTWICKLER",
     "scroll": "Scrollen"
   },
@@ -63,17 +63,17 @@
       "james": {
         "name": "Mischa König",
         "role": "Projekt Join",
-        "quote": "Simon arbeitet zuverlässig, strukturiert und sehr lösungsorientiert. Besonders im Projekt Join hat er durch sauberen Code und klare Kommunikation überzeugt."
+        "quote": "Moha arbeitet zuverlässig, strukturiert und sehr lösungsorientiert. Besonders im Projekt Join hat er durch sauberen Code und klare Kommunikation überzeugt."
       },
       "evelyn": {
         "name": "Fritz Neumann",
         "role": "Projekt Join",
-        "quote": "Simon ist ein sehr verlässlicher Teamplayer. Auch unter Zeitdruck behält er den Überblick und liefert saubere, gut durchdachte Ergebnisse."
+        "quote": "Moha ist ein sehr verlässlicher Teamplayer. Auch unter Zeitdruck behält er den Überblick und liefert saubere, gut durchdachte Ergebnisse."
       },
       "noah": {
         "name": "Hannelore Müller",
         "role": "Projekt Join",
-        "quote": "Simon hat aktiv an der Entwicklung von Features mitgearbeitet und sich gut ins Team integriert. Seine strukturierte Arbeitsweise war besonders wertvoll."
+        "quote": "Moha hat aktiv an der Entwicklung von Features mitgearbeitet und sich gut ins Team integriert. Seine strukturierte Arbeitsweise war besonders wertvoll."
       }
     }
   },
@@ -106,7 +106,7 @@
   },
   "footer": {
     "legal": "Impressum",
-    "copyright": "© 2026 Simon Bonardi"
+    "copyright": "© 2026 Mohamed Brohani"
   },
   "legal": {
     "title": "Impressum",
@@ -115,9 +115,9 @@
     "disclaimerTitle": "Disclaimer",
     "disclaimerText": "Dieses Portfolio ist ein Showcase-Projekt. Alle Inhalte sind nicht kommerziell.",
     "contactTitle": "Kontakt",
-    "contactText": "E-Mail: your@email.com | Frankfurt, Deutschland",
+    "contactText": "E-Mail: mohabroha@mail.de | Frankfurt, Deutschland",
     "copyrightTitle": "Copyright & Nutzung",
-    "copyright1": "© 2026 Simon Bonardi",
+    "copyright1": "© 2026 Mohamed Brohani",
     "copyright2": "Alle Inhalte sind urheberrechtlich geschützt.",
     "copyright3": "Keine Nutzung ohne Erlaubnis.",
     "back": "← Zurück zur Startseite"

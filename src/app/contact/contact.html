@@ -30,12 +30,10 @@
 
         </div>
 
-        <!-- FORM -->
 
         <form id="contact-form" class="contact__form" #contactForm="ngForm" (ngSubmit)="sendEmail(contactForm)"
             autocomplete="on">
 
-            <!-- NAME -->
 
             <input type="text" name="name" class="contact__input" [placeholder]="'contact.form.name' | translate"
                 required minlength="2" ngModel #name="ngModel" autocomplete="name">
@@ -50,7 +48,6 @@
 
             </div>
 
-            <!-- EMAIL -->
 
             <input type="email" name="email" class="contact__input" [placeholder]="'contact.form.email' | translate"
                 required email ngModel #email="ngModel" autocomplete="email">
@@ -65,7 +62,6 @@
 
             </div>
 
-            <!-- MESSAGE -->
 
             <textarea name="message" class="contact__textarea" rows="6" required minlength="10" ngModel
                 #message="ngModel" [placeholder]="'contact.form.message' | translate"></textarea>
@@ -80,7 +76,6 @@
 
             </div>
 
-            <!-- PRIVACY -->
 
             <div class="contact__checkbox">
 
@@ -113,7 +108,6 @@
 
             </div>
 
-            <!-- SUCCESS / ERROR -->
 
             <div class="contact__messages">
 
@@ -131,7 +125,6 @@
 
             </div>
 
-            <!-- BUTTON -->
 
             <button type="submit" class="contact__button" [disabled]="!contactForm.valid || isSending">
 
@@ -143,7 +136,6 @@
 
             </button>
 
-            <!-- SCROLL TOP -->
 
             <button type="button" class="contact__scroll-top" aria-label="Scroll to top" (click)="scrollTop()"></button>
 

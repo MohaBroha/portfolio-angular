@@ -12,7 +12,7 @@
   },
   "hero": {
     "intro": "Hello! I am",
-    "name": "Simon",
+    "name": "Moha",
     "role": "FullStack <br>DEVELOPER",
     "scroll": "Scroll"
   },
@@ -63,17 +63,17 @@
       "james": {
         "name": "Mischa König",
         "role": "Project Join",
-        "quote": "Simon works reliably, in a structured and solution-oriented way. In the Join project, he stood out through clean code and clear communication within the team."
+        "quote": "Moha works reliably, in a structured and solution-oriented way. In the Join project, he stood out through clean code and clear communication within the team."
       },
       "evelyn": {
         "name": "Fritz Neumann",
         "role": "Project Join",
-        "quote": "Simon is a very dependable team player. Even under time pressure, he stays focused and delivers well-structured, high-quality results."
+        "quote": "Moha is a very dependable team player. Even under time pressure, he stays focused and delivers well-structured, high-quality results."
       },
       "noah": {
         "name": "Hannelore Müller",
         "role": "Project Join",
-        "quote": "Simon actively contributed to feature development and integrated well into the team. His structured way of working was especially valuable throughout the project."
+        "quote": "Moha actively contributed to feature development and integrated well into the team. His structured way of working was especially valuable throughout the project."
       }
     }
   },
@@ -107,7 +107,7 @@
   },
   "footer": {
     "legal": "Legal Notice",
-    "copyright": "© Simon Bonardi 2022"
+    "copyright": "© Mohamed Brohani 2022"
   },
   "legal": {
     "title": "Legal Notice",
@@ -116,9 +116,9 @@
     "disclaimerTitle": "Disclaimer",
     "disclaimerText": "This portfolio website was created for demonstration purposes. All content, images and projects are part of a fictional or educational showcase.",
     "contactTitle": "Contact",
-    "contactText": "Email: your@email.com | Location: Frankfurt, Germany",
+    "contactText": "Email: mohabroha@mail.de | Location: Frankfurt, Germany",
     "copyrightTitle": "Copyright & Usage",
-    "copyright1": "© 2026 Simon Bonardi. All rights reserved.",
+    "copyright1": "© 2026 Mohamed Brohani. All rights reserved.",
     "copyright2": "All content on this website is protected by copyright.",
     "copyright3": "Unauthorized use, reproduction or distribution is not permitted without prior written consent.",
     "back": "← Back to Home"

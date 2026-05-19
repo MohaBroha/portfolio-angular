@@ -15,7 +15,6 @@
     gap: 24px;
 }
 
-/* left logo */
 .site-footer__left {
     flex: 0 0 auto;
 }
@@ -26,7 +25,6 @@
     display: block;
 }
 
-/* center copyright + legal */
 .site-footer__center {
     flex: 1 1 auto;
     text-align: center;
@@ -50,7 +48,6 @@
     opacity: 0.95;
 }
 
-/* right social icons as white circular buttons */
 .site-footer__right {
     flex: 0 0 auto;
     display: flex;
@@ -82,7 +79,6 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* responsive: stack center and keep logo & icons aligned */
 @media (max-width: 900px) {
     .site-footer__inner {
         gap: 16px;
@@ -103,7 +99,6 @@
     }
 }
 
-/* mobile: center everything, vertical spacing */
 @media (max-width: 640px) {
     .site-footer__inner {
         flex-direction: column;

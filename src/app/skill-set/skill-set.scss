@@ -16,18 +16,15 @@
     color: #ffffff;
 }
 
-/* Grid */
 .skills__grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    /* immer 6 Spalten */
     gap: 48px;
     justify-items: center;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Skill Item */
 .skill {
     display: flex;
     flex-direction: column;
@@ -35,7 +32,6 @@
     gap: 14px;
 }
 
-/* Skill Icon mit Animation */
 .skill__icon {
     width: 102px;
     height: 102px;
@@ -58,12 +54,10 @@
     transform: translateY(-8px) scale(1.1);
 }
 
-/* Labels entfernt */
 .skill__label {
     display: none;
 }
 
-/* subtle inner border */
 .skills::before {
     content: '';
     position: absolute;
@@ -72,7 +66,6 @@
     pointer-events: none;
 }
 
-/* Responsive */
 @media (max-width: 1200px) {
     .skills__grid {
         grid-template-columns: repeat(4, 1fr);

@@ -38,7 +38,6 @@ html {
     animation: floatGlow 8s ease-in-out infinite;
 }
 
-/* ✅ MUSS AUSSERHALB stehen */
 @keyframes floatGlow {
     0% {
         transform: translate(0, 0) scale(1);
@@ -53,9 +52,7 @@ html {
     }
 }
 
-/* =========================
-   LOGO
-========================= */
+
 
 .header__logo {
     width: 120px;
@@ -70,9 +67,6 @@ html {
     }
 }
 
-/* =========================
-   DESKTOP NAV (IMPORTANT)
-========================= */
 
 .header__nav {
     position: static;
@@ -111,9 +105,7 @@ html {
     }
 }
 
-/* =========================
-   LANGUAGE SWITCH
-========================= */
+
 
 .header__lang {
     display: flex;
@@ -135,9 +127,7 @@ html {
     }
 }
 
-/* =========================
-   HAMBURGER
-========================= */
+
 
 .hamburger {
     display: none;
@@ -151,9 +141,7 @@ html {
 
 
 
-/* =========================
-   MOBILE ONLY OVERLAY
-========================= */
+
 
 @media (max-width: 900px) {
 
@@ -161,7 +149,6 @@ html {
         display: block;
     }
 
-    /* HEADER */
     .header {
         padding: 20px 24px;
         height: auto;
@@ -174,7 +161,6 @@ html {
 
         width: 130px;
 
-        /* dunkler + etwas stärkerer Glow */
         filter: drop-shadow(0 0 8px rgba(3, 2, 62, 0.55));
     }
 
@@ -186,7 +172,6 @@ html {
 
 
 
-    /* OVERLAY NAV */
     .header__nav {
         position: fixed;
         top: 0;

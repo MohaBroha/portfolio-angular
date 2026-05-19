@@ -1,5 +1,7 @@
 html,
 body {
+    font-family: 'Inter', sans-serif;
+
     height: 100%;
 }
 
@@ -17,9 +19,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* =====================================================
-   Gemeinsame Basis für dekorative Kreise
-===================================================== */
+
 
 .about::before,
 .about::after,
@@ -33,9 +33,6 @@ html {
         filter 0.6s ease;
 }
 
-/* =====================================================
-   Hover Effekte
-===================================================== */
 
 .about:hover::before,
 .about:hover::after {
@@ -53,9 +50,7 @@ html {
     filter: drop-shadow(0 20px 40px rgba(108, 142, 240, 0.35));
 }
 
-/* =====================================================
-   Float Animation (EINMAL – FINAL)
-===================================================== */
+
 
 @keyframes float {
     0% {
@@ -71,9 +66,7 @@ html {
     }
 }
 
-/* =====================================================
-   Animation Zuweisung
-===================================================== */
+
 
 .about::before {
     animation: float 6s ease-in-out infinite;

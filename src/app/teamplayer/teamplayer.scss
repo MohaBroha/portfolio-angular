@@ -4,7 +4,6 @@
     color: #fff;
     overflow: hidden;
 
-    /* strong diagonal gradient like screenshot */
     background: linear-gradient(135deg, #6c8ef0 0%, #3f56e6 100%);
 
     &__inner {
@@ -34,7 +33,6 @@
         opacity: 0.95;
     }
 
-    /* testimonials row */
     &__list {
         display: flex;
         gap: 48px;
@@ -65,7 +63,6 @@
         margin-bottom: 18px;
     }
 
-    /* HORIZONTAL testimonial text (like screenshot) */
     &__quote {
         margin: 0;
         font-size: 15px;
@@ -78,7 +75,6 @@
         padding-top: 14px;
     }
 
-    /* subtle horizontal line instead of vertical quote */
     &__quote::before {
         content: '';
         position: absolute;
@@ -89,7 +85,6 @@
         background: rgba(255, 255, 255, 0.35);
     }
 
-    /* decorative soft circles behind content for depth */
     &::before,
     &::after {
         content: "";
@@ -121,7 +116,6 @@
     }
 }
 
-/* Responsive */
 @media (max-width: 1000px) {
     .team-player {
         padding: 56px 28px;

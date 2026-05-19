@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { environment } from '../../environments/environment';
 
 import {
   TranslateModule,
@@ -67,10 +68,10 @@ export class ContactComponent {
     this.errorMessage = '';
 
     emailjs.sendForm(
-      'service_5auolr6',
-      'template_isntjdq',
+      environment.emailJsServiceId,
+      environment.emailJsTemplateId,
       formElement,
-      'cKmxg22XtA_5jd9zm'
+      environment.emailJsPublicKey
     ).then(
 
       (result: EmailJSResponseStatus) => {
