@@ -50,8 +50,8 @@
         "button": "View project"
       },
       "pokedex": {
-        "title": "Pokédex",
-        "description": "An interactive Pokédex application connected to an external API. The project improved my understanding of asynchronous data handling, dynamic rendering, and structured API integration.",
+        "title": "DexHub",
+        "description": "An interactive DexHub application connected to an external API. The project improved my understanding of asynchronous data handling, dynamic rendering, and structured API integration.",
         "button": "View project"
       }
     }
@@ -66,9 +66,9 @@
         "quote": "Moha works reliably, in a structured and solution-oriented way. In the Join project, he stood out through clean code and clear communication within the team."
       },
       "evelyn": {
-        "name": "Fritz Neumann",
+        "name": "Patrick Schauer",
         "role": "Project Join",
-        "quote": "Moha is a very dependable team player. Even under time pressure, he stays focused and delivers well-structured, high-quality results."
+        "quote": "I see Moha as a friendly and courteous developer within the team who implements features with great care. In particular, he places strong emphasis on maintaining a clean Git workflow. At times, he has delivered features beyond the team’s expectations in record time. On a personal level, I got along well with him, as he consistently interacts with others in a very polite and respectful manner."
       },
       "noah": {
         "name": "Hannelore Müller",

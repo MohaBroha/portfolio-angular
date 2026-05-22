@@ -50,8 +50,8 @@
         "button": "Projekt ansehen"
       },
       "pokedex": {
-        "title": "Pokédex",
-        "description": "Eine API-basierte Pokédex-App mit dynamischem Rendering und Fetch API. Fokus auf asynchrone Datenverarbeitung und DOM-Manipulation.",
+        "title": "DexHub",
+        "description": "Eine API-basierte DexHub-App mit dynamischem Rendering und Fetch API. Fokus auf asynchrone Datenverarbeitung und DOM-Manipulation.",
         "button": "Projekt ansehen"
       }
     }
@@ -66,9 +66,9 @@
         "quote": "Moha arbeitet zuverlässig, strukturiert und sehr lösungsorientiert. Besonders im Projekt Join hat er durch sauberen Code und klare Kommunikation überzeugt."
       },
       "evelyn": {
-        "name": "Fritz Neumann",
+        "name": "Patrick Schauer",
         "role": "Projekt Join",
-        "quote": "Moha ist ein sehr verlässlicher Teamplayer. Auch unter Zeitdruck behält er den Überblick und liefert saubere, gut durchdachte Ergebnisse."
+        "quote": "Ich sehe Moha als einen freundlichen, zuvorkommenden Entwickler im Team, der gewissenhaft Features umsetzt. Insbesondere legt er Wert auf einen sauberen Git-Workflow. Teilweise hat er Features über den Erwartungen im Team hinaus in Rekordzeit umgesetzt. Auf persönlicher Ebene kam ich mit ihm gut klar, da er in sehr höflicher Art und Weise Menschen begegnet."
       },
       "noah": {
         "name": "Hannelore Müller",
