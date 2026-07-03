@@ -34,6 +34,11 @@
     "title": "My Projects",
     "intro": "Here are some projects I worked on during my training and in collaborative team environments. These projects allowed me to gain experience in both frontend development and initial backend workflows.",
     "projects": {
+      "coderr": {
+  "title": "Coderr",
+  "description": "A fully developed full-stack freelancer platform built from planning and architecture to production deployment. Developed with Angular, Django REST Framework, and PostgreSQL. Features include REST APIs, authentication, role-based permissions, offer, review, and order management, as well as deployment on an Ubuntu server using Gunicorn, Nginx, and Cloudflare.",
+  "button": "View project"
+},
       "join": {
         "title": "Join",
         "description": "Join is a collaborative Kanban tool developed as a team project. During this project, I gained practical experience working between frontend and backend systems, including APIs, component architecture, and modern Angular workflows.",
@@ -61,7 +66,7 @@
     "subtitle": "What my teammates say about me",
     "items": {
       "james": {
-        "name": "Mischa König",
+        "name": "Volker Derksen",
         "role": "Project Join",
         "quote": "Moha works reliably, in a structured and solution-oriented way. In the Join project, he stood out through clean code and clear communication within the team."
       },
@@ -71,7 +76,7 @@
         "quote": "I see Moha as a friendly and courteous developer within the team who implements features with great care. In particular, he places strong emphasis on maintaining a clean Git workflow. At times, he has delivered features beyond the teams expectations in record time. On a personal level, I got along well with him, as he consistently interacts with others in a very polite and respectful manner."
       },
       "noah": {
-        "name": "Hannelore Müller",
+        "name": "Levin Krischer",
         "role": "Project Join",
         "quote": "Moha actively contributed to feature development and integrated well into the team. His structured way of working was especially valuable throughout the project."
       }

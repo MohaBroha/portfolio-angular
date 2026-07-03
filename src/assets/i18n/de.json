@@ -34,6 +34,12 @@
     "title": "Meine Projekte",
     "intro": "Hier findest du Projekte, an denen ich während meiner Ausbildung und in Teamarbeit gearbeitet habe. Dabei konnte ich sowohl Frontend- als auch erste Backend-Erfahrungen sammeln.",
     "projects": {
+      
+      "coderr": {
+  "title": "Coderr",
+  "description": "Eine vollständig entwickelte Fullstack-Freelancer-Plattform – von der Planung über die Umsetzung bis zum produktiven Deployment. Entwickelt mit Angular, Django REST Framework und PostgreSQL. Implementiert wurden REST-APIs, Authentifizierung, Rollen- und Berechtigungssysteme, Angebots-, Bewertungs- und Bestellverwaltung sowie das Deployment auf einem Ubuntu-Server mit Gunicorn, Nginx und Cloudflare.",
+  "button": "Projekt ansehen"
+},
       "join": {
         "title": "Join",
         "description": "Join ist ein kollaboratives Kanban-Tool, das im Team entwickelt wurde. Ich habe dabei eng mit Frontend- und Backend-Entwicklung gearbeitet und Erfahrung in API-Kommunikation und Komponentenarchitektur gesammelt.",
@@ -55,13 +61,14 @@
         "button": "Projekt ansehen"
       }
     }
+  
   },
   "team": {
     "title": "Du suchst einen Teamplayer?",
     "subtitle": "Das sagen meine Teamkolleg:innen über mich",
     "items": {
       "james": {
-        "name": "Mischa König",
+        "name": "Volker Derksen",
         "role": "Projekt Join",
         "quote": "Moha arbeitet zuverlässig, strukturiert und sehr lösungsorientiert. Besonders im Projekt Join hat er durch sauberen Code und klare Kommunikation überzeugt."
       },
@@ -71,7 +78,7 @@
         "quote": "Ich sehe Moha als einen freundlichen, zuvorkommenden Entwickler im Team, der gewissenhaft Features umsetzt. Insbesondere legt er Wert auf einen sauberen Git-Workflow. Teilweise hat er Features über den Erwartungen im Team hinaus in Rekordzeit umgesetzt. Auf persönlicher Ebene kam ich mit ihm gut klar, da er in sehr höflicher Art und Weise Menschen begegnet."
       },
       "noah": {
-        "name": "Hannelore Müller",
+        "name": "Levin Krischer",
         "role": "Projekt Join",
         "quote": "Moha hat aktiv an der Entwicklung von Features mitgearbeitet und sich gut ins Team integriert. Seine strukturierte Arbeitsweise war besonders wertvoll."
       }
