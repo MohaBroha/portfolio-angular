@@ -32,7 +32,7 @@
   },
   "work": {
     "title": "Meine Projekte",
-    "intro": "Hier findest du Projekte, an denen ich während meiner Ausbildung und in Teamarbeit gearbeitet habe. Dabei konnte ich sowohl Frontend- als auch erste Backend-Erfahrungen sammeln.",
+    "intro": "Hier findest du Projekte, die ich während meiner Ausbildung zum Softwareentwickler umgesetzt habe. Die meisten entstanden eigenständig, während Join in einem kollaborativen Team entwickelt wurde. Die Projekte spiegeln meine praktischen Erfahrungen in der Frontend- und Backend-Entwicklung wider.",
     "projects": {
       
       "coderr": {
@@ -70,17 +70,17 @@
       "james": {
         "name": "Volker Derksen",
         "role": "Projekt Join",
-        "quote": "Moha arbeitet zuverlässig, strukturiert und sehr lösungsorientiert. Besonders im Projekt Join hat er durch sauberen Code und klare Kommunikation überzeugt."
+        "quote": "Mohamed arbeitet zuverlässig, strukturiert und sehr lösungsorientiert. Besonders im Projekt Join hat er durch sauberen Code und klare Kommunikation überzeugt."
       },
       "evelyn": {
         "name": "Patrick Schauer",
         "role": "Projekt Join",
-        "quote": "Ich sehe Moha als einen freundlichen, zuvorkommenden Entwickler im Team, der gewissenhaft Features umsetzt. Insbesondere legt er Wert auf einen sauberen Git-Workflow. Teilweise hat er Features über den Erwartungen im Team hinaus in Rekordzeit umgesetzt. Auf persönlicher Ebene kam ich mit ihm gut klar, da er in sehr höflicher Art und Weise Menschen begegnet."
+        "quote": "Ich sehe Mohamed als einen freundlichen, zuvorkommenden Entwickler im Team, der gewissenhaft Features umsetzt. Insbesondere legt er Wert auf einen sauberen Git-Workflow. Teilweise hat er Features über den Erwartungen im Team hinaus in Rekordzeit umgesetzt. Auf persönlicher Ebene kam ich mit ihm gut klar, da er in sehr höflicher Art und Weise Menschen begegnet."
       },
       "noah": {
         "name": "Levin Krischer",
         "role": "Projekt Join",
-        "quote": "Moha hat aktiv an der Entwicklung von Features mitgearbeitet und sich gut ins Team integriert. Seine strukturierte Arbeitsweise war besonders wertvoll."
+        "quote": "Mohamed hat aktiv an der Entwicklung von Features mitgearbeitet und sich gut ins Team integriert. Seine strukturierte Arbeitsweise war besonders wertvoll."
       }
     }
   },
@@ -88,7 +88,7 @@
     "title": "Kontakt",
     "subtitle": "Ein Problem zu lösen?",
     "description": "Ich bin angehender Fullstack-Entwickler und offen für spannende Projekte im Frontend und Backend. Wenn du jemanden suchst, der sauber, strukturiert und praxisnah arbeitet, freue ich mich auf deine Nachricht.",
-    "cta": "Du suchst einen angehenden Fullstack-Entwickler? Du kannst mir über das Formular eine Nachricht senden oder",
+    "cta": "Du suchst einen Fullstack-Entwickler? Du kannst mir über das Formular eine Nachricht senden oder",
     "ctaLink": "direkt per E-Mail schreiben",
     "form": {
       "name": "Dein Name",

@@ -32,7 +32,7 @@
   },
   "work": {
     "title": "My Projects",
-    "intro": "Here are some projects I worked on during my training and in collaborative team environments. These projects allowed me to gain experience in both frontend development and initial backend workflows.",
+    "intro": "Here are some projects I completed during my software development training. Most of them were developed independently, while Join was created in a collaborative team environment. These projects helped me gain practical experience in frontend development, backend development, and modern web technologies.",
     "projects": {
       "coderr": {
   "title": "Coderr",
@@ -68,17 +68,17 @@
       "james": {
         "name": "Volker Derksen",
         "role": "Project Join",
-        "quote": "Moha works reliably, in a structured and solution-oriented way. In the Join project, he stood out through clean code and clear communication within the team."
+        "quote": "Mohamed works reliably, in a structured and solution-oriented way. In the Join project, he stood out through clean code and clear communication within the team."
       },
       "evelyn": {
         "name": "Patrick Schauer",
         "role": "Project Join",
-        "quote": "I see Moha as a friendly and courteous developer within the team who implements features with great care. In particular, he places strong emphasis on maintaining a clean Git workflow. At times, he has delivered features beyond the teams expectations in record time. On a personal level, I got along well with him, as he consistently interacts with others in a very polite and respectful manner."
+        "quote": "I see Mohamed as a friendly and courteous developer within the team who implements features with great care. In particular, he places strong emphasis on maintaining a clean Git workflow. At times, he has delivered features beyond the teams expectations in record time. On a personal level, I got along well with him, as he consistently interacts with others in a very polite and respectful manner."
       },
       "noah": {
         "name": "Levin Krischer",
         "role": "Project Join",
-        "quote": "Moha actively contributed to feature development and integrated well into the team. His structured way of working was especially valuable throughout the project."
+        "quote": "Mohamed actively contributed to feature development and integrated well into the team. His structured way of working was especially valuable throughout the project."
       }
     }
   },
