@@ -66,6 +66,18 @@
 }
 
 
+.project--normal:first-of-type::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    top: -300px;
+    border-radius: 50%;
+    border: 2px  #6c8ef0;
+    pointer-events: none;
+    z-index: -1;
+}
+
 
 .projects__title {
     font-size: 96px;
@@ -220,6 +232,7 @@
     display: inline-block;
 
     margin-top: 24px;
+    margin-right: 12px;
     padding: 14px 28px;
 
     border-radius: 12px;
@@ -261,15 +274,23 @@
 
 @keyframes heroGlowFloat {
     0% {
-        transform: translateY(0px) scale(1);
+        transform: translateY(0) scale(1);
+    }
+
+    25% {
+        transform: translateY(-12px) scale(1.03);
     }
 
     50% {
-        transform: translateY(18px) scale(1.05);
+        transform: translateY(20px) scale(1.28);
+    }
+
+    75% {
+        transform: translateY(8px) scale(1.34);
     }
 
     100% {
-        transform: translateY(0px) scale(1);
+        transform: translateY(0) scale(1);
     }
 }
 
@@ -302,6 +323,9 @@
         height: 100px;
         top: 420px;
         right: 10%;
+    }
+       .project--normal:first-of-type::after {
+        display: none;
     }
 }
 
@@ -387,12 +411,6 @@
         margin-bottom: 30px;
     }
 
-    .pr
-    /* =========================
-       GLOWS – ULTRA SAFE MOBILE
-       → verhindert JEGLICHEN Scroll Overflow
-    ========================= */
-
     .my-work::before {
         width: 120px;
         height: 120px;
@@ -416,7 +434,6 @@
         filter: blur(0.3px);
     }
 
-    /* PROJECT GLOWS ebenfalls entschärfen */
     .project::before {
         width: 220px;
         height: 220px;
