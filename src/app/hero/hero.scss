@@ -6,7 +6,6 @@
     min-height: calc(100vh);
     padding: 0 80px;
     box-sizing: border-box;
-
     background-color: #7a59a026;
     overflow: hidden;
 }
@@ -123,7 +122,7 @@
     }
 
     50% {
-        transform: translateY(calc(50% - 130px));
+        transform: translateY(calc(50% - 120px));
     }
 }
  
@@ -132,13 +131,50 @@
 
 .hero__socials {
     position: absolute;
-    right: 80px;
+    right: 27px;
     bottom: 120px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     z-index: 5;
+}
 
+.hero__socials a {
+    display: inline-flex;
+    animation: socialFloat 2.8s ease-in-out infinite;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.hero__socials a:nth-child(1) {
+    animation-duration: 2.6s;
+}
+
+.hero__socials a:nth-child(2) {
+    animation-duration: 3s;
+    animation-delay: .2s;
+}
+
+.hero__socials a:nth-child(3) {
+    animation-duration: 2.4s;
+    animation-delay: .4s;
+}
+
+.hero__socials a:hover {
+    transform: scale(1.15) rotate(6deg);
+    box-shadow: 0 0 20px rgba(255, 255, 255, .25);
+}
+
+@keyframes socialFloat {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(8px) scale(1.06);
+    }
+}
+.hero__socials a:hover svg {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, .5));
 }
 
 .site-footer__icon {
@@ -149,24 +185,17 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     background: #fff;
-    border: 2px solid #5988FF;
-
-
+    border: 2px solid #5b7ec3;;
     transition:
         transform .2s ease,
         background .2s ease,
         color .2s ease,
         box-shadow .2s ease;
-
     box-shadow: none;
-    
     .site-footer__icon:hover {
     transform: translateY(-4px);
-
     color: #fff;
-
     box-shadow: 0 6px 20px rgba(118, 88, 216, 0.12);
 }
 }
@@ -211,7 +240,7 @@
                 transform 0.3s ease,
                 opacity 0.3s ease;
 
-    animation: scrollFloat 2.5s ease-in-out infinite;
+    animation: scrollFloat 3.5s ease-in-out infinite;
 
     &::after {
         height: 150px;
@@ -238,7 +267,7 @@
     }
 
     50% {
-        transform: translateY(calc(50% - 150px));
+        transform: translateY(calc(50% - 120px));
     }
 }
 
