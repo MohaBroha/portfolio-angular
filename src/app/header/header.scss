@@ -42,15 +42,10 @@
 }
 
 .header__logo {
-  width: 120px;
-  height: 80px;
+  width: 100px;
+  height: 60px;
   display: flex;
   justify-content: center;
-  img {
-    width: 240px;
-    height: auto;
-    object-fit: contain;
-  }
 }
 
 .header__nav {
