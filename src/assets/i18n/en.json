@@ -35,10 +35,10 @@
     "intro": "Here are some projects I completed during my software development training. Most of them were developed independently, while Join was created in a collaborative team environment. These projects helped me gain practical experience in frontend development, backend development, and modern web technologies.",
     "projects": {
       "coderr": {
-  "title": "Coderr",
-  "description": "A fully developed full-stack freelancer platform built from planning and architecture to production deployment. Developed with Angular, Django REST Framework, and PostgreSQL. Features include REST APIs, authentication, role-based permissions, offer, review, and order management, as well as deployment on an Ubuntu server using Gunicorn, Nginx, and Cloudflare.",
-  "button": "Live Demo"
-},
+        "title": "Coderr",
+        "description": "A fully developed full-stack freelancer platform built from planning and architecture to production deployment. Developed with Angular, Django REST Framework, and PostgreSQL. Features include REST APIs, authentication, role-based permissions, offer, review, and order management, as well as deployment on an Ubuntu server using Gunicorn, Nginx, and Cloudflare.",
+        "button": "Live Demo"
+      },
       "join": {
         "title": "Join",
         "description": "Join is a collaborative Kanban tool developed as a team project. During this project, I gained practical experience working between frontend and backend systems, including APIs, component architecture, and modern Angular workflows.",

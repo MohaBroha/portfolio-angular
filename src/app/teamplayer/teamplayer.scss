@@ -1,179 +1,174 @@
 .team-player {
-    position: relative;
-    padding: 72px 40px;
+  position: relative;
+  padding: 72px 40px;
+  color: #fff;
+  overflow: hidden;
+
+  background: linear-gradient(135deg, #6c8ef0 0%, #3f56e6 100%);
+
+  &__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  &__title {
+    font-family: 'Baloo 2', cursive;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 141%;
+    text-align: center;
+    margin: 0 0 12px;
     color: #fff;
-    overflow: hidden;
+  }
 
-    background: linear-gradient(135deg, #6c8ef0 0%, #3f56e6 100%);
+  &__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 141%;
+    text-align: center;
+    text-align: center;
+    margin: 0 0 48px;
+    color: rgba(255, 255, 255, 0.95);
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.95;
+  }
 
-    &__inner {
-        max-width: 1200px;
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
+  &__list {
+    display: flex;
+    gap: 48px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 12px;
+    z-index: 1;
+  }
 
-    &__title {
-        font-family: 'Baloo 2', cursive;
-        font-size: 45px;
-        font-weight: 800;
-        line-height: 141%;
-        text-align: center;
-        margin: 0 0 12px;
-        color: #fff;
-       
-    }
+  &__item {
+    flex: 1 1 0;
+    max-width: 360px;
+    min-width: 220px;
+    box-sizing: border-box;
+    padding: 6px 12px;
+  }
 
-    &__subtitle {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 32px;
-        font-weight: 400;
-        line-height: 141%;
-        text-align: center;
-        text-align: center;
-        margin: 0 0 48px;
-        color: rgba(255, 255, 255, 0.95);
-        max-width: 820px;
-        margin-left: auto;
-        margin-right: auto;
-        opacity: 0.95;
-    }
+  &__name {
+    margin: 0 0 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    color: #ffffff;
+  }
 
-    &__list {
-        display: flex;
-        gap: 48px;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-top: 12px;
-        z-index: 1;
-    }
-
-    &__item {
-        flex: 1 1 0;
-        max-width: 360px;
-        min-width: 220px;
-        box-sizing: border-box;
-        padding: 6px 12px;
-    }
-
-    &__name {
-        margin: 0 0 6px;
-         font-family: 'Montserrat', sans-serif;
-         font-size: 24px;
-        font-weight: 700;
-        line-height: 120%;
-        color: #ffffff;
-    }
-
-    &__role {
+  &__role {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 140%;        
+    line-height: 140%;
     color: rgba(255, 255, 255, 0.85);
     margin-bottom: 18px;
+  }
+
+  &__quote {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.95);
+    position: relative;
+    padding-left: 0;
+    padding-top: 14px;
+  }
+
+  &__quote::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.35);
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+    mix-blend-mode: multiply;
+  }
+
+  &::before {
+    width: 360px;
+    height: 360px;
+    right: -120px;
+    top: -60px;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.08), transparent 40%);
+  }
+
+  &::after {
+    width: 200px;
+    height: 200px;
+    left: -80px;
+    bottom: -80px;
+    background: radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.06), transparent 40%);
+  }
+}
+
+@media (max-width: 1000px) {
+  .team-player {
+    padding: 56px 28px;
+
+    &__title {
+      font-size: 40px;
     }
 
-    &__quote {
-        margin: 0;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 120%;
-        color: rgba(255, 255, 255, 0.95);
-        position: relative;
-        padding-left: 0;
-        padding-top: 14px;
+    &__subtitle {
+      font-size: 18px;
     }
 
-    &__quote::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 48px;
-        height: 1px;
-        background: rgba(255, 255, 255, 0.35);
+    &__list {
+      gap: 28px;
+    }
+
+    &__item {
+      max-width: 300px;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .team-player {
+    padding: 40px 20px;
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      margin-bottom: 28px;
+    }
+
+    &__list {
+      display: block;
+    }
+
+    &__item {
+      max-width: none;
+      padding: 18px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
     }
 
     &::before,
     &::after {
-        content: "";
-        position: absolute;
-        border-radius: 50%;
-        pointer-events: none;
-        z-index: 0;
-        mix-blend-mode: multiply;
+      display: none;
     }
-
-    &::before {
-        width: 360px;
-        height: 360px;
-        right: -120px;
-        top: -60px;
-        background: radial-gradient(circle at 30% 30%,
-                rgba(255, 255, 255, 0.08),
-                transparent 40%);
-    }
-
-    &::after {
-        width: 200px;
-        height: 200px;
-        left: -80px;
-        bottom: -80px;
-        background: radial-gradient(circle at 70% 70%,
-                rgba(255, 255, 255, 0.06),
-                transparent 40%);
-    }
-}
-
-@media (max-width: 1000px) {
-    .team-player {
-        padding: 56px 28px;
-
-        &__title {
-            font-size: 40px;
-        }
-
-        &__subtitle {
-            font-size: 18px;
-        }
-
-        &__list {
-            gap: 28px;
-        }
-
-        &__item {
-            max-width: 300px;
-        }
-    }
-}
-
-@media (max-width: 760px) {
-    .team-player {
-        padding: 40px 20px;
-
-        &__title {
-            font-size: 30px;
-        }
-
-        &__subtitle {
-            font-size: 16px;
-            margin-bottom: 28px;
-        }
-
-        &__list {
-            display: block;
-        }
-
-        &__item {
-            max-width: none;
-            padding: 18px 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.04);
-        }
-
-        &::before,
-        &::after {
-            display: none;
-        }
-    }
+  }
 }

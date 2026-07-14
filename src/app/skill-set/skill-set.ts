@@ -7,6 +7,6 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [CommonModule, TranslateModule],
   templateUrl: './skill-set.html',
-  styleUrls: ['./skill-set.scss']
+  styleUrls: ['./skill-set.scss'],
 })
-export class SkillSetComponent { }
+export class SkillSetComponent {}

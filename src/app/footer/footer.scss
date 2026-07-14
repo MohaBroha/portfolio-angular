@@ -1,133 +1,136 @@
 .site-footer {
-    background: linear-gradient(135deg, #6c8ef0 0%, #3f56e6 100%);
-    padding: 34px 48px;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
+  background: linear-gradient(135deg, #6c8ef0 0%, #3f56e6 100%);
+  padding: 34px 48px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
 }
 
 .site-footer__inner {
-    max-width: 1350px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
+  max-width: 1350px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 .site-footer__left {
-    flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .site-footer__logo {
-    width: 48px;
-    height: 48px;
-    display: block;
+  width: 48px;
+  height: 48px;
+  display: block;
 }
 
 .site-footer__center {
-    flex: 1 1 auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  flex: 1 1 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .site-footer__copyright {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 23px;
-    font-weight: 400;
-    line-height: 120%;
-    margin-bottom: 10px;
-    color: rgba(255, 255, 255, 0.95);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .site-footer__legal {
-    color: rgba(255, 255, 255, 0.9);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 120%;
-    text-decoration: none;
-    opacity: 0.95;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+  text-decoration: none;
+  opacity: 0.95;
 }
 
 .site-footer__right {
-    flex: 0 0 auto;
-    display: flex;
-    gap: 18px;
-    align-items: center;
+  flex: 0 0 auto;
+  display: flex;
+  gap: 18px;
+  align-items: center;
 }
 
 .site-footer__icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.12);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-decoration: none;
-    transition: transform .12s ease, background .12s ease, box-shadow .12s ease;
-    box-shadow: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  transition:
+    transform 0.12s ease,
+    background 0.12s ease,
+    box-shadow 0.12s ease;
+  box-shadow: none;
 }
 
 .site-footer__icon svg {
-    display: block;
+  display: block;
 }
 
 .site-footer__icon:hover {
-    transform: translateY(-4px);
-    background: rgba(255, 255, 255, 0.22);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
 @media (max-width: 900px) {
-    .site-footer__inner {
-        gap: 16px;
-    }
+  .site-footer__inner {
+    gap: 16px;
+  }
 
-    .site-footer__logo {
-        width: 44px;
-        height: 44px;
-    }
+  .site-footer__logo {
+    width: 44px;
+    height: 44px;
+  }
 
-    .site-footer__icon {
-        width: 40px;
-        height: 40px;
-    }
+  .site-footer__icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media (max-width: 640px) {
-    .site-footer__inner {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 14px;
-        padding: 10px 0;
-    }
+  .site-footer__inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+    padding: 10px 0;
+  }
 
-    .site-footer__right {
-        order: 3;
-    }
+  .site-footer__right {
+    order: 3;
+  }
 
-    .site-footer__left {
-        order: 1;
-    }
+  .site-footer__left {
+    order: 1;
+  }
 
-    .site-footer__center {
-        order: 2;
-    }
+  .site-footer__center {
+    order: 2;
+  }
 
-    .site-footer__logo {
-        width: 56px;
-        height: 56px;
-    }
+  .site-footer__logo {
+    width: 56px;
+    height: 56px;
+  }
 
-    .site-footer__icon {
-        width: 44px;
-        height: 44px;
-    }
+  .site-footer__icon {
+    width: 44px;
+    height: 44px;
+  }
 }

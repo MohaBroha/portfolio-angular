@@ -7,9 +7,8 @@ describe('TeamplayerComponent', () => {
   let fixture: ComponentFixture<TeamplayerComponent>;
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TeamplayerComponent]
-    })
-      .compileComponents();
+      imports: [TeamplayerComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(TeamplayerComponent);
     component = fixture.componentInstance;

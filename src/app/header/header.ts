@@ -3,18 +3,17 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageService } from '../language.service';
 
-
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [CommonModule, TranslateModule],
   templateUrl: './header.html',
-  styleUrls: ['./header.scss']
+  styleUrls: ['./header.scss'],
 })
 export class HeaderComponent {
   menuOpen = false;
 
-  constructor(private languageService: LanguageService) { }
+  constructor(private languageService: LanguageService) {}
 
   get currentLang() {
     return this.languageService.currentLang;

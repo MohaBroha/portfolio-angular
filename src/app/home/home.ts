@@ -18,9 +18,9 @@ import { ContactComponent } from '../contact/contact';
     SkillSetComponent,
     MyWorkComponent,
     TeamplayerComponent,
-    ContactComponent
+    ContactComponent,
   ],
   templateUrl: './home.html',
-  styleUrls: ['./home.scss']
+  styleUrls: ['./home.scss'],
 })
-export class HomeComponent { }
+export class HomeComponent {}

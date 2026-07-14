@@ -8,17 +8,17 @@ This portfolio showcases personal and collaborative projects, frontend and backe
 
 # 🚀 Features
 
-* Modern responsive UI
-* Angular-based architecture
-* Multilingual support (DE / EN)
-* Clean component structure
-* Smooth animations and glow effects
-* Project showcase section
-* Team testimonials section
-* Contact form with validation
-* Legal notice / imprint page
-* Custom favicon and branding
-* Optimized mobile experience
+- Modern responsive UI
+- Angular-based architecture
+- Multilingual support (DE / EN)
+- Clean component structure
+- Smooth animations and glow effects
+- Project showcase section
+- Team testimonials section
+- Contact form with validation
+- Legal notice / imprint page
+- Custom favicon and branding
+- Optimized mobile experience
 
 ---
 
@@ -26,26 +26,26 @@ This portfolio showcases personal and collaborative projects, frontend and backe
 
 ## Frontend
 
-* Angular
-* TypeScript
-* HTML5
-* SCSS
-* RxJS
+- Angular
+- TypeScript
+- HTML5
+- SCSS
+- RxJS
 
 ## Styling & UI
 
-* SCSS Architecture
-* Responsive Design
-* CSS Animations
-* Flexbox
-* Custom Glow Effects
+- SCSS Architecture
+- Responsive Design
+- CSS Animations
+- Flexbox
+- Custom Glow Effects
 
 ## Backend / Additional Experience
 
-* Django
-* Django REST Framework
-* REST APIs
-* Server & Deployment Basics
+- Django
+- Django REST Framework
+- REST APIs
+- Server & Deployment Basics
 
 ---
 
@@ -61,10 +61,10 @@ Angular | TypeScript | SCSS | REST API | Bootstrap 5
 
 ### Focus
 
-* Component architecture
-* API integration
-* Team collaboration
-* Frontend & backend communication
+- Component architecture
+- API integration
+- Team collaboration
+- Frontend & backend communication
 
 ---
 
@@ -78,9 +78,9 @@ HTML5 | CSS3 | JavaScript
 
 ### Focus
 
-* Responsive layouts
-* Structured UI
-* Frontend architecture
+- Responsive layouts
+- Structured UI
+- Frontend architecture
 
 ---
 
@@ -94,11 +94,11 @@ JavaScript | HTML5 Canvas | OOP | CSS | Game Logic
 
 ### Focus
 
-* Object-oriented programming
-* Collision detection
-* Animation systems
-* Keyboard controls
-* Browser rendering logic
+- Object-oriented programming
+- Collision detection
+- Animation systems
+- Keyboard controls
+- Browser rendering logic
 
 ---
 
@@ -112,9 +112,9 @@ HTML5 | CSS3 | JavaScript | Fetch API | DOM Manipulation | PokéAPI
 
 ### Focus
 
-* Async API handling
-* Dynamic rendering
-* Structured data processing
+- Async API handling
+- Dynamic rendering
+- Structured data processing
 
 ---
 
@@ -122,8 +122,8 @@ HTML5 | CSS3 | JavaScript | Fetch API | DOM Manipulation | PokéAPI
 
 The portfolio supports:
 
-* German 🇩🇪
-* English 🇬🇧
+- German 🇩🇪
+- English 🇬🇧
 
 Translations are managed using Angular translation pipes and JSON-based language files.
 
@@ -133,17 +133,17 @@ Translations are managed using Angular translation pipes and JSON-based language
 
 The entire portfolio is optimized for:
 
-* Desktop
-* Tablet
-* Mobile devices
+- Desktop
+- Tablet
+- Mobile devices
 
 Special attention was given to:
 
-* spacing systems
-* adaptive layouts
-* overflow prevention
-* scalable glow effects
-* mobile readability
+- spacing systems
+- adaptive layouts
+- overflow prevention
+- scalable glow effects
+- mobile readability
 
 ---
 
@@ -151,11 +151,11 @@ Special attention was given to:
 
 The UI follows a modern developer-focused aesthetic:
 
-* dark/light contrast
-* blue glow visuals
-* minimal but expressive styling
-* consistent spacing and typography
-* smooth hover interactions
+- dark/light contrast
+- blue glow visuals
+- minimal but expressive styling
+- consistent spacing and typography
+- smooth hover interactions
 
 The goal was to create a professional portfolio that feels modern, clean, and technically structured.
 
@@ -184,6 +184,7 @@ ng serve
 Open in browser:
 
 ```bash
+
 ```
 
 ---
@@ -195,6 +196,7 @@ Production build:
 ```bash
 ng build
 ```
+
 # 📁 Project Structure
 
 ```bash
@@ -259,11 +261,11 @@ src/
 
 The portfolio follows a modular Angular architecture:
 
-* Every section is separated into reusable components
-* Translation files are centralized inside `/assets/i18n`
-* Styling is component-based using SCSS
-* Shared logic is separated into services and utilities
-* Assets are grouped cleanly for scalability
+- Every section is separated into reusable components
+- Translation files are centralized inside `/assets/i18n`
+- Styling is component-based using SCSS
+- Shared logic is separated into services and utilities
+- Assets are grouped cleanly for scalability
 
 ---
 
@@ -275,11 +277,11 @@ Contains all visual portfolio sections.
 
 Example:
 
-* Hero
-* About
-* Work
-* Contact
-* Team Player
+- Hero
+- About
+- Work
+- Contact
+- Team Player
 
 ---
 
@@ -300,9 +302,9 @@ Used together with Angular translation pipes.
 
 Contains reusable logic such as:
 
-* language switching
-* form handling
-* API communication
+- language switching
+- form handling
+- API communication
 
 ---
 
@@ -325,9 +327,9 @@ component-name/
 
 This keeps:
 
-* styling isolated
-* responsive behavior maintainable
-* UI scalable
+- styling isolated
+- responsive behavior maintainable
+- UI scalable
 
 ---
 
@@ -354,14 +356,14 @@ The structure is prepared for future expansion:
 
 Possible future additions:
 
-* backend integration
-* blog section
-* project detail pages
-* animations library
-* CMS integration
-* authentication
-* admin dashboard
-* dark/light theme system
+- backend integration
+- blog section
+- project detail pages
+- animations library
+- CMS integration
+- authentication
+- admin dashboard
+- dark/light theme system
 
 ---
 
@@ -370,7 +372,7 @@ Possible future additions:
 Moha Broha
 Frankfurt, Germany
 
-Portfolio: 
+Portfolio:
 
 ---
 

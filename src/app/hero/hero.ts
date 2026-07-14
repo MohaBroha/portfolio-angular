@@ -7,6 +7,6 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [CommonModule, TranslateModule],
   templateUrl: './hero.html',
-  styleUrls: ['./hero.scss']
+  styleUrls: ['./hero.scss'],
 })
-export class HeroComponent { }
+export class HeroComponent {}

@@ -9,7 +9,6 @@ import { TeamplayerComponent } from './teamplayer/teamplayer';
 import { ContactComponent } from './contact/contact';
 import { FooterComponent } from './footer/footer';
 
-
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -22,9 +21,9 @@ import { FooterComponent } from './footer/footer';
     MyWorkComponent,
     TeamplayerComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
   ],
   templateUrl: './app.html',
-  styleUrls: ['./app.scss']
+  styleUrls: ['./app.scss'],
 })
-export class AppComponent { }
+export class AppComponent {}

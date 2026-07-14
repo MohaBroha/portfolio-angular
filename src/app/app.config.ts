@@ -12,8 +12,6 @@ export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
 }
 
-
-
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
@@ -24,13 +22,13 @@ export const appConfig: ApplicationConfig = {
         loader: {
           provide: TranslateLoader,
           useFactory: HttpLoaderFactory,
-          deps: [HttpClient]
-        }
-      })
+          deps: [HttpClient],
+        },
+      }),
     ),
     provideRouter([
       { path: '', component: HomeComponent },
-      { path: 'legal-notice', component: LegalNoticeComponent }
-    ])
-  ]
+      { path: 'legal-notice', component: LegalNoticeComponent },
+    ]),
+  ],
 };

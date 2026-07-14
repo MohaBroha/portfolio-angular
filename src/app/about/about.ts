@@ -7,6 +7,6 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [CommonModule, TranslateModule],
   templateUrl: './about.html',
-  styleUrls: ['./about.scss']
+  styleUrls: ['./about.scss'],
 })
-export class AboutComponent { }
+export class AboutComponent {}

@@ -8,6 +8,6 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [CommonModule, RouterModule, TranslateModule],
   templateUrl: './legal-notice.html',
-  styleUrls: ['./legal-notice.scss']
+  styleUrls: ['./legal-notice.scss'],
 })
-export class LegalNoticeComponent { }
+export class LegalNoticeComponent {}

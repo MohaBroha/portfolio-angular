@@ -7,6 +7,6 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [CommonModule, TranslateModule],
   templateUrl: './teamplayer.html',
-  styleUrls: ['./teamplayer.scss']
+  styleUrls: ['./teamplayer.scss'],
 })
-export class TeamplayerComponent { }
+export class TeamplayerComponent {}

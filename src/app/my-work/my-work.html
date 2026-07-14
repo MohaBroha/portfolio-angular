@@ -1,218 +1,244 @@
 <section id="work" class="projects">
+  <h2 class="projects__title">
+    {{ 'work.title' | translate }}
+  </h2>
 
-    <h2 class="projects__title">
-        {{ 'work.title' | translate }}
-    </h2>
+  <p class="projects__intro">
+    {{ 'work.intro' | translate }}
+  </p>
 
-    <p class="projects__intro">
-        {{ 'work.intro' | translate }}
-    </p>
-
-
-    <div class="project project--normal">
-
-    <div class="project__image">
-        <img src="assets/images/coderr.png" alt="Coderr Screenshot">
-    </div>
+  <div class="project project--normal">
+    <a
+      class="project__image"
+      href="https://coderr.mohabroha.dev"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="assets/images/coderr.png" alt="Coderr Screenshot" />
+    </a>
 
     <div class="project__content">
+      <a
+        class="project__title"
+        href="https://coderr.mohabroha.dev"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ 'work.projects.coderr.title' | translate }}
+      </a>
+      <p class="project__stack">
+        Angular | TypeScript | Django REST Framework | Python | PostgreSQL | REST API | Gunicorn |
+        Nginx | Ubuntu | Cloudflare
+      </p>
 
-        <h3 class="project__title">
-            {{ 'work.projects.coderr.title' | translate }}
-        </h3>
+      <p>
+        {{ 'work.projects.coderr.description' | translate }}
+      </p>
 
-        <p class="project__stack">
-Angular | TypeScript | Django REST Framework | Python | PostgreSQL | REST API | Gunicorn | Nginx | Ubuntu | Cloudflare        </p>
+      <a
+        href="https://coderr.mohabroha.dev"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project__btn project__btn--live"
+      >
+        {{ 'work.projects.coderr.button' | translate }}
+      </a>
 
-        <p class="project__description">
-    {{ 'work.projects.coderr.description' | translate }}
-</p>
-
-        <a
-            href="https://coderr.mohabroha.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project__btn">
-
-            {{ 'work.projects.coderr.button' | translate }}
-
-        </a>
-
-        <a
-    href="https://github.com/MohaBroha/Backend---Frontend-Coderr-"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="project__btn">
-
-    GitHub
-
-       </a>
-
+      <a
+        href="https://github.com/MohaBroha/Backend---Frontend-Coderr-"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project__btn"
+      >
+        GitHub
+      </a>
     </div>
+  </div>
 
+  <div class="project project--reverse">
+    <a
+      class="project__image"
+      href="https://join-5-1227.developerakademie.net/#/legal-notice"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="assets/images/join.png" alt="Join Screenshot" />
+    </a>
+
+    <div class="project__content">
+      <a
+        class="project__title"
+        href="https://join-5-1227.developerakademie.net/#/legal-notice"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ 'work.projects.join.title' | translate }}
+      </a>
+
+      <p class="project__stack">Angular | TypeScript | SCSS | REST API | Bootstrap 5</p>
+
+      <p>
+        {{ 'work.projects.join.description' | translate }}
+      </p>
+
+      <a
+        href="https://join-5-1227.developerakademie.net/#/legal-notice"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project__btn"
+        class="project__btn project__btn--live"
+      >
+        {{ 'work.projects.join.button' | translate }}
+      </a>
+      <a
+        href="https://github.com/MohaBroha/Join"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project__btn"
+      >
+        GitHub
+      </a>
     </div>
+  </div>
 
-    <div class="project project--reverse">
+  <div class="project project--normal">
+    <a
+      class="project__image"
+      href="https://mohamed-brohani.developerakademie.net/BookStrore-Project/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="assets/images/Screenshot 2026-02-11 051847.png" alt="BookStore Screenshot" />
+    </a>
 
-        <div class="project__image">
-            <img src="assets\images\join.png" alt="Join Screenshot">
-        </div>
+    <div class="project__content">
+      <a
+        class="project__title"
+        href="https://mohamed-brohani.developerakademie.net/BookStrore-Project/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ 'work.projects.bookstore.title' | translate }}
+      </a>
 
-        <div class="project__content">
+      <p class="project__stack">HTML | CSS | JavaScript</p>
 
-            <h3 class="project__title">
-                {{ 'work.projects.join.title' | translate }}
-            </h3>
+      <p>
+        {{ 'work.projects.bookstore.description' | translate }}
+      </p>
 
-            <p class="project__stack">
-                Angular | TypeScript | SCSS | REST API | Bootstrap 5
-            </p>
-
-            <p>
-                {{ 'work.projects.join.description' | translate }}
-            </p>
-
-            <a href="https://join-5-1227.developerakademie.net/#/legal-notice" target="_blank" rel="noopener noreferrer"
-                class="project__btn">
-                {{ 'work.projects.join.button' | translate }}
-            </a>
-<a 
-             href="https://github.com/MohaBroha/Join"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="project__btn">
-
-    GitHub
-
-            </a>
-
-        </div>
-
+      <a
+        href="https://mohamed-brohani.developerakademie.net/BookStrore-Project/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project__btn"
+        class="project__btn project__btn--live"
+      >
+        {{ 'work.projects.bookstore.button' | translate }}
+      </a>
+      <a
+        href="https://github.com/MohaBroha/BookStrore-Project"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project__btn"
+      >
+        GitHub
+      </a>
     </div>
+  </div>
 
-    <div class="project project--normal">
+  <div class="project project--reverse">
+    <a
+      class="project__image"
+      href="https://mohamed-brohani.developerakademie.net/El%20Pollo%20Loco-Project/index.html"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="assets/images/Screenshot 2026-02-11 045742.png" alt="El Pollo Loco Screenshot" />
+    </a>
 
-        <div class="project__image">
-            <img src="assets/images/Screenshot 2026-02-11 051847.png" alt="BookStore Screenshot">
-        </div>
+    <div class="project__content">
+      <a
+        class="project__title"
+        href="https://mohamed-brohani.developerakademie.net/El%20Pollo%20Loco-Project/index.html"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ 'work.projects.pollo.title' | translate }}
+      </a>
 
-        <div class="project__content">
+      <p class="project__stack">JavaScript | HTML5 Canvas | OOP | CSS | Game Logic</p>
 
-            <h3 class="project__title">
-                {{ 'work.projects.bookstore.title' | translate }}
-            </h3>
+      <p>
+        {{ 'work.projects.pollo.description' | translate }}
+      </p>
 
-            <p class="project__stack">
-                HTML | CSS | JavaScript
-            </p>
-
-            <p>
-                {{ 'work.projects.bookstore.description' | translate }}
-            </p>
-
-            <a href="https://mohamed-brohani.developerakademie.net/BookStrore-Project/" target="_blank"
-                rel="noopener noreferrer" class="project__btn">
-
-                {{ 'work.projects.bookstore.button' | translate }}
-
-            </a>
-            <a 
-             href="https://github.com/MohaBroha/BookStrore-Project"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="project__btn">
-
-    GitHub
-
-            </a>
-
-        </div>
-
+      <a
+        href="https://mohamed-brohani.developerakademie.net/El%20Pollo%20Loco-Project/index.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project__btn project__btn--live"
+      >
+        {{ 'work.projects.pollo.button' | translate }}
+      </a>
+      <a
+        href="https://github.com/MohaBroha/El-Pollo-Loco-Project"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project__btn"
+      >
+        GitHub
+      </a>
     </div>
+  </div>
 
-    <div class="project project--reverse">
+  <div class="project project--normal">
+    <a
+      class="project__image"
+      href="https://mohamed-brohani.developerakademie.net/Dexhub-Project/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="assets/images/Screenshot 2026-02-11 050930.png" alt="Pokédex Screenshot" />
+    </a>
 
-        <div class="project__image">
-            <img src="assets/images/Screenshot 2026-02-11 045742.png" alt="El Pollo Loco Screenshot">
-        </div>
+    <div class="project__content">
+      <a
+        class="project__title"
+        href="https://mohamed-brohani.developerakademie.net/Dexhub-Project/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ 'work.projects.pokedex.title' | translate }}
+      </a>
 
-        <div class="project__content">
+      <p class="project__stack">HTML | CSS (Flexbox) | JavaScript (Fetch API, DOM) | PokéAPI</p>
 
-            <h3 class="project__title">
-                {{ 'work.projects.pollo.title' | translate }}
-            </h3>
+      <p>
+        {{ 'work.projects.pokedex.description' | translate }}
+      </p>
 
-            <p class="project__stack">
-                JavaScript | HTML5 Canvas | OOP | CSS | Game Logic
-            </p>
-
-            <p>
-                {{ 'work.projects.pollo.description' | translate }}
-            </p>
-
-            <a class="project__btn"
-                href="https://mohamed-brohani.developerakademie.net/El%20Pollo%20Loco-Project/index.html"
-                target="_blank" rel="noopener noreferrer">
-
-                {{ 'work.projects.pollo.button' | translate }}
-
-            </a>
-               <a 
-             href="https://github.com/MohaBroha/El-Pollo-Loco-Project"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="project__btn">
-
-    GitHub
-
-            </a>
-
-        </div>
-
+      <a
+        href="https://mohamed-brohani.developerakademie.net/Dexhub-Project/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project__btn"
+        class="project__btn project__btn--live"
+      >
+        {{ 'work.projects.pokedex.button' | translate }}
+      </a>
+      <a
+        href="https://github.com/MohaBroha/Pokedex-Project"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project__btn"
+      >
+        GitHub
+      </a>
     </div>
+  </div>
 
-    <div class="project project--normal">
-
-        <div class="project__image">
-            <img src="assets/images/Screenshot 2026-02-11 050930.png" alt="Pokédex Screenshot">
-        </div>
-
-        <div class="project__content">
-
-            <h3 class="project__title">
-                {{ 'work.projects.pokedex.title' | translate }}
-            </h3>
-
-            <p class="project__stack">
-                HTML | CSS (Flexbox) | JavaScript (Fetch API, DOM) | PokéAPI
-            </p>
-
-            <p>
-                {{ 'work.projects.pokedex.description' | translate }}
-            </p>
-
-            <a href="https://mohamed-brohani.developerakademie.net/Dexhub-Project/" target="_blank"
-                rel="noopener noreferrer" class="project__btn">
-
-                {{ 'work.projects.pokedex.button' | translate }}
-
-            </a>
-                 <a 
-             href="https://github.com/MohaBroha/Pokedex-Project"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="project__btn">
-
-    GitHub
-
-            </a>
-
-        </div>
-
-    </div>
-
-    <div class="projects__circle-1"></div>
-    <div class="projects__circle-2"></div>
-    <div class="projects__circle-3"></div>
-
+  <div class="projects__circle-1"></div>
+  <div class="projects__circle-2"></div>
+  <div class="projects__circle-3"></div>
 </section>
