@@ -15,14 +15,18 @@
 }
 
 .legal-notice__title {
-    font-size: 34px;
-    font-weight: 700;
+     font-family: 'Baloo 2', cursive;
+    font-size: 90px;
+    font-weight: 800;
+    line-height: 120%;
     color: #6c8ef0;
 }
 
 .legal-notice__text {
-    font-size: 15px;
-    line-height: 1.7;
+     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
     color: #333;
 }
 
@@ -33,26 +37,38 @@
     padding-top: 10px;
 
     h2 {
-        font-size: 18px;
-        color: #3f56e6;
-        margin: 0;
+    font-family: 'Baloo 2', cursive;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 120%;        
+    color: #6c8ef0;
+    margin: 0;
     }
 
     p {
-        font-size: 14px;
-        line-height: 1.6;
-        color: #444;
-        margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #444;
+    margin: 0;
     }
 }
 
 .legal-notice__back {
+    color: #3f56e6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     margin-top: 20px;
 }
 
 .legal-notice__link {
     color: #3f56e6;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;    
     text-decoration: none;
 
     &:hover {

@@ -53,21 +53,25 @@
 }
 
 .about__title {
-    margin: 0;
-    font-size: 85px;
-    line-height: 0.95;
+    font-family: 'Baloo 2', cursive;
+    font-size: 121px;
     font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    margin: 0;
     overflow-wrap: anywhere;
     hyphens: auto;
     color: #6c8ef0;
-    letter-spacing: -2px;
-    font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .about__iam {
-    margin: 28px 0 24px 0;
-    font-size: 28px;
-    font-weight: 700;
+    font-family: 'Baloo 2', cursive;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    color: #6c8ef0;
+    margin: 28px 0 24px;
     color: #6c8ef0;
 }
 
@@ -85,8 +89,8 @@
 }
 
 .meta-item img {
-    width: 36px;
-    height: 36px;
+    width: 46px;
+    height: 46px;
     object-fit: contain;
     transition: all 0.3s ease;
     &:hover {
@@ -96,9 +100,12 @@
 }
 
 .meta-label {
-    font-size: 14px;
-    line-height: 1.4;
-    color: rgba(0, 0, 0, 0.65);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0;
+    color: #6c8ef0;
 }
 
 .about__right {
@@ -110,10 +117,12 @@
 }
 
 .about__content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
     margin: 0 0 24px 0;
     color: #111;
-    line-height: 1.7;
-    font-size: 16px;
 }
 
 .btn {

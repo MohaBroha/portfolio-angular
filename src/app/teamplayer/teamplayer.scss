@@ -13,19 +13,24 @@
     }
 
     &__title {
-        font-size: 48px;
+        font-family: 'Baloo 2', cursive;
+        font-size: 45px;
         font-weight: 800;
+        line-height: 141%;
         text-align: center;
         margin: 0 0 12px;
         color: #fff;
-        line-height: 1;
-        font-family: inherit;
+       
     }
 
     &__subtitle {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 141%;
+        text-align: center;
         text-align: center;
         margin: 0 0 48px;
-        font-size: 20px;
         color: rgba(255, 255, 255, 0.95);
         max-width: 820px;
         margin-left: auto;
@@ -52,25 +57,30 @@
 
     &__name {
         margin: 0 0 6px;
-        font-size: 22px;
-        font-weight: 800;
+         font-family: 'Montserrat', sans-serif;
+         font-size: 24px;
+        font-weight: 700;
+        line-height: 120%;
         color: #ffffff;
     }
 
     &__role {
-        font-size: 13px;
-        color: rgba(255, 255, 255, 0.85);
-        margin-bottom: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;        
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 18px;
     }
 
     &__quote {
         margin: 0;
-        font-size: 15px;
-        line-height: 1.7;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 120%;
         color: rgba(255, 255, 255, 0.95);
-        font-weight: 300;
         position: relative;
-
         padding-left: 0;
         padding-top: 14px;
     }

@@ -52,38 +52,46 @@
 }
 
 .hero__intro {
-    font-size: 24px;
+     font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
     font-weight: 400;
+    line-height: 100%;
     color: #5b7ec3;
     margin: 0 0 12px 0;
     letter-spacing: 0.5px;
 }
 
 .hero__name {
-    font-size: 48px;
-    font-weight: 700;
+     font-family: 'Baloo 2', cursive;
+    font-size: 128px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.025em;
     color: #0b597a;
     margin: 0 0 8px 0;
-    line-height: 1.2;
 }
 
 .hero__role {
-    font-size: 56px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 128px;
     font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.025em;
     color: #5b7ec3;
     margin: 0;
-    line-height: 1.2;
-    letter-spacing: -1px;
+ 
 }
 
 .hero__scroll {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 120%;
     position: absolute;
     bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 14px;
     color: #5b7ec3;
-    font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
     display: flex;
@@ -93,28 +101,12 @@
     &::after {
         content: '';
         width: 1px;
-        height: 200px;
+        height: 60px;
         background: #5b7ec3;
-    }
-    transition: color 0.3s ease,
-                transform 0.3s ease,
-                opacity 0.3s ease;
-    animation: scrollFloat 2.5s ease-in-out infinite;
-    &:hover {
-        color: #5988FF;
-        transform: translateY(50%) translateX(-3px);
     }
     &:hover::after {
         height: 95px;
     }
-    @keyframes scrollFloat {
-    0%, 100% {
-        transform: translateY(50%);
-    }
-    50% {
-        transform: translateY(calc(50% - 120px));
-    }
-}
 }
 
 .hero__socials {
