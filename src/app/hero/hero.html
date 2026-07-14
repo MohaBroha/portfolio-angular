@@ -5,17 +5,25 @@
     </div>
   </div>
 
-  <div class="hero__right">
-    <p class="hero__intro">
-      {{ 'hero.intro' | translate }}
-    </p>
+ <div class="hero__right">
+    <div class="hero__heading">
+        <p class="hero__intro">
+            {{ 'hero.intro' | translate }}
+        </p>
 
-    <h1 class="hero__name">
-      {{ 'hero.name' | translate }}
-    </h1>
+        <h1 class="hero__name">
+            {{ 'hero.name' | translate }}
+        </h1>
+    </div>
 
-    <h2 class="hero__role" [innerHTML]="'hero.role' | translate"></h2>
-  </div>
+     <h2 class="hero__role hero__role--top">
+        {{ 'hero.roleTop' | translate }}
+    </h2>
+
+    <h2 class="hero__role hero__role--bottom">
+        {{ 'hero.roleBottom' | translate }}
+    </h2>
+</div>
 
   <div class="hero__socials" aria-label="social links">
     <a

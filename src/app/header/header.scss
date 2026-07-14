@@ -1,33 +1,19 @@
 .header {
-  position: relative;
-  z-index: 5000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 80px;
-  padding: 0 80px;
-  box-sizing: border-box;
-  background: #f8f9fc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 80px;
+    background: transparent;
+    z-index: 100;
+        box-sizing: border-box;
+
 }
 
-.header::before {
-  content: '';
-  position: absolute;
-  top: -190px;
-  left: -100px;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(
-    circle at 35% 35%,
-    rgba(62, 123, 255, 0.95) 0%,
-    rgba(89, 126, 255, 0.95) 42%,
-    rgba(245, 247, 250, 0) 80%
-  );
-  border-radius: 50%;
-  z-index: -1;
-  pointer-events: none;
-  animation: floatGlow 8s ease-in-out infinite;
-}
 
 @keyframes floatGlow {
   0% {
@@ -71,7 +57,7 @@
   font-size: 23px;
   font-weight: 400;
   line-height: 120%;
-  color: #5b7ec3;
+  color:rgba(89, 136, 255, 1);
   a {
     text-decoration: none;
     color: inherit;
@@ -87,7 +73,7 @@
   font-size: 23px;
   span {
     cursor: pointer;
-    color: #5b7ec3;
+  color:rgba(89, 136, 255, 1);
     &.active {
       font-weight: 600;
       border-bottom: 2px solid #5b7ec3;
@@ -192,30 +178,24 @@
 }
 
 .header__logo img {
-  width: 240px;
   height: auto;
   object-fit: contain;
+      border-radius: 12px;
   animation: logoFloat 3s ease-in-out infinite;
   transition:
     transform 0.35s ease,
     filter 0.35s ease;
 }
 
+.header__logo img,
+.site-footer__logo {
+    border-radius: 50%;
+}
+
 .header__logo:hover img {
   transform: scale(1.08);
   filter: drop-shadow(0 0 10px rgba(108, 142, 240, 0.8))
     drop-shadow(0 0 20px rgba(108, 142, 240, 0.6)) drop-shadow(0 0 40px rgba(108, 142, 240, 0.4));
-}
-
-@keyframes logoFloat {
-  0%,
-  100% {
-    transform: translateY(0) scale(1);
-  }
-
-  50% {
-    transform: translateY(-4px) scale(1.02);
-  }
 }
 
 @media (max-width: 900px) {

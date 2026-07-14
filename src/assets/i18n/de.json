@@ -11,11 +11,13 @@
     }
   },
   "hero": {
-    "intro": "Hallo! Ich bin",
-    "name": "Moha ",
-    "role": "FullStack ENTWICKLER",
-    "scroll": "Scrollen"
-  },
+  "intro": "Hallo! Ich bin",
+  "name": "Moha",
+  "roleTop": "Fullstack",
+  "roleBottom": "Entwickler",
+  "scroll": "Scrollen"
+},
+
   "about": {
     "title": "Lass uns zusammen arbeiten",
     "iam": "Ich bin",

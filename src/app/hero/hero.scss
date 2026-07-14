@@ -1,20 +1,18 @@
 .hero {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: calc(100vh);
-  padding: 0 80px;
-  box-sizing: border-box;
-  background-color: #7a59a026;
-  overflow: hidden;
-}
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 0 80px;
+    box-sizing: border-box;
+    background: linear-gradient(
+        179.99deg,
+        #FFFFFF 12.89%,
+        #EAF0FF 91.39%
+    );
 
-.hero::before,
-.hero::after,
-.decorative-circle,
-.circle {
-  display: none !important;
+    overflow: hidden;
 }
 
 .hero__left {
@@ -23,6 +21,35 @@
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+.hero__left {
+    position: relative;
+    z-index: 2;
+}
+
+.hero__right {
+    position: relative;
+    z-index: 2;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -186px;
+    left: -222px;
+    width: 950px;
+    height: 891px;
+    border-radius: 50%;
+    z-index: 0;
+    pointer-events: none;
+    background: radial-gradient(
+        74.22% 74.22% at 19.79% 22.42%,
+        #5988FF 6.25%,
+        #5988FF 51.56%,
+        #0043F0 100%
+    );
+    animation: floatGlow 8s ease-in-out infinite;
 }
 
 .hero__image-placeholder {
@@ -38,7 +65,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-    z-index: 20;
+    z-index: 10;
     position: relative;
   }
 }
@@ -51,33 +78,58 @@
   justify-content: center;
 }
 
+.hero__heading {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.hero__intro {
+    margin: 0;
+}
+
+.hero__name {
+    margin: 0;
+}
+
 .hero__intro {
   font-family: 'Montserrat', sans-serif;
   font-size: 64px;
   font-weight: 400;
-  line-height: 100%;
-  color: #5b7ec3;
+  line-height: 60%;
+  color:rgba(89, 136, 255, 1);
   margin: 0 0 12px 0;
   letter-spacing: 0.5px;
 }
 
 .hero__name {
   font-family: 'Baloo 2', cursive;
-  font-size: 128px;
+  font-size: 64px;
   font-weight: 400;
   line-height: 120%;
   letter-spacing: -0.025em;
-  color: #0b597a;
+  color:rgba(89, 136, 255, 1);
   margin: 0 0 8px 0;
 }
 
+.hero__role--top {
+    font-size: 140px;
+    margin-bottom: -10px;
+}
+
+.hero__role--bottom {
+    font-size: 145px;
+    margin-top: -15px;
+}
 .hero__role {
   font-family: 'Baloo 2', cursive;
-  font-size: 128px;
-  font-weight: 700;
-  line-height: 120%;
-  letter-spacing: -0.025em;
-  color: #5b7ec3;
+   font-size: 145px;
+    line-height: 70%;
+    font-weight: 700;
+    margin-top: -20px;
+    letter-spacing: -0.04em;
+  color:rgba(89, 136, 255, 1);
   margin: 0;
 }
 
