@@ -32,10 +32,10 @@
 .hero::before {
   content: '';
   position: absolute;
-  top: -186px;
-  left: -222px;
+  top: -80px;
+  left: -240px;
   width: 950px;
-  height: 891px;
+  height: 780px;
   border-radius: 50%;
   z-index: 0;
   pointer-events: none;
@@ -131,147 +131,104 @@
 }
 
 .hero__scroll {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 23px;
-  font-weight: 500;
-  line-height: 120%;
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #5b7ec3;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  &::after {
-    content: '';
-    width: 1px;
-    height: 60px;
-    background: #5b7ec3;
-  }
-  &:hover::after {
-    height: 95px;
-  }
-}
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 120%;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(200%);
+  color: rgba(89, 136, 255, 1);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    &::after {
+        content: '';
+        width: 1px;
+        height: 200px;
+  background:  rgba(89, 136, 255, 1);
+    }
+
+   
+}
 .hero__socials {
-  position: absolute;
-  right: 27px;
-  bottom: 120px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  z-index: 5;
-  color: rgb(7 15 88);
+    position: absolute;
+    right: 27px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 5;
 }
 
 .hero__socials a {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  overflow: hidden;
-  text-decoration: none;
-  color: inherit;
-  animation: socialFloat 2.8s ease-in-out infinite;
-  transition:
-    transform 0.35s ease,
-    background 0.35s ease,
-    box-shadow 0.35s ease,
-    color 0.35s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-decoration: none;
+    animation: socialFloat 2.8s ease-in-out infinite;
 }
 
-.hero__socials a:hover {
-  animation-play-state: paused;
-  transform: translateY(-2px) scale(1.08);
-  background: rgba(108, 142, 240, 0.12);
-  box-shadow:
-    0 0 18px rgba(108, 142, 240, 0.28),
-    0 0 45px rgba(108, 142, 240, 0.18);
+.hero__socials img {
+    width: 33px;
+    height: 33px;
+    object-fit: contain;
+    display: block;
+    transition:
+        transform .35s ease,
+        filter .35s ease;
 }
 
 .hero__socials a::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -120%;
-  width: 60%;
-  height: 100%;
-  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.8), transparent);
-  transform: skewX(-25deg);
-  transition: left 0.55s ease;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 60%;
+    height: 100%;
+    background:
+        linear-gradient(
+            120deg,
+            transparent,
+            rgba(255, 255, 255, .8),
+            transparent
+        );
+    transform: skewX(-25deg);
+    transition: left .55s ease;
+}
+
+.hero__socials a:hover img {
+    transform: translateX(-8px) scale(1.1);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, .5));
 }
 
 .hero__socials a:hover::before {
-  left: 150%;
-}
-
-.hero__socials svg {
-  transition:
-    transform 0.35s ease,
-    filter 0.35s ease;
-}
-
-.hero__socials a:hover svg {
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
-}
-
-.hero__socials a:hover::before {
-  left: 150%;
+    left: 150%;
 }
 
 .hero__socials a:nth-child(1) {
-  animation-duration: 2.6s;
+    animation-duration: 2.6s;
 }
 
 .hero__socials a:nth-child(2) {
-  animation-duration: 3s;
-  animation-delay: 0.2s;
+    animation-duration: 3s;
+    animation-delay: .2s;
 }
 
 .hero__socials a:nth-child(3) {
-  animation-duration: 2.4s;
-  animation-delay: 0.4s;
+    animation-duration: 2.4s;
+    animation-delay: .4s;
 }
 
-@keyframes socialFloat {
-  0%,
-  100% {
-    transform: translateY(0) scale(1);
-  }
-  50% {
-    transform: translateY(8px) scale(1.06);
-  }
-}
-
-.site-footer__icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  border: 2px solid #5b7ec3;
-  transition:
-    transform 0.2s ease,
-    background 0.2s ease,
-    color 0.2s ease,
-    box-shadow 0.2s ease;
-  box-shadow: none;
-  .site-footer__icon:hover {
-    transform: translateY(-4px);
-    color: #fff;
-    box-shadow: 0 6px 20px rgba(118, 88, 216, 0.12);
-  }
-}
 
 @media (max-width: 900px) {
   .hero {
