@@ -96,12 +96,12 @@
       "privacyText": "I've read the",
       "privacyLink": "privacy policy",
       "privacySuffix": "and agree to the processing of my data as outlined",
-      "submit": "Say hello 👋"
+      "submit": "Send Message"
     },
     "validation": {
       "name": "Please enter your name.",
       "email": "Please enter a valid email address.",
-      "message": "Please enter a message.",
+      "message": "Please enter a message.(10 letters)",
       "privacy": "Please accept the privacy policy."
     },
     "messages": {

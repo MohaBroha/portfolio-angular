@@ -12,42 +12,41 @@
   border-radius: 50%;
   z-index: 0;
 
-  background: radial-gradient(
-    circle at 35% 35%,
-    rgba(62, 123, 255, 0.95) 0%,
-    rgba(89, 126, 255, 0.95) 42%,
-    rgba(245, 247, 250, 0) 80%
-  );
-
-  filter: drop-shadow(0 20px 40px rgba(108, 142, 240, 0.35));
-  animation: floatGlow 7s ease-in-out infinite;
+background: radial-gradient(
+    74.22% 74.22% at 19.79% 22.42%,
+    #5988ff 6.25%,
+    #5988ff 51.56%,
+    #0043f0 100%
+);
 }
 
 .contact::before {
-  width: 180px;
-  height: 180px;
+  width: 280px;
+  height: 280px;
   top: 80px;
-  right: 120px;
+  right: 280px;
 }
 
 .contact::after {
   width: 70px;
   height: 70px;
   bottom: 80px;
-  left: 160px;
+  right: 190px;
+}
+.circle--ellipse-11 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+
+    bottom: 20px;
+    left: 260px;
+
+    z-index: 0;
+
+    background: url('/assets/images/Ellipse 11.svg')
+        no-repeat center / contain;
 }
 
-@keyframes floatGlow {
-  0% {
-    transform: translateY(0px) scale(1);
-  }
-  50% {
-    transform: translateY(18px) scale(1.05);
-  }
-  100% {
-    transform: translateY(0px) scale(1);
-  }
-}
 
 .contact__container {
   max-width: 1200px;
@@ -100,52 +99,115 @@
 }
 
 .contact__form {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact__field {
+    position: relative;
+    width: 100%;
 }
 
 .contact__input,
 .contact__textarea {
-  padding: 12px 16px;
-  font-size: 14px;
-  border: 1px solid rgba(91, 126, 195, 0.25);
-  border-radius: 8px;
-  background: #fff;
-  color: #333;
-  transition: 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+
+    border: 2px solid #5b7ec3;
+    border-radius: 8px;
+
+    background: #fff;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+
+    transition: border-color .2s ease;
+}
+
+.contact__input {
+    height: 56px;
+    padding: 0 48px 0 16px;
+        border: 2px solid rgba(89, 136, 255, 1);
+
+}
+
+.contact__textarea {
+    min-height: 180px;
+    padding: 16px 48px 16px 16px;
+    resize: vertical;
+        border: 2px solid rgba(89, 136, 255, 1);
+
 }
 
 .contact__input:focus,
 .contact__textarea:focus {
-  outline: none;
-  border-color: #5b7ec3;
+    outline: none;
+    border-color: #5b7ec3;
+}
+
+.contact__status-icon {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 18px;
+    height: 18px;
+    transform: translateY(-50%);
+}
+
+.contact__status-icon--textarea {
+    top: 20px;
+    transform: none;
 }
 
 .contact__validation {
-  min-height: 18px;
-  font-size: 13px;
-  color: #d93025;
-  margin-top: -8px;
+    min-height: 18px;
+    margin-top: -8px;
+
+    color: #d93025;
+    font-size: 13px;
 }
 
 .contact__messages {
-  min-height: 24px;
-  display: flex;
-  align-items: center;
+    min-height: 24px;
+    display: flex;
+    align-items: center;
 }
 
 .contact__success {
-  color: #1f9d55;
-  font-size: 14px;
-  font-weight: 500;
+    color: #1f9d55;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .contact__error {
-  color: #d93025;
-  font-size: 14px;
-  font-weight: 500;
+    color: #d93025;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contact__checkbox {
+    transition: filter .25s ease;
+}
+
+.contact__checkbox:hover {
+    filter: drop-shadow(0 0 4px rgba(89, 136, 255, 0.35))
+            drop-shadow(0 0 10px rgba(89, 136, 255, 0.25));
+}
+
+.contact__privacy-link {
+    text-decoration: underline;
+    transition:
+        color .25s ease,
+        text-shadow .25s ease;
+}
+
+.contact__checkbox:hover .contact__privacy-link {
+    color: rgba(89, 136, 255, 1);
+    text-shadow:
+        0 0 4px rgba(8, 34, 100, 0.35),
+        0 0 10px rgba(129, 151, 207, 0.25);
 }
 
 .contact__checkbox-label {
@@ -153,6 +215,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 120%;
+
 }
 
 .contact__button {
@@ -308,14 +371,23 @@
 
 .contact__scroll-top {
   margin-top: 16px;
+
   width: 44px;
   height: 44px;
+  left: 180;
   border: none;
   cursor: pointer;
   background: url('/assets/images/Property 1=Default (2).png') no-repeat center / contain;
   transition:
     transform 0.2s ease,
     filter 0.2s ease;
+}
+.contact__scroll-top {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 44px;
+    height: 44px;
 }
 
 .contact__scroll-top:hover {

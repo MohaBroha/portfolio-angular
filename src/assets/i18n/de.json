@@ -102,7 +102,7 @@
     "validation": {
       "name": "Bitte gib deinen Namen ein.",
       "email": "Bitte gib eine gültige E-Mail-Adresse ein.",
-      "message": "Bitte schreibe eine Nachricht.",
+      "message": "Bitte schreibe eine Nachricht. (10 Buchstaben)",
       "privacy": "Bitte akzeptiere die Datenschutzerklärung."
     },
     "messages": {
