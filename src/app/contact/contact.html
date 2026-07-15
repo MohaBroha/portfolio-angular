@@ -1,5 +1,4 @@
 <section id="contact" class="contact">
-
   <div class="contact__container">
     <div class="contact__content">
       <h2 class="contact__title">
@@ -24,180 +23,169 @@
     </div>
 
     <form
-  id="contact-form"
-  class="contact__form"
-  #contactForm="ngForm"
-  (ngSubmit)="sendEmail(contactForm)"
-  autocomplete="on"
->
-  <!-- NAME -->
+      id="contact-form"
+      class="contact__form"
+      #contactForm="ngForm"
+      (ngSubmit)="sendEmail(contactForm)"
+      autocomplete="on"
+    >
+      <!-- NAME -->
 
-  <div class="contact__field">
-    <input
-      type="text"
-      name="name"
-      class="contact__input"
-      [placeholder]="'contact.form.name' | translate"
-      required
-      minlength="2"
-      ngModel
-      #name="ngModel"
-      autocomplete="name"
-    />
+      <div class="contact__field">
+        <input
+          type="text"
+          name="name"
+          class="contact__input"
+          [placeholder]="'contact.form.name' | translate"
+          required
+          minlength="2"
+          ngModel
+          #name="ngModel"
+          autocomplete="name"
+        />
 
-    <img
-      *ngIf="name.valid && name.touched"
-      src="assets/images/Vector (8).png"
-      class="contact__status-icon"
-      alt="valid"
-    />
+        <img
+          *ngIf="name.valid && name.touched"
+          src="assets/images/Vector (8).png"
+          class="contact__status-icon"
+          alt="valid"
+        />
 
-    <img
-      *ngIf="name.invalid && name.touched"
-      src="assets/images/Vector (7).png"
-      class="contact__status-icon"
-      alt="invalid"
-    />
-  </div>
+        <img
+          *ngIf="name.invalid && name.touched"
+          src="assets/images/Vector (7).png"
+          class="contact__status-icon"
+          alt="invalid"
+        />
+      </div>
 
-  <div class="contact__validation">
-    <span *ngIf="name.invalid && name.touched">
-      {{ 'contact.validation.name' | translate }}
-    </span>
-  </div>
+      <div class="contact__validation">
+        <span *ngIf="name.invalid && name.touched">
+          {{ 'contact.validation.name' | translate }}
+        </span>
+      </div>
 
-  <!-- EMAIL -->
+      <!-- EMAIL -->
 
-  <div class="contact__field">
-    <input
-      type="email"
-      name="email"
-      class="contact__input"
-      [placeholder]="'contact.form.email' | translate"
-      required
-      email
-      ngModel
-      #email="ngModel"
-      autocomplete="email"
-    />
+      <div class="contact__field">
+        <input
+          type="email"
+          name="email"
+          class="contact__input"
+          [placeholder]="'contact.form.email' | translate"
+          required
+          email
+          ngModel
+          #email="ngModel"
+          autocomplete="email"
+        />
 
-    <img
-      *ngIf="email.valid && email.touched"
-      src="assets/images/Vector (8).png"
-      class="contact__status-icon"
-      alt="valid"
-    />
+        <img
+          *ngIf="email.valid && email.touched"
+          src="assets/images/Vector (8).png"
+          class="contact__status-icon"
+          alt="valid"
+        />
 
-    <img
-      *ngIf="email.invalid && email.touched"
-      src="assets/images/Vector (7).png"
-      class="contact__status-icon"
-      alt="invalid"
-    />
-  </div>
+        <img
+          *ngIf="email.invalid && email.touched"
+          src="assets/images/Vector (7).png"
+          class="contact__status-icon"
+          alt="invalid"
+        />
+      </div>
 
-  <div class="contact__validation">
-    <span *ngIf="email.invalid && email.touched">
-      {{ 'contact.validation.email' | translate }}
-    </span>
-  </div>
+      <div class="contact__validation">
+        <span *ngIf="email.invalid && email.touched">
+          {{ 'contact.validation.email' | translate }}
+        </span>
+      </div>
 
-  <!-- MESSAGE -->
+      <!-- MESSAGE -->
 
-  <div class="contact__field">
-    <textarea
-      name="message"
-      class="contact__textarea"
-      rows="6"
-      required
-      minlength="10"
-      ngModel
-      #message="ngModel"
-      [placeholder]="'contact.form.message' | translate"
-    ></textarea>
+      <div class="contact__field">
+        <textarea
+          name="message"
+          class="contact__textarea"
+          rows="6"
+          required
+          minlength="10"
+          ngModel
+          #message="ngModel"
+          [placeholder]="'contact.form.message' | translate"
+        ></textarea>
 
-    <img
-      *ngIf="message.valid && message.touched"
-      src="assets/images/Vector (8).png"
-      class="contact__status-icon contact__status-icon--textarea"
-      alt="valid"
-    />
+        <img
+          *ngIf="message.valid && message.touched"
+          src="assets/images/Vector (8).png"
+          class="contact__status-icon contact__status-icon--textarea"
+          alt="valid"
+        />
 
-    <img
-      *ngIf="message.invalid && message.touched"
-      src="assets/images/Vector (7).png"
-      class="contact__status-icon contact__status-icon--textarea"
-      alt="invalid"
-    />
-  </div>
+        <img
+          *ngIf="message.invalid && message.touched"
+          src="assets/images/Vector (7).png"
+          class="contact__status-icon contact__status-icon--textarea"
+          alt="invalid"
+        />
+      </div>
 
-  <div class="contact__validation">
-    <span *ngIf="message.invalid && message.touched">
-      {{ 'contact.validation.message' | translate }}
-    </span>
-  </div>
+      <div class="contact__validation">
+        <span *ngIf="message.invalid && message.touched">
+          {{ 'contact.validation.message' | translate }}
+        </span>
+      </div>
 
-  <!-- PRIVACY -->
+      <!-- PRIVACY -->
 
-  <div class="contact__checkbox">
-    <input
-      type="checkbox"
-      id="privacy"
-      name="privacy"
-      class="contact__checkbox-input"
-      required
-      ngModel
-      #privacy="ngModel"
-    />
+      <div class="contact__checkbox">
+        <input
+          type="checkbox"
+          id="privacy"
+          name="privacy"
+          class="contact__checkbox-input"
+          required
+          ngModel
+          #privacy="ngModel"
+        />
 
-    <label for="privacy" class="contact__checkbox-label">
-      {{ 'contact.form.privacyText' | translate }}
+        <label for="privacy" class="contact__checkbox-label">
+          {{ 'contact.form.privacyText' | translate }}
 
-      <a routerLink="/legal-notice" class="contact__privacy-link">
-        {{ 'contact.form.privacyLink' | translate }}
-      </a>
+          <a routerLink="/legal-notice" class="contact__privacy-link">
+            {{ 'contact.form.privacyLink' | translate }}
+          </a>
 
-      {{ 'contact.form.privacySuffix' | translate }}
-    </label>
+          {{ 'contact.form.privacySuffix' | translate }}
+        </label>
+      </div>
 
-    
-  </div>
+      <div class="contact__validation">
+        <span *ngIf="privacy.invalid && privacy.touched">
+          {{ 'contact.validation.privacy' | translate }}
+        </span>
+      </div>
+      <div class="contact__messages">
+        <p class="contact__success" *ngIf="successMessage">
+          {{ successMessage }}
+        </p>
 
-  <div class="contact__validation">
-    <span *ngIf="privacy.invalid && privacy.touched">
-      {{ 'contact.validation.privacy' | translate }}
-    </span>
-  </div>
-  <div class="contact__messages">
-    <p class="contact__success" *ngIf="successMessage">
-      {{ successMessage }}
-    </p>
+        <p class="contact__error" *ngIf="errorMessage">
+          {{ errorMessage }}
+        </p>
+      </div>
 
-    <p class="contact__error" *ngIf="errorMessage">
-      {{ errorMessage }}
-    </p>
-  </div>
+      <button type="submit" class="contact__button" [disabled]="!contactForm.valid || isSending">
+        {{ isSending ? ('contact.form.sending' | translate) : ('contact.form.submit' | translate) }}
+      </button>
 
-  <button
-    type="submit"
-    class="contact__button"
-    [disabled]="!contactForm.valid || isSending"
-  >
-    {{
-      isSending
-        ? ('contact.form.sending' | translate)
-        : ('contact.form.submit' | translate)
-    }}
-  </button>
-
-  <button
-    type="button"
-    class="contact__scroll-top"
-    aria-label="Scroll to top"
-    (click)="scrollTop()"
-  ></button>
+      <button
+        type="button"
+        class="contact__scroll-top"
+        aria-label="Scroll to top"
+        (click)="scrollTop()"
+      ></button>
       <div class="circle circle--ellipse-11"></div>
-
-</form>
+    </form>
   </div>
 </section>

@@ -12,12 +12,12 @@
   border-radius: 50%;
   z-index: 0;
 
-background: radial-gradient(
+  background: radial-gradient(
     74.22% 74.22% at 19.79% 22.42%,
     #5988ff 6.25%,
     #5988ff 51.56%,
     #0043f0 100%
-);
+  );
 }
 
 .contact::before {
@@ -34,19 +34,17 @@ background: radial-gradient(
   right: 190px;
 }
 .circle--ellipse-11 {
-    position: absolute;
-    width: 150px;
-    height: 150px;
+  position: absolute;
+  width: 150px;
+  height: 150px;
 
-    bottom: 20px;
-    left: 260px;
+  bottom: 20px;
+  left: 260px;
 
-    z-index: 0;
+  z-index: 0;
 
-    background: url('/assets/images/Ellipse 11.svg')
-        no-repeat center / contain;
+  background: url('/assets/images/Ellipse 11.svg') no-repeat center / contain;
 }
-
 
 .contact__container {
   max-width: 1200px;
@@ -99,115 +97,113 @@ background: radial-gradient(
 }
 
 .contact__form {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .contact__field {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .contact__input,
 .contact__textarea {
-    width: 100%;
-    box-sizing: border-box;
+  width: 100%;
+  box-sizing: border-box;
 
-    border: 2px solid #5b7ec3;
-    border-radius: 8px;
+  border: 2px solid #5b7ec3;
+  border-radius: 8px;
 
-    background: #fff;
-    color: #333;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+  background: #fff;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 
-    transition: border-color .2s ease;
+  transition: border-color 0.2s ease;
 }
 
 .contact__input {
-    height: 56px;
-    padding: 0 48px 0 16px;
-        border: 2px solid rgba(89, 136, 255, 1);
-
+  height: 56px;
+  padding: 0 48px 0 16px;
+  border: 2px solid rgba(89, 136, 255, 1);
 }
 
 .contact__textarea {
-    min-height: 180px;
-    padding: 16px 48px 16px 16px;
-    resize: vertical;
-        border: 2px solid rgba(89, 136, 255, 1);
-
+  min-height: 180px;
+  padding: 16px 48px 16px 16px;
+  resize: vertical;
+  border: 2px solid rgba(89, 136, 255, 1);
 }
 
 .contact__input:focus,
 .contact__textarea:focus {
-    outline: none;
-    border-color: #5b7ec3;
+  outline: none;
+  border-color: #5b7ec3;
 }
 
 .contact__status-icon {
-    position: absolute;
-    top: 50%;
-    right: 16px;
-    width: 18px;
-    height: 18px;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
 }
 
 .contact__status-icon--textarea {
-    top: 20px;
-    transform: none;
+  top: 20px;
+  transform: none;
 }
 
 .contact__validation {
-    min-height: 18px;
-    margin-top: -8px;
+  min-height: 18px;
+  margin-top: -8px;
 
-    color: #d93025;
-    font-size: 13px;
+  color: #d93025;
+  font-size: 13px;
 }
 
 .contact__messages {
-    min-height: 24px;
-    display: flex;
-    align-items: center;
+  min-height: 24px;
+  display: flex;
+  align-items: center;
 }
 
 .contact__success {
-    color: #1f9d55;
-    font-size: 14px;
-    font-weight: 500;
+  color: #1f9d55;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .contact__error {
-    color: #d93025;
-    font-size: 14px;
-    font-weight: 500;
+  color: #d93025;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .contact__checkbox {
-    transition: filter .25s ease;
+  transition: filter 0.25s ease;
 }
 
 .contact__checkbox:hover {
-    filter: drop-shadow(0 0 4px rgba(89, 136, 255, 0.35))
-            drop-shadow(0 0 10px rgba(89, 136, 255, 0.25));
+  filter: drop-shadow(0 0 4px rgba(89, 136, 255, 0.35))
+    drop-shadow(0 0 10px rgba(89, 136, 255, 0.25));
 }
 
 .contact__privacy-link {
-    text-decoration: underline;
-    transition:
-        color .25s ease,
-        text-shadow .25s ease;
+  text-decoration: underline;
+  transition:
+    color 0.25s ease,
+    text-shadow 0.25s ease;
 }
 
 .contact__checkbox:hover .contact__privacy-link {
-    color: rgba(89, 136, 255, 1);
-    text-shadow:
-        0 0 4px rgba(8, 34, 100, 0.35),
-        0 0 10px rgba(129, 151, 207, 0.25);
+  color: rgba(89, 136, 255, 1);
+  text-shadow:
+    0 0 4px rgba(8, 34, 100, 0.35),
+    0 0 10px rgba(129, 151, 207, 0.25);
 }
 
 .contact__checkbox-label {
@@ -215,7 +211,6 @@ background: radial-gradient(
   font-size: 14px;
   font-weight: 400;
   line-height: 120%;
-
 }
 
 .contact__button {
@@ -383,11 +378,11 @@ background: radial-gradient(
     filter 0.2s ease;
 }
 .contact__scroll-top {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 44px;
-    height: 44px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 44px;
+  height: 44px;
 }
 
 .contact__scroll-top:hover {
