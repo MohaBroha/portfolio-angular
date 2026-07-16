@@ -10,13 +10,15 @@
       "en": "EN"
     }
   },
+  
   "hero": {
-    "intro": "Hello! I am",
+    "intro": "Hi! I am",
     "name": "Moha",
     "roleTop": "FUllSTACK",
     "roleBottom": "DEVELOPER",
     "scroll": "SCROLL"
   },
+
   "about": {
     "title": "Let's work together",
     "iam": "I am",
