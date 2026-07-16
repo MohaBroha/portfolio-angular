@@ -3,7 +3,7 @@
     "nav": {
       "about": "Über mich",
       "skills": "Fähigkeiten",
-      "work": "Meine Projekte"
+      "work": "Projekte"
     },
     "language": {
       "de": "DE",
@@ -14,7 +14,7 @@
     "intro": "Hallo! Ich bin",
     "name": "Moha",
     "roleTop": "Fullstack",
-    "roleBottom": "Entwickler",
+    "roleBottom": "ENTWICKLER",
     "scroll": "Scrollen"
   },
 

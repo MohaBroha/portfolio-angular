@@ -175,10 +175,13 @@
         </p>
       </div>
 
-      <button type="submit" class="contact__button" [disabled]="!contactForm.valid || isSending">
-        {{ isSending ? ('contact.form.sending' | translate) : ('contact.form.submit' | translate) }}
-      </button>
-
+    <button
+  type="submit"
+  class="contact__button"
+  [class.contact__button--active]="contactForm.valid"
+>
+  {{ isSending ? ('contact.form.sending' | translate) : ('contact.form.submit' | translate) }}
+</button>
       <button
         type="button"
         class="contact__scroll-top"

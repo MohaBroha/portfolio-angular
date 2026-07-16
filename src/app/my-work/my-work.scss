@@ -1,3 +1,8 @@
+@use '../../styles/breakpoints' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+
 .my-work {
   position: relative;
   overflow: hidden;
@@ -232,57 +237,44 @@
   max-width: 520px;
   z-index: 2;
 }
-
 .project__btn {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  @include button;
+
   margin-top: 24px;
   margin-right: 12px;
-  padding: 14px 28px;
-  border-radius: 999px;
-  border: 2px solid rgba(99, 115, 255, 0.35);
-  overflow: hidden;
-  background: transparent;
-  color: #5b7ec3;
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-  transition:
-    color 0.35s ease,
-    background 0.35s ease,
-    transform 0.35s ease,
-    box-shadow 0.35s ease;
+
+  span {
+    position: relative;
+    z-index: 2;
+  }
+
+  &::before {
+    @include button-fill;
+  }
+
+  &:hover {
+    @include button-hover;
+
+    background:
+      radial-gradient(
+        74.22% 74.22%
+        at 19.79% 22.42%,
+        #5988FF 6.25%,
+        #5988FF 51.56%,
+        #0043F0 100%
+      );
+
+    color: white;
+    border-color: #0043F0;
+  }
+
+  &:hover::before {
+    left: 130%;
+  }
 }
 
 .project__btn--live {
   display: none;
-}
-
-.project__btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -120%;
-  width: 60%;
-  height: 100%;
-  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.8), transparent);
-  transform: skewX(-25deg);
-  transition: left 0.55s ease;
-}
-
-.project__btn:hover::before {
-  left: 150%;
-}
-
-.project__btn:hover {
-  background: rgba(108, 142, 240, 0.12);
-  transform: translateY(-3px) scale(1.1);
-  box-shadow:
-    0 0 18px rgba(4, 25, 86, 0.35),
-    0 0 35px rgba(27, 52, 128, 0.25),
-    0 0 60px rgba(82, 107, 185, 0.18);
 }
 
 .project--reverse {

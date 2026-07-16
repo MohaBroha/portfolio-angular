@@ -1,0 +1,54 @@
+@mixin button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+ font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  padding: 14px 28px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #5988ff;
+  background: #fff;
+  border: 2px solid #5988ff;
+  border-radius: 10px;
+  transition:
+    color .100s ease,
+    transform .15s ease,
+    box-shadow .15s ease;
+}
+
+@mixin button-fill {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -150%;
+  width: 80%;
+  height: 200%;
+  background:
+    radial-gradient(
+      74.22% 74.22%
+      at 19.79% 22.42%,
+      #5988FF 6.25%,
+      #5988FF 51.56%,
+      #0043F0 100%
+    );
+  transform: rotate(-5deg);
+  filter: blur(15px);
+  opacity: .85;
+  transition: left .55s ease;
+  z-index: 1;
+}
+
+@mixin button-hover {
+  transform:
+    translateY(-3px)
+        scale(1.04);
+ box-shadow:
+    0 12px 20px rgba(0, 67, 240, .18),
+    0 4px 8px rgba(0, 67, 240, .12),
+    0 0 24px rgba(89, 136, 255, .25);
+}

@@ -26,7 +26,7 @@
     "text1": "I am a junior full-stack developer currently in training, focusing on modern web applications and practical software development. I started in frontend development using Angular, TypeScript, and modern UI concepts. During this time, I learned how to write clean, structured, and maintainable code while building user-focused interfaces.",
     "text2": "Throughout my training, I gradually expanded my knowledge into backend development. This includes initial experience with Django and Django REST Framework, API design, as well as basic server and deployment processes. I also gained hands-on experience in setting up and managing servers, which helped me understand the full lifecycle of an application from development to production deployment.",
     "team": "An important part of my growth has also been working in team projects. I have contributed to two collaborative projects: Join and Kochwelt. In Join, I worked closely with other developers across frontend and backend, gaining valuable experience in API integration and team collaboration.",
-    "button": "Send message"
+    "button": "Send a Message"
   },
   "skills": {
     "title": "Skill Set"
@@ -96,7 +96,7 @@
       "privacyText": "I've read the",
       "privacyLink": "privacy policy",
       "privacySuffix": "and agree to the processing of my data as outlined",
-      "submit": "Send Message"
+      "submit": "Send a Message"
     },
     "validation": {
       "name": "Please enter your name.",

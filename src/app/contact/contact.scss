@@ -1,3 +1,7 @@
+@use '../../styles/breakpoints' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
 .contact {
   position: relative;
   padding: 80px 60px;
@@ -214,55 +218,33 @@
 }
 
 .contact__button {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  padding: 14px 28px;
-  border: 2px solid rgba(99, 115, 255, 0.35);
-  border-radius: 999px;
-  background: transparent;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition:
-    color 0.35s ease,
-    background 0.35s ease,
-    transform 0.35s ease,
-    box-shadow 0.35s ease;
+  @include button;
+
+  &::before {
+    @include button-fill;
+  }
 }
 
-.contact__button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -120%;
-  width: 60%;
-  height: 100%;
-  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.8), transparent);
-  transform: skewX(-25deg);
-  transition: left 0.55s ease;
+.contact__button--active:hover {
+  @include button-hover;
+
+  background:
+    radial-gradient(
+      74.22% 74.22%
+      at 19.79% 22.42%,
+      #5988FF 6.25%,
+      #5988FF 51.56%,
+      #0043F0 100%
+    );
+
+  color: white;
+  border-color: #0043F0;
 }
 
-.contact__button:hover::before {
-  left: 150%;
+.contact__button--active:hover::before {
+  left: 130%;
 }
 
-.contact__button:hover:not(:disabled) {
-  background: rgba(108, 142, 240, 0.12);
-  transform: translateY(-2px) scale(1.03);
-  box-shadow:
-    0 0 18px rgba(108, 142, 240, 0.28),
-    0 0 45px rgba(108, 142, 240, 0.18);
-}
-
-.contact__button:disabled {
-  opacity: 0.55;
-  cursor: not-allowed;
-  transform: none;
-  box-shadow: none;
-}
 
 .contact__cta,
 .contact__link,
