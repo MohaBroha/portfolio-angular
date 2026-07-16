@@ -4,8 +4,9 @@
   isolation: isolate;
   box-sizing: border-box;
   padding: 220px clamp(24px, 5vw, 90px) 240px;
-  padding-top: 220px;
+  padding-top: 160px;
   padding-bottom: 220px;
+
 }
 
 .my-work > *:not(.circles) {
@@ -88,7 +89,7 @@
 .circle--lg {
   width: 520px;
   height: 520px;
-  top: 680px;
+  top: 630px;
   left: -280px;
 }
 
@@ -96,7 +97,7 @@
   width: 400px;
   height: 400px;
   top: 2750px;
-  left: 20%;
+  left: 0%;
 }
 
 .circle--sm {
@@ -130,7 +131,7 @@
 .circle--project-3 {
   width: 200px;
   height: 200px;
-  top: 1900px;
+  top: 1850px;
   left: 260px;
 }
 
