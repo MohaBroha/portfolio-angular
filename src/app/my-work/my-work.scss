@@ -14,10 +14,7 @@
 
 }
 
-.my-work > *:not(.circles) {
-  position: relative;
-  z-index: 2;
-}
+
 
 .project:first-of-type {
   margin-top: 20px;
@@ -45,6 +42,24 @@
   margin: 0 0 50px;
   margin-top: 40px;
   text-align: left;
+}
+
+.my-work__scroll {
+  position: absolute;
+    top: -250px;
+    left: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #5988ff;
+  font-size: 23px;
+  font-weight: 500;
+  &::before {
+    content: '';
+    width: 2px;
+    height: 300px;
+    background: #5988ff;
+  }
 }
 
 .projects__intro {

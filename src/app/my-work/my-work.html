@@ -1,4 +1,15 @@
 <section id="work" class="my-work projects">
+  
+<div
+  class="my-work__scroll"
+  [style.opacity]="getMyWorkOpacity()"
+  [style.transform]="
+    'translateX(-70%) translateY(' +
+    getMyWorkTranslateY() +
+    'px)'">
+  <span>SCROLL</span>
+</div>
+
   <h2 class="projects__title">
     {{ 'work.title' | translate }}
   </h2>

@@ -136,19 +136,22 @@
   left: 50%;
   transform: translateX(200%);
   color: rgba(89, 136, 255, 1);
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
   align-items: center;
+      transition: opacity .1s linear;
+
 
   &::after {
     content: '';
-    width: 1px;
-    height: 200px;
+    width: 2px;
+    height: 210px;
     background: rgba(89, 136, 255, 1);
   }
 }
+
 .hero__socials {
   position: absolute;
   right: 27px;

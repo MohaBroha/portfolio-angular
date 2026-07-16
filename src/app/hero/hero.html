@@ -49,8 +49,14 @@
     </a>
   </div>
 
-  <div class="hero__scroll">
-    <span>{{ 'hero.scroll' | translate }}</span>
-  </div>
+<div
+  class="hero__scroll"
+  [style.opacity]="1 - (scrollY / 500)"
+  [style.transform]="
+    'translateX(200%) translateY(' + (scrollY * 0.5) + 'px)'
+  "
+>
+  <span>{{ 'hero.scroll' | translate }}</span>
+</div>
 
 </section>

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
+import { HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
@@ -9,4 +10,11 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './hero.html',
   styleUrls: ['./hero.scss'],
 })
-export class HeroComponent {}
+export class HeroComponent {
+
+scrollY = 0;
+@HostListener('window:scroll')
+onWindowScroll() {
+  this.scrollY = window.scrollY;
+}
+}
