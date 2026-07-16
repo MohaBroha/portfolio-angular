@@ -59,3 +59,37 @@
     0 4px 8px rgba(0, 67, 240, .12),
     0 0 24px rgba(89, 136, 255, .25);
 }
+
+@mixin fade-slide-up(
+  $duration: 0.8s,
+  $distance: 40px
+) {
+  opacity: 0;
+  animation: fadeSlideUp $duration ease-out forwards;
+
+  @keyframes fadeSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY($distance);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@mixin section-title-animation {
+  opacity: 0;
+  transform: translateY(80px) scale(0.96);
+
+  transition:
+    opacity 1s ease,
+    transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

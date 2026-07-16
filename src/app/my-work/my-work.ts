@@ -2,15 +2,18 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { HostListener } from '@angular/core';
+import { SectionAnimationDirective } from '../shared/directives/section-animation';
+
 
 
 @Component({
   selector: 'app-my-work',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, SectionAnimationDirective],
   templateUrl: './my-work.html',
   styleUrls: ['./my-work.scss'],
 })
+
 export class MyWorkComponent {
 scrollY = 0;
   Math = Math;

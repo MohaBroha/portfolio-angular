@@ -8,9 +8,25 @@
   justify-content: space-between;
   height: 80px;
   padding: 0 80px;
+  margin-top: 20px;
   background: transparent;
   z-index: 100;
   box-sizing: border-box;
+    animation: headerEnter 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  opacity: 0;
+  transform: translateY(-70px);
+
+  @keyframes headerEnter {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 }
 
 .header__logo {
@@ -54,7 +70,6 @@
     transition:
       color 0.2s ease,
       font-weight 0.2s ease;
-
     &:hover {
       font-weight: 600;
       color: #5988ff;

@@ -67,6 +67,7 @@
   overflow-wrap: anywhere;
   hyphens: auto;
   color: #6c8ef0;
+  @include section-title-animation;
 }
 
 .about__iam {
@@ -212,6 +213,7 @@
 
   .about__title {
     font-size: 64px;
+
   }
 }
 

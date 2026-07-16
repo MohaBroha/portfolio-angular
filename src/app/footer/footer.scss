@@ -1,3 +1,8 @@
+@use '../../styles/breakpoints' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+
 .site-footer {
   background: linear-gradient(135deg, #6c8ef0 0%, #3f56e6 100%);
   padding: 34px 48px;
@@ -47,6 +52,8 @@
   line-height: 120%;
   margin-bottom: 10px;
   color: rgba(255, 255, 255, 0.95);
+  @include section-title-animation;
+
 }
 
 .site-footer__legal {

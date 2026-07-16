@@ -1,3 +1,7 @@
+@use '../../styles/breakpoints' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
 .skills {
   padding: 100px 40px;
   box-sizing: border-box;
@@ -16,6 +20,7 @@
   line-height: 100%;
   letter-spacing: 0.01em;
   color: #fff;
+  @include section-title-animation;
 }
 
 .skills__grid {

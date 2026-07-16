@@ -41,12 +41,9 @@
   position: absolute;
   width: 150px;
   height: 150px;
-
   bottom: 20px;
   left: 260px;
-
   z-index: 0;
-
   background: url('/assets/images/Ellipse 11.svg') no-repeat center / contain;
 }
 
@@ -71,6 +68,8 @@
   line-height: 120%;
   margin: 0 0 8px;
   color: #6c8ef0;
+  @include section-title-animation;
+
 }
 
 .contact__subtitle {

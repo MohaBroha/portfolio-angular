@@ -3,15 +3,15 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { environment } from '../../environments/environment';
-
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import { SectionAnimationDirective } from '../shared/directives/section-animation';
+
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule, TranslateModule, RouterModule],
+  imports: [FormsModule, CommonModule, TranslateModule, RouterModule, SectionAnimationDirective],
   templateUrl: './contact.html',
   styleUrls: ['./contact.scss'],
 })

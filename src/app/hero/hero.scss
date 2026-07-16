@@ -21,7 +21,7 @@
 
 .hero__right {
   width: 50%;
-  padding: 0 60px;
+  min-width: 50%;  padding: 0 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,7 +46,6 @@
 .hero__image-placeholder {
   position: relative;
   bottom: -100px;
-  left: 0;
   width: 500px;
   height: auto;
   z-index: 20;
@@ -154,7 +153,7 @@
 
 .hero__socials {
   position: absolute;
-  right: 27px;
+  right: 68px;
   bottom: 35px;
   display: flex;
   flex-direction: column;
