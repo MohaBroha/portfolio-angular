@@ -9,31 +9,67 @@
     </p>
 
     <div class="about__meta">
+     <div class="meta-item">
+  <div class="meta-icon">
+    <img
+      class="meta-icon--default"
+      src="assets/images/Group-60.png"
+      alt="location"
+    />
+
+    <img
+      class="meta-icon--hover"
+      src="assets/images/based hover.svg"
+      alt="location"
+    />
+  </div>
+
+  <div class="meta-label">
+    <span [innerHTML]="'about.location' | translate"></span>
+  </div>
+</div>
+
+    <div class="meta-item">
+  <div class="meta-icon">
+    <img
+      class="meta-icon--default"
+      src="assets/images/icon defaultt remot.svg"
+      alt="remote"
+    />
+
+    <img
+      class="meta-icon--hover"
+      src="assets/images/Icon Remote (1).svg"
+      alt="remote"
+    />
+  </div>
+
+  <div class="meta-label">
+    <span [innerHTML]="'about.remote' | translate"></span>
+  </div>
+</div>
+
       <div class="meta-item">
-        <img src="assets/images/Group-60.png" alt="location" />
+  <div class="meta-icon">
+    <img
+      class="meta-icon--default"
+      src="assets/images/Group 24.png"
+      alt="relocate"
+    />
 
-        <div class="meta-label">
-          <span [innerHTML]="'about.location' | translate"></span>
-        </div>
-      </div>
+    <img
+      class="meta-icon--hover"
+      src="assets/images/Group 25.svg"
+      alt="relocate"
+    />
+  </div>
 
-      <div class="meta-item">
-        <img src="assets/images/Icon Remote.png" alt="remote" />
-
-        <div class="meta-label">
-          <span [innerHTML]="'about.remote' | translate"></span>
-        </div>
-      </div>
-
-      <div class="meta-item">
-        <img src="assets/images/Group 24.png" alt="relocate" />
-
-        <div class="meta-label">
-          <span [innerHTML]="'about.relocate' | translate"></span>
-        </div>
+  <div class="meta-label">
+    <span [innerHTML]="'about.relocate' | translate"></span>
+  </div>
+</div>
       </div>
     </div>
-  </div>
 
   <div class="about__right">
     <div class="about__content">
