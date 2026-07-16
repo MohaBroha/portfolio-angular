@@ -33,7 +33,7 @@
     "title": "Fähigkeiten"
   },
   "work": {
-    "title": "Meine Projekte",
+    "title": "Projekte",
     "intro": "Hier findest du Projekte, die ich während meiner Ausbildung zum Softwareentwickler umgesetzt habe. Die meisten entstanden eigenständig, während Join in einem kollaborativen Team entwickelt wurde. Die Projekte spiegeln meine praktischen Erfahrungen in der Frontend- und Backend-Entwicklung wider.",
     "projects": {
       "coderr": {
