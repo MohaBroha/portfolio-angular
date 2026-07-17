@@ -34,8 +34,16 @@ export class HeroComponent implements OnInit {
   private textRoleTop = '';
   private textRoleBottom = '';
 
-ngOnInit() {
+ngOnInit(): void {
+  this.loadTranslations();
 
+  this.translate.onLangChange.subscribe(() => {
+    this.resetTyping();
+    this.loadTranslations();
+  });
+}
+
+loadTranslations(): void {
   this.translate.get([
     'hero.intro',
     'hero.name',
@@ -49,9 +57,14 @@ ngOnInit() {
     this.textRoleBottom = translations['hero.roleBottom'];
 
     this.startTyping();
-
   });
+}
 
+resetTyping(): void {
+  this.intro = '';
+  this.name = '';
+  this.roleTop = '';
+  this.roleBottom = '';
 }
 
 async startTyping() {
