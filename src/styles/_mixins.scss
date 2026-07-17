@@ -1,3 +1,5 @@
+@use './breakpoints' as *;
+
 @mixin button {
   position: relative;
   display: inline-flex;
@@ -91,5 +93,23 @@
   &.visible {
     opacity: 1;
     transform: translateY(0) scale(1);
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: $laptop) {
+    @content;
   }
 }
