@@ -58,5 +58,19 @@
 >
   <span>{{ 'hero.scroll' | translate }}</span>
 </div>
+<div
+  class="hero__scroll--mobile"
+  [style.opacity]="1 - (scrollY / 1200)"
+  [style.transform]="
+    'translateY(' + (scrollY * 0.65) + 'px)'
+  "
+>
+  <div class="hero__scroll--mobile-inner">
+    <img
+      src="assets/images/Scroll down (1).png"
+      alt="Scroll down"
+    />
+  </div>
+</div>
 
 </section>
