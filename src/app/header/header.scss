@@ -157,10 +157,7 @@
     margin-top: 16px;
   }
 
-  .header__logo {
-    width: 90px;
-    height: 54px;
-  }
+ 
 
   .header__nav ul {
     gap: 20px;
@@ -175,11 +172,6 @@
   .header {
     padding: 0 32px;
     margin-top: 12px;
-  }
-
-  .header__logo {
-    width: 80px;
-    height: 48px;
   }
 
   .header__nav ul {
@@ -213,15 +205,8 @@
   }
 
   .header__logo {
-    width: 75px;
-    height: 75px;
     position: relative;
     z-index: 7000;
-  }
-
-  .header__logo img {
-    width: 100%;
-    height: auto;
   }
 
   .hamburger {
