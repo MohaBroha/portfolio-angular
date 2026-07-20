@@ -28,21 +28,21 @@
   width: 280px;
   height: 280px;
   top: 80px;
-  right: 280px;
+  right: 80px;
 }
 
 .contact::after {
   width: 70px;
   height: 70px;
-  bottom: 80px;
-  right: 190px;
+  bottom: 90px;
+  right: 90px;
 }
 .circle--ellipse-11 {
   position: absolute;
   width: 150px;
   height: 150px;
   bottom: 20px;
-  left: 260px;
+  left: 200px;
   z-index: 0;
   background: url('/assets/images/Ellipse 11.svg') no-repeat center / contain;
 }
@@ -69,7 +69,6 @@
   margin: 0 0 8px;
   color: #6c8ef0;
   @include section-title-animation;
-
 }
 
 .contact__subtitle {
@@ -224,34 +223,8 @@
   }
 }
 
-.contact__button--active:hover {
-  @include button-hover;
-
-  background:
-    radial-gradient(
-      74.22% 74.22%
-      at 19.79% 22.42%,
-      #5988FF 6.25%,
-      #5988FF 51.56%,
-      #0043F0 100%
-    );
-
-  color: white;
-  border-color: #0043F0;
-}
-
 .contact__button--active:hover::before {
   left: 130%;
-}
-
-
-.contact__cta,
-.contact__link,
-.contact__input,
-.contact__textarea,
-.contact__success,
-.contact__error {
-  font-family: 'Montserrat', sans-serif;
 }
 
 .contact__input:-webkit-autofill,
@@ -263,47 +236,32 @@
   transition: background-color 5000s ease-in-out 0s;
 }
 
-@media (max-width: 640px) {
-  .contact {
-    padding: 48px 20px;
-  }
-  .contact__title {
-    font-size: 30px;
-  }
-  .contact__subtitle {
-    font-size: 17px;
-  }
-  .contact__description {
-    font-size: 14px;
-    line-height: 1.7;
-  }
-  .contact__input,
-  .contact__textarea {
-    font-size: 16px;
-  }
-  .contact__button {
-    width: 100%;
-    justify-content: center;
-  }
-  .contact__scroll-top {
-    align-self: center;
-  }
-}
-
 .contact__button {
-  padding: 12px 28px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #fff;
-  background: linear-gradient(135deg, #6c8ef0 0%, #3f56e6 100%);
-  border: none;
-  border-radius: 10px;
+  display: inline-block;
+  margin-top: 24px;
+
+  padding: 14px 28px;
+
+  border-radius: 12px;
+  border: 2px solid rgba(99, 115, 255, 0.35);
+
+  background: transparent;
+  color: #5b7ec3;
+
+  font-size: 18px;
+  font-weight: 500;
+
   cursor: pointer;
   align-self: flex-start;
-  box-shadow: 0 6px 18px rgba(63, 86, 230, 0.25);
+
+  box-shadow: 0 6px 18px rgba(63, 86, 230, 0.12);
+
   transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .contact__button:hover {
@@ -360,7 +318,7 @@
 }
 .contact__scroll-top {
   position: absolute;
-  bottom: 0;
+  bottom: -40px;
   left: 0;
   width: 44px;
   height: 44px;
@@ -371,7 +329,7 @@
   filter: drop-shadow(0 0 8px rgba(91, 126, 195, 0.45));
 }
 
-@media (max-width: 900px) {
+@media (max-width: $tablet) {
   .contact {
     padding: 60px 24px;
   }
@@ -383,10 +341,10 @@
     flex: 1;
   }
   .contact__title {
-    font-size: 34px;
+    font-size: 64px;
   }
   .contact__subtitle {
-    font-size: 18px;
+    font-size: 32px;
   }
   .contact::before,
   .contact::after {
@@ -395,16 +353,67 @@
     pointer-events: none;
   }
   .contact::before {
-    width: 140px;
-    height: 140px;
-    top: 40px;
+    width: 100px;
+    height: 100px;
+    top: 10px;
     right: 20px;
   }
 
   .contact::after {
     width: 60px;
     height: 60px;
-    bottom: 40px;
-    left: 20px;
+    bottom: 20px;
+    right: 30px;
+  }
+
+  .circle--ellipse-11 {
+    width: 220px;
+    height: 220px;
+
+    bottom: 380px;
+    left: 20%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+    opacity: 1;
+  }
+
+  .contact__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    top: -40px;
+    align-self: center;
+  }
+}
+
+@media (max-width: $mobile) {
+  .contact {
+    padding: 48px 20px;
+  }
+  .contact__title {
+    font-size: 64px;
+  }
+  .contact__subtitle {
+    font-size: 17px;
+  }
+  .contact__description {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .contact__input,
+  .contact__textarea {
+    font-size: 16px;
+  }
+  .contact::before {
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    right: 20px;
+  }
+  .contact__scroll-top {
+    align-self: center;
   }
 }
