@@ -243,10 +243,14 @@
   }
 
   .hero::before {
-    width: 760px;
-    height: 760px;
+    width: 750px;
+    height: 750px;
     top: -140px;
     left: -180px;
+  }
+    .hero__right {
+    padding: 0 19px;
+    transform: translate(-18px, -70px);
   }
 
   .hero__image-placeholder {
