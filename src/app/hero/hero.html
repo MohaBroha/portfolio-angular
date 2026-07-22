@@ -8,20 +8,20 @@
   <div class="hero__right">
     <div class="hero__heading">
       <p class="hero__intro">
-  {{ intro  }}
+        {{ intro }}
       </p>
 
       <h1 class="hero__name">
-  {{ name }}
+        {{ name }}
       </h1>
     </div>
 
     <h2 class="hero__role hero__role--top">
-  {{ roleTop }}
+      {{ roleTop }}
     </h2>
 
     <h2 class="hero__role hero__role--bottom">
-  {{ roleBottom }}
+      {{ roleBottom }}
     </h2>
   </div>
 
@@ -49,28 +49,20 @@
     </a>
   </div>
 
-<div
-  class="hero__scroll"
-  [style.opacity]="1 - (scrollY / 500)"
-  [style.transform]="
-    'translateX(200%) translateY(' + (scrollY * 0.5) + 'px)'
-  "
->
-  <span>{{ 'hero.scroll' | translate }}</span>
-</div>
-<div
-  class="hero__scroll--mobile"
-  [style.opacity]="1 - (scrollY / 1200)"
-  [style.transform]="
-    'translateY(' + (scrollY * 0.65) + 'px)'
-  "
->
-  <div class="hero__scroll--mobile-inner">
-    <img
-      src="assets/images/Scroll down (1).png"
-      alt="Scroll down"
-    />
+  <div
+    class="hero__scroll"
+    [style.opacity]="1 - scrollY / 500"
+    [style.transform]="'translateX(200%) translateY(' + scrollY * 0.5 + 'px)'"
+  >
+    <span>{{ 'hero.scroll' | translate }}</span>
   </div>
-</div>
-
+  <div
+    class="hero__scroll--mobile"
+    [style.opacity]="1 - scrollY / 1200"
+    [style.transform]="'translateY(' + scrollY * 0.65 + 'px)'"
+  >
+    <div class="hero__scroll--mobile-inner">
+      <img src="assets/images/Scroll down (1).png" alt="Scroll down" />
+    </div>
+  </div>
 </section>

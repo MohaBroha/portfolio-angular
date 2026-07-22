@@ -7,7 +7,6 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 import { SectionAnimationDirective } from '../shared/directives/section-animation';
 
-
 @Component({
   selector: 'app-contact',
   standalone: true,

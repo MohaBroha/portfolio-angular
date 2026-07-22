@@ -129,6 +129,27 @@
   .legal-notice h2 {
     font-size: 34px;
   }
+  .circle--legal-1 {
+    width: 20px;
+    height: 20px;
+    top: 300px;
+    right: 30px;
+  }
+
+  .circle--legal-2 {
+    width: 30px;
+    height: 30px;
+    top: 800px;
+    right: 30px;
+  }
+
+  .circle--legal-3 {
+    width: 10px;
+    height: 10px;
+
+    bottom: -30px;
+    right: 350px;
+  }
 }
 
 @media (max-width: $mobile) {

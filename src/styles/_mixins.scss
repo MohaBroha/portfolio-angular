@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
- font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 120%;
@@ -18,9 +18,9 @@
   border: 2px solid #5988ff;
   border-radius: 10px;
   transition:
-    color .100s ease,
-    transform .15s ease,
-    box-shadow .15s ease;
+    color 0.1s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 @mixin button-fill {
@@ -33,39 +33,32 @@
   width: 80%;
   height: 200%;
 
-  background:
-    radial-gradient(
-      74.22% 74.22%
-      at 19.79% 22.42%,
-      #5988FF 6.25%,
-      #5988FF 51.56%,
-      #0043F0 100%
-    );
+  background: radial-gradient(
+    74.22% 74.22% at 19.79% 22.42%,
+    #5988ff 6.25%,
+    #5988ff 51.56%,
+    #0043f0 100%
+  );
 
   transform: skew(-30deg);
 
-  opacity: .85;
+  opacity: 0.85;
   z-index: 1;
 
   transition:
-    left .55s ease,
-    transform .3s ease;
+    left 0.55s ease,
+    transform 0.3s ease;
 }
 
 @mixin button-hover {
-  transform:
-    translateY(-3px)
-        scale(1.04);
- box-shadow:
-    0 12px 20px rgba(0, 67, 240, .18),
-    0 4px 8px rgba(0, 67, 240, .12),
-    0 0 24px rgba(89, 136, 255, .25);
+  transform: translateY(-3px) scale(1.04);
+  box-shadow:
+    0 12px 20px rgba(0, 67, 240, 0.18),
+    0 4px 8px rgba(0, 67, 240, 0.12),
+    0 0 24px rgba(89, 136, 255, 0.25);
 }
 
-@mixin fade-slide-up(
-  $duration: 0.8s,
-  $distance: 40px
-) {
+@mixin fade-slide-up($duration: 0.8s, $distance: 40px) {
   opacity: 0;
   animation: fadeSlideUp $duration ease-out forwards;
 

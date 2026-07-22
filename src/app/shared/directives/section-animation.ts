@@ -1,15 +1,10 @@
-import {
-  Directive,
-  ElementRef,
-  AfterViewInit,
-} from '@angular/core';
+import { Directive, ElementRef, AfterViewInit } from '@angular/core';
 
 @Directive({
   selector: '[appSectionAnimation]',
   standalone: true,
 })
 export class SectionAnimationDirective implements AfterViewInit {
-
   constructor(private element: ElementRef) {}
 
   ngAfterViewInit(): void {

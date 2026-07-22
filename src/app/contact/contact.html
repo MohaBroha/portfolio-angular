@@ -1,8 +1,8 @@
 <section id="contact" class="contact">
   <div class="contact__container">
     <div class="contact__content">
-<h2 class="contact__title" appSectionAnimation>
-          {{ 'contact.title' | translate }}
+      <h2 class="contact__title" appSectionAnimation>
+        {{ 'contact.title' | translate }}
       </h2>
 
       <h3 class="contact__subtitle">
@@ -29,7 +29,6 @@
       (ngSubmit)="sendEmail(contactForm)"
       autocomplete="on"
     >
-
       <div class="contact__field">
         <input
           type="text"
@@ -63,7 +62,6 @@
           {{ 'contact.validation.name' | translate }}
         </span>
       </div>
-
 
       <div class="contact__field">
         <input
@@ -99,7 +97,6 @@
         </span>
       </div>
 
-
       <div class="contact__field">
         <textarea
           name="message"
@@ -132,7 +129,6 @@
           {{ 'contact.validation.message' | translate }}
         </span>
       </div>
-
 
       <div class="contact__checkbox">
         <input
@@ -171,13 +167,13 @@
         </p>
       </div>
 
-    <button
-  type="submit"
-  class="contact__button"
-  [class.contact__button--active]="contactForm.valid"
->
-  {{ isSending ? ('contact.form.sending' | translate) : ('contact.form.submit' | translate) }}
-</button>
+      <button
+        type="submit"
+        class="contact__button"
+        [class.contact__button--active]="contactForm.valid"
+      >
+        {{ isSending ? ('contact.form.sending' | translate) : ('contact.form.submit' | translate) }}
+      </button>
       <button
         type="button"
         class="contact__scroll-top"
