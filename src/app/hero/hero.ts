@@ -75,7 +75,7 @@ export class HeroComponent implements OnInit {
           clearInterval(timer);
           resolve();
         }
-      }, 100);
+      }, 50);
     });
   }
 
