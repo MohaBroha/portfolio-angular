@@ -270,17 +270,16 @@
     left: -100px;
   }
 
-  .hero__left {
-    width: 450px;
-    bottom: -150px;
-    right: -10px;
-  }
+
+
+
 
   .hero__right {
     padding: 0 19px;
     transform: translate(-18px, -70px);
   }
 }
+
 
 @media (max-width: $tablet) {
   .hero {

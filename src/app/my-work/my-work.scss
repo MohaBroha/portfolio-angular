@@ -322,14 +322,6 @@
   .my-work__scroll {
     display: none;
   }
-
-  .my-work__scroll--mobile {
-    display: block;
-    position: absolute;
-    right: 12px;
-    bottom: 40px;
-    z-index: 500;
-  }
 }
 
 @media (max-width: $laptop) {
@@ -391,48 +383,6 @@
     display: none;
   }
 
-  .my-work__scroll--mobile {
-    display: block;
-    position: absolute;
-    right: 12px;
-    bottom: 40px;
-    z-index: 500;
-  }
-
-  .my-work__scroll--mobile {
-    display: block;
-    position: absolute;
-    top: 40px;
-    right: 8px;
-    z-index: 500;
-  }
-
-  .my-work__scroll--mobile img {
-    height: 200px;
-
-    animation:
-      scrollPulse 6s ease-in-out infinite,
-      scrollFloat 3s ease-in-out infinite;
-
-    filter: brightness(0) invert(1) drop-shadow(0 0 4px rgba(0, 0, 0, 0.9))
-      drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.4));
-  }
-
-  .my-work__scroll--mobile-inner {
-    animation: scrollEnterMobile 4s cubic-bezier(0.2, 0.5, 0.86, 1.5) forwards;
-  }
-
-  @keyframes scrollEnterMobile {
-    from {
-      opacity: 0;
-      transform: translateY(-500px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 
   .circle--lg {
     width: 380px;
