@@ -1,66 +1,55 @@
 <section class="team-player" aria-labelledby="team-player-title">
+  <div class="team-player__inner">
+<h2 id="team-player-title" class="team-player__title" appSectionAnimation>
+        {{ 'team.title' | translate }}
+    </h2>
 
-    <div class="team-player__inner">
+    <p class="team-player__subtitle">
+      {{ 'team.subtitle' | translate }}
+    </p>
 
-        <h2 id="team-player-title" class="team-player__title">
-            {{ 'team.title' | translate }}
-        </h2>
+    <div class="team-player__list">
+      <article class="team-player__item">
+        <h3 class="team-player__name">
+          {{ 'team.items.james.name' | translate }}
+        </h3>
 
-        <p class="team-player__subtitle">
-            {{ 'team.subtitle' | translate }}
-        </p>
-
-        <div class="team-player__list">
-            <article class="team-player__item">
-
-                <h3 class="team-player__name">
-                    {{ 'team.items.james.name' | translate }}
-                </h3>
-
-                <div class="team-player__role">
-                    {{ 'team.items.james.role' | translate }}
-                </div>
-
-                <blockquote class="team-player__quote">
-                    "{{ 'team.items.james.quote' | translate }}"
-                </blockquote>
-
-            </article>
-
-            <article class="team-player__item">
-
-                <h3 class="team-player__name">
-                    {{ 'team.items.evelyn.name' | translate }}
-                </h3>
-
-                <div class="team-player__role">
-                    {{ 'team.items.evelyn.role' | translate }}
-                </div>
-
-                <blockquote class="team-player__quote">
-                    "{{ 'team.items.evelyn.quote' | translate }}"
-                </blockquote>
-
-            </article>
-
-            <article class="team-player__item">
-
-                <h3 class="team-player__name">
-                    {{ 'team.items.noah.name' | translate }}
-                </h3>
-
-                <div class="team-player__role">
-                    {{ 'team.items.noah.role' | translate }}
-                </div>
-
-                <blockquote class="team-player__quote">
-                    "{{ 'team.items.noah.quote' | translate }}"
-                </blockquote>
-
-            </article>
-
+        <div class="team-player__role">
+          {{ 'team.items.james.role' | translate }}
         </div>
 
-    </div>
+        <blockquote class="team-player__quote">
+          "{{ 'team.items.james.quote' | translate }}"
+        </blockquote>
+      </article>
 
+      <article class="team-player__item">
+        <h3 class="team-player__name">
+          {{ 'team.items.evelyn.name' | translate }}
+        </h3>
+
+        <div class="team-player__role">
+          {{ 'team.items.evelyn.role' | translate }}
+        </div>
+
+        <blockquote class="team-player__quote">
+          "{{ 'team.items.evelyn.quote' | translate }}"
+        </blockquote>
+      </article>
+
+      <article class="team-player__item">
+        <h3 class="team-player__name">
+          {{ 'team.items.noah.name' | translate }}
+        </h3>
+
+        <div class="team-player__role">
+          {{ 'team.items.noah.role' | translate }}
+        </div>
+
+        <blockquote class="team-player__quote">
+          "{{ 'team.items.noah.quote' | translate }}"
+        </blockquote>
+      </article>
+    </div>
+  </div>
 </section>

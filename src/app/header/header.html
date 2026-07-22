@@ -1,29 +1,29 @@
-<header class="header" >
-
- <a href="#hero" aria-label="Back to top">
+<header class="header" [class.hidden]="!isVisible">
+  <a href="#hero" aria-label="Back to top">
     <div class="header__logo">
-        <img src="assets/images/Group.png" alt="Logo">
+      <img src="assets/images/favicon.png" alt="Logo" />
     </div>
-</a>
+  </a>
 
-    <div class="hamburger" (click)="toggleMenu()">
-        ☰
-    </div>
+  <div class="hamburger" (click)="toggleMenu()">☰</div>
 
-    <nav class="header__nav" [class.open]="menuOpen" (click)="closeMenu()">
-        <ul (click)="$event.stopPropagation()">
+  <nav class="header__nav" [class.open]="menuOpen" (click)="closeMenu()">
+    <ul (click)="$event.stopPropagation()">
+      <li>
+        <a (click)="closeMenu()" href="#about">{{ 'header.nav.about' | translate }}</a>
+      </li>
+      <li>
+        <a (click)="closeMenu()" href="#skills">{{ 'header.nav.skills' | translate }}</a>
+      </li>
+      <li>
+        <a (click)="closeMenu()" href="#work">{{ 'header.nav.work' | translate }}</a>
+      </li>
 
-            <li><a (click)="closeMenu()" href="#about">{{ 'header.nav.about' | translate }}</a></li>
-            <li><a (click)="closeMenu()" href="#skills">{{ 'header.nav.skills' | translate }}</a></li>
-            <li><a (click)="closeMenu()" href="#work">{{ 'header.nav.work' | translate }}</a></li>
-
-            <li class="header__lang">
-                <span [class.active]="currentLang === 'de'" (click)="switchLanguage('de')">DE</span>
-                /
-                <span [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">EN</span>
-            </li>
-
-        </ul>
-    </nav>
-
+      <li class="header__lang">
+        <span [class.active]="currentLang === 'de'" (click)="switchLanguage('de')">DE</span>
+        /
+        <span [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">EN</span>
+      </li>
+    </ul>
+  </nav>
 </header>

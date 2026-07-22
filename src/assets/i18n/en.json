@@ -10,12 +10,15 @@
       "en": "EN"
     }
   },
+  
   "hero": {
-    "intro": "Hello! I am",
+    "intro": "Hi! I am",
     "name": "Moha",
-    "role": "FullStack <br>DEVELOPER",
-    "scroll": "Scroll"
+    "roleTop": "FUllSTACK",
+    "roleBottom": "DEVELOPER",
+    "scroll": "SCROLL"
   },
+
   "about": {
     "title": "Let's work together",
     "iam": "I am",
@@ -25,20 +28,20 @@
     "text1": "I am a junior full-stack developer currently in training, focusing on modern web applications and practical software development. I started in frontend development using Angular, TypeScript, and modern UI concepts. During this time, I learned how to write clean, structured, and maintainable code while building user-focused interfaces.",
     "text2": "Throughout my training, I gradually expanded my knowledge into backend development. This includes initial experience with Django and Django REST Framework, API design, as well as basic server and deployment processes. I also gained hands-on experience in setting up and managing servers, which helped me understand the full lifecycle of an application from development to production deployment.",
     "team": "An important part of my growth has also been working in team projects. I have contributed to two collaborative projects: Join and Kochwelt. In Join, I worked closely with other developers across frontend and backend, gaining valuable experience in API integration and team collaboration.",
-    "button": "Send message"
+    "button": "Send a Message"
   },
   "skills": {
     "title": "Skill Set"
   },
   "work": {
-    "title": "My Projects",
+    "title": "My Work",
     "intro": "Here are some projects I completed during my software development training. Most of them were developed independently, while Join was created in a collaborative team environment. These projects helped me gain practical experience in frontend development, backend development, and modern web technologies.",
     "projects": {
       "coderr": {
-  "title": "Coderr",
-  "description": "A fully developed full-stack freelancer platform built from planning and architecture to production deployment. Developed with Angular, Django REST Framework, and PostgreSQL. Features include REST APIs, authentication, role-based permissions, offer, review, and order management, as well as deployment on an Ubuntu server using Gunicorn, Nginx, and Cloudflare.",
-  "button": "Live Demo"
-},
+        "title": "Coderr",
+        "description": "A fully developed full-stack freelancer platform built from planning and architecture to production deployment. Developed with Angular, Django REST Framework, and PostgreSQL. Features include REST APIs, authentication, role-based permissions, offer, review, and order management, as well as deployment on an Ubuntu server using Gunicorn, Nginx, and Cloudflare.",
+        "button": "Live Demo"
+      },
       "join": {
         "title": "Join",
         "description": "Join is a collaborative Kanban tool developed as a team project. During this project, I gained practical experience working between frontend and backend systems, including APIs, component architecture, and modern Angular workflows.",
@@ -95,12 +98,12 @@
       "privacyText": "I've read the",
       "privacyLink": "privacy policy",
       "privacySuffix": "and agree to the processing of my data as outlined",
-      "submit": "Say hello 👋"
+      "submit": "Send a Message"
     },
     "validation": {
       "name": "Please enter your name.",
       "email": "Please enter a valid email address.",
-      "message": "Please enter a message.",
+      "message": "Please enter a message.(10 letters)",
       "privacy": "Please accept the privacy policy."
     },
     "messages": {

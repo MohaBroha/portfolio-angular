@@ -3,7 +3,7 @@
     "nav": {
       "about": "Über mich",
       "skills": "Fähigkeiten",
-      "work": "Meine Projekte"
+      "work": "Projekte"
     },
     "language": {
       "de": "DE",
@@ -11,11 +11,13 @@
     }
   },
   "hero": {
-    "intro": "Hallo! Ich bin",
-    "name": "Moha ",
-    "role": "FullStack ENTWICKLER",
-    "scroll": "Scrollen"
+    "intro": "Hi! Ich bin",
+    "name": "Moha",
+    "roleTop": "FUllSTACK",
+    "roleBottom": "ENTWICKLER",
+    "scroll": "SCROLL"
   },
+
   "about": {
     "title": "Lass uns zusammen arbeiten",
     "iam": "Ich bin",
@@ -34,12 +36,11 @@
     "title": "Meine Projekte",
     "intro": "Hier findest du Projekte, die ich während meiner Ausbildung zum Softwareentwickler umgesetzt habe. Die meisten entstanden eigenständig, während Join in einem kollaborativen Team entwickelt wurde. Die Projekte spiegeln meine praktischen Erfahrungen in der Frontend- und Backend-Entwicklung wider.",
     "projects": {
-      
       "coderr": {
-  "title": "Coderr",
-  "description": "Eine vollständig entwickelte Fullstack-Freelancer-Plattform – von der Planung über die Umsetzung bis zum produktiven Deployment. Entwickelt mit Angular, Django REST Framework und PostgreSQL. Implementiert wurden REST-APIs, Authentifizierung, Rollen- und Berechtigungssysteme, Angebots-, Bewertungs- und Bestellverwaltung sowie das Deployment auf einem Ubuntu-Server mit Gunicorn, Nginx und Cloudflare.",
-  "button": "Live Demo"
-},
+        "title": "Coderr",
+        "description": "Eine vollständig entwickelte Fullstack-Freelancer-Plattform – von der Planung über die Umsetzung bis zum produktiven Deployment. Entwickelt mit Angular, Django REST Framework und PostgreSQL. Implementiert wurden REST-APIs, Authentifizierung, Rollen- und Berechtigungssysteme, Angebots-, Bewertungs- und Bestellverwaltung sowie das Deployment auf einem Ubuntu-Server mit Gunicorn, Nginx und Cloudflare.",
+        "button": "Live Demo"
+      },
       "join": {
         "title": "Join",
         "description": "Join ist ein kollaboratives Kanban-Tool, das im Team entwickelt wurde. Ich habe dabei eng mit Frontend- und Backend-Entwicklung gearbeitet und Erfahrung in API-Kommunikation und Komponentenarchitektur gesammelt.",
@@ -61,7 +62,6 @@
         "button": "Live Demo"
       }
     }
-  
   },
   "team": {
     "title": "Du suchst einen Teamplayer?",
@@ -102,7 +102,7 @@
     "validation": {
       "name": "Bitte gib deinen Namen ein.",
       "email": "Bitte gib eine gültige E-Mail-Adresse ein.",
-      "message": "Bitte schreibe eine Nachricht.",
+      "message": "Bitte schreibe eine Nachricht. (10 Buchstaben)",
       "privacy": "Bitte akzeptiere die Datenschutzerklärung."
     },
     "messages": {

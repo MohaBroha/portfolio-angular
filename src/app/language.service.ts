@@ -4,7 +4,7 @@ import { TranslateService } from '@ngx-translate/core';
 type SupportedLang = 'de' | 'en';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class LanguageService {
   private readonly storageKey = 'language';
@@ -14,7 +14,8 @@ export class LanguageService {
     this.translate.addLangs(['de', 'en']);
     this.translate.setDefaultLang(this.defaultLang);
 
-    const saved = (localStorage.getItem(this.storageKey) as SupportedLang | null) || this.defaultLang;
+    const saved =
+      (localStorage.getItem(this.storageKey) as SupportedLang | null) || this.defaultLang;
     this.use(saved);
   }
 
@@ -28,4 +29,3 @@ export class LanguageService {
     return current || this.defaultLang;
   }
 }
-

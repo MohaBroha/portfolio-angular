@@ -1,42 +1,41 @@
 <section class="legal-notice">
+  <div class="legal-notice__container">
+<h1 class="legal-notice__title" appSectionAnimation>
+        {{ 'legal.title' | translate }}
+    </h1>
 
-    <div class="legal-notice__container">
+    <p class="legal-notice__text">
+      {{ 'legal.intro1' | translate }}
+    </p>
 
-        <h1 class="legal-notice__title">
-            {{ 'legal.title' | translate }}
-        </h1>
+    <p class="legal-notice__text">
+      {{ 'legal.intro2' | translate }}
+    </p>
 
-        <p class="legal-notice__text">
-            {{ 'legal.intro1' | translate }}
-        </p>
-
-        <p class="legal-notice__text">
-            {{ 'legal.intro2' | translate }}
-        </p>
-
-        <div class="legal-notice__section">
-            <h2>{{ 'legal.disclaimerTitle' | translate }}</h2>
-            <p>{{ 'legal.disclaimerText' | translate }}</p>
-        </div>
-
-        <div class="legal-notice__section">
-            <h2>{{ 'legal.contactTitle' | translate }}</h2>
-            <p>{{ 'legal.contactText' | translate }}</p>
-        </div>
-
-        <div class="legal-notice__section">
-            <h2>{{ 'legal.copyrightTitle' | translate }}</h2>
-            <p>{{ 'legal.copyright1' | translate }}</p>
-            <p>{{ 'legal.copyright2' | translate }}</p>
-            <p>{{ 'legal.copyright3' | translate }}</p>
-        </div>
-
-        <p class="legal-notice__back">
-            <a routerLink="/" class="legal-notice__link">
-                {{ 'legal.back' | translate }}
-            </a>
-        </p>
-
+    <div class="legal-notice__section">
+      <h2>{{ 'legal.disclaimerTitle' | translate }}</h2>
+      <p>{{ 'legal.disclaimerText' | translate }}</p>
     </div>
 
+    <div class="legal-notice__section">
+      <h2>{{ 'legal.contactTitle' | translate }}</h2>
+      <p>{{ 'legal.contactText' | translate }}</p>
+    </div>
+
+    <div class="legal-notice__section">
+      <h2>{{ 'legal.copyrightTitle' | translate }}</h2>
+      <p>{{ 'legal.copyright1' | translate }}</p>
+      <p>{{ 'legal.copyright2' | translate }}</p>
+      <p>{{ 'legal.copyright3' | translate }}</p>
+    </div>
+
+    <p class="legal-notice__back">
+      <a routerLink="/" class="legal-notice__link">
+        {{ 'legal.back' | translate }}
+      </a>
+    </p>
+    <div class="circle circle--legal-1"></div>
+<div class="circle circle--legal-2"></div>
+<div class="circle circle--legal-3"></div>
+  </div>
 </section>

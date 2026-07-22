@@ -1,86 +1,180 @@
+@use '../../styles/breakpoints' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
 .legal-notice {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    padding: 80px 40px;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 40px 60px;
+  min-height: auto;
+  box-sizing: border-box;
 }
 
 .legal-notice__container {
-    max-width: 900px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .legal-notice__title {
-    font-size: 34px;
-    font-weight: 700;
-    color: #6c8ef0;
+  font-family: 'Baloo 2', cursive;
+  font-size: 90px;
+  font-weight: 800;
+  line-height: 120%;
+  color: #6c8ef0;
+  @include section-title-animation;
 }
 
 .legal-notice__text {
-    font-size: 15px;
-    line-height: 1.7;
-    color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #333;
 }
 
 .legal-notice__section {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
 
-    h2 {
-        font-size: 18px;
-        color: #3f56e6;
-        margin: 0;
-    }
+  h2 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #6c8ef0;
+    margin: 0;
+  }
 
-    p {
-        font-size: 14px;
-        line-height: 1.6;
-        color: #444;
-        margin: 0;
-    }
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #444;
+    margin: 0;
+  }
 }
 
 .legal-notice__back {
-    margin-top: 20px;
+  color: #3f56e6;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
 }
 
 .legal-notice__link {
-    color: #3f56e6;
-    font-weight: 600;
-    text-decoration: none;
+  color: #3f56e6;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  text-decoration: none;
 
-    &:hover {
-        text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
-@media (max-width: 768px) {
-    .legal-notice {
-        padding: 60px 20px;
-    }
+.circle--legal-1,
+.circle--legal-2,
+.circle--legal-3 {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
 
-    .legal-notice__title {
-        font-size: 28px;
-    }
+  background: radial-gradient(
+    74.22% 74.22% at 19.79% 22.42%,
+    #5988ff 6.25%,
+    #5988ff 51.56%,
+    #0043f0 100%
+  );
 }
 
-@media (max-width: 480px) {
-    .legal-notice {
-        padding: 40px 16px;
-    }
+.circle--legal-1 {
+  width: 40px;
+  height: 40px;
+  top: 300px;
+  right: 30px;
+}
 
-    .legal-notice__title {
-        font-size: 24px;
-    }
+.circle--legal-2 {
+  width: 80px;
+  height: 80px;
+  top: 800px;
+  right: 30px;
+}
 
-    .legal-notice__text,
-    .legal-notice__section p {
-        font-size: 13.5px;
-    }
+.circle--legal-3 {
+  width: 20px;
+  height: 20px;
+
+  bottom: -30px;
+  right: 350px;
+}
+@media (max-width: $tablet) {
+  .legal-notice {
+    padding: 60px 20px;
+  }
+
+  .legal-notice__title {
+    font-size: 75px;
+  }
+  .legal-notice h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .legal-notice {
+    padding: 50px 18px;
+  }
+
+  .legal-notice h2 {
+    font-size: 30px;
+  }
+  .legal-notice h2 {
+    font-size: 30px;
+  }
+  .legal-notice__title {
+    font-size: 56px;
+  }
+
+  .legal-notice__text,
+  .legal-notice__section p {
+    font-size: 14px;
+  }
+}
+@media (max-width: $small-mobile) {
+  .legal-notice {
+    padding: 80px 16px 20px;
+  }
+
+  .legal-notice__title {
+    font-size: 45px;
+  }
+
+  .legal-notice__text,
+  .legal-notice__section p {
+    font-size: 13.5px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: $tiny-mobile) {
+  .legal-notice__title {
+    font-size: 36px;
+  }
+
+  .legal-notice__text,
+  .legal-notice__section p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
 }

@@ -1,63 +1,89 @@
 <section id="about" class="about">
+  <div class="about__left">
+ <h2 class="about__title" appSectionAnimation>
+  <span [innerHTML]="'about.title' | translate"></span>
+</h2>
 
-    <div class="about__left">
+    <p class="about__iam">
+      {{ 'about.iam' | translate }}
+    </p>
 
-        <h2 class="about__title">
-            <span [innerHTML]="'about.title' | translate"></span>
-        </h2>
+    <div class="about__meta">
+     <div class="meta-item">
+  <div class="meta-icon">
+    <img
+      class="meta-icon--default"
+      src="assets/images/Group-60.png"
+      alt="location"
+    />
 
-        <p class="about__iam">
-            {{ 'about.iam' | translate }}
-        </p>
+    <img
+      class="meta-icon--hover"
+      src="assets/images/based hover.svg"
+      alt="location"
+    />
+  </div>
 
-        <div class="about__meta">
+  <div class="meta-label">
+    <span [innerHTML]="'about.location' | translate"></span>
+  </div>
+</div>
 
-            <div class="meta-item">
-                <img src="assets/images/Group-60.png" alt="location">
+    <div class="meta-item">
+  <div class="meta-icon">
+    <img
+      class="meta-icon--default"
+      src="assets/images/icon defaultt remot.svg"
+      alt="remote"
+    />
 
-                <div class="meta-label">
-                    <span [innerHTML]="'about.location' | translate"></span>
-                </div>
-            </div>
+    <img
+      class="meta-icon--hover"
+      src="assets/images/Icon Remote (1).svg"
+      alt="remote"
+    />
+  </div>
 
-            <div class="meta-item">
-                <img src="assets/images/Icon Remote.png" alt="remote">
+  <div class="meta-label">
+    <span [innerHTML]="'about.remote' | translate"></span>
+  </div>
+</div>
 
-                <div class="meta-label">
-                    <span [innerHTML]="'about.remote' | translate"></span>
-                </div>
-            </div>
+      <div class="meta-item">
+  <div class="meta-icon">
+    <img
+      class="meta-icon--default"
+      src="assets/images/Group 24.png"
+      alt="relocate"
+    />
 
-            <div class="meta-item">
-                <img src="assets/images/Group 24.png" alt="relocate">
+    <img
+      class="meta-icon--hover"
+      src="assets/images/Group 25.svg"
+      alt="relocate"
+    />
+  </div>
 
-                <div class="meta-label">
-                    <span [innerHTML]="'about.relocate' | translate"></span>
-                </div>
-            </div>
-
-        </div>
-
+  <div class="meta-label">
+    <span [innerHTML]="'about.relocate' | translate"></span>
+  </div>
+</div>
+      </div>
     </div>
 
-    <div class="about__right">
+  <div class="about__right">
+    <div class="about__content">
+      <p>
+        {{ 'about.text1' | translate }}
+      </p>
 
-        <div class="about__content">
+      <p>
+        {{ 'about.text2' | translate }}
+      </p>
 
-            <p>
-                {{ 'about.text1' | translate }}
-            </p>
-
-            <p>
-                {{ 'about.text2' | translate }}
-            </p>
-
-            <a href="#contact" class="btn btn--outline">
-                {{ 'about.button' | translate }}
-            </a>
-
-        </div>
-
+   <a href="#contact" class="btn btn--outline">
+    <span>{{ 'about.button' | translate }}</span>
+</a>
     </div>
-
+  </div>
 </section>
