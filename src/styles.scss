@@ -1,12 +1,33 @@
 @forward './styles/breakpoints';
 
+:root {
+  --portfolio-content-max-width: 1440px;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100%;
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
+  background: #eef3ff;
+  overflow-x: clip;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #eef3ff;
+}
+
+.content-wrapper {
+  width: min(100%, var(--portfolio-content-max-width));
+  margin-inline: auto;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 }
 
 .heading {
@@ -105,6 +126,9 @@ app-root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: min(100%, var(--portfolio-content-max-width));
+  margin-inline: auto;
+  position: relative;
 }
 
 router-outlet + * {

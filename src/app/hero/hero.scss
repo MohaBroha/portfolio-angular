@@ -237,6 +237,33 @@
   animation-delay: 0.4s;
 }
 
+@media (min-width: 3000px) {
+  .hero {
+    max-width: 2400px;
+    margin: 0 auto;
+  }
+
+  .hero__left {
+    bottom: -400px;
+  }
+
+  .hero__image-placeholder {
+    width: 650px;
+  
+  }
+}
+
+@media (min-width: 550px) and (max-width: 800px) and (pointer: fine) and (min-height: 900px) {
+  .hero__left {
+    bottom: -100px;
+  }
+
+  .hero__image-placeholder {
+    width: clamp(360px, 40vw, 500px);
+    bottom: -100px;
+  }
+}
+
 @media (max-width: $large-laptop) {
   .hero {
     padding: 0 60px;
@@ -302,7 +329,7 @@
 
   .hero__image-placeholder {
     width: 500px;
-    bottom: -160px;
+    bottom: -210px;
   }
 }
 @media (max-height: 950px) {
@@ -322,9 +349,7 @@
   }
   
 
-  .hero__image-placeholder {
-    bottom: -23px;
-  }
+
 }
 
 @media (max-width: $tablet) and (min-height: 1200px) {
@@ -369,7 +394,7 @@
 
   .hero__image-placeholder {
     width: 500px;
-    bottom: -36px;
+    bottom: -66px;
   }
   .hero__scroll {
     font-size: 20px;
@@ -400,20 +425,45 @@
   }
   .hero__image-placeholder {
     width: 500px;
-    bottom: -36px;
+    bottom: -110px;
   }
   
 }
 
+@media (max-width: $mobile) {
+  .hero__left {
+    bottom: clamp(-900px, -65vh, -500px);
+  }
+
+  .hero__image-placeholder {
+    top: clamp(-900px, -35vh, -250px);
+  }
+}
 
 @media (min-width: 550px) and (max-width: 800px) {
+  .hero {
+    padding: 0 24px;
+  }
+
   .hero__left {
-    transform: scale(1.0);
+    width: 420px;
+    bottom: -180px;
+    right: 0;
+    transform: none;
+  }
+
+  .hero__image-placeholder {
+    width: 420px;
     bottom: -120px;
   }
 
-
+  .hero__right {
+    transform: translate(-60px, -80px);
+  }
 }
+
+
+
 
 @media (max-width: $mobile) {
   .hero {
@@ -480,11 +530,11 @@
   .hero__left {
     order: 2;
     display: flex;
-    bottom: -700px;
+    bottom: -720px;
   }
 
   .hero__image-placeholder {
-    top: -660px;
+    top: -623px;
   }
 
   .hero__socials {
@@ -555,7 +605,8 @@
   }
   .hero__image-placeholder {
     width: 100%;
-    top: -40px;
+    top: 95px;
+    
   }
   .hero__scroll--mobile img {
     height: 180px;
@@ -575,6 +626,6 @@
   }
   .hero__image-placeholder {
     width: 100%;
-    top: -40px;
+    top: 40px;
   }
 }
