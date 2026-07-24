@@ -43,7 +43,7 @@
 .my-work__scroll {
   position: absolute;
   top: -250px;
-  left: 70%;
+  left: 76%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -317,13 +317,9 @@
   flex-wrap: wrap;
 }
 
-@media (max-width: $laptop) {
-  .my-work__scroll {
-    display: none;
-  }
-}
 
-@media (max-width: $laptop) {
+
+@media (max-width: $tablet-xl) {
   .project {
     flex-direction: column;
     gap: 40px;

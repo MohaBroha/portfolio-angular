@@ -117,18 +117,70 @@
     "legal": "Legal Notice",
     "copyright": "© Mohamed Brohani 2026"
   },
+
   "legal": {
-    "title": "Legal Notice",
-    "intro1": "This portfolio is created for demonstration purposes as part of a job application.",
-    "intro2": "All content and projects are fictional or educational and do not represent real commercial services.",
-    "disclaimerTitle": "Disclaimer",
-    "disclaimerText": "This portfolio website was created for demonstration purposes. All content, images and projects are part of a fictional or educational showcase.",
-    "contactTitle": "Contact",
-    "contactText": "Email: mohabroha@mail.de | Location: Frankfurt, Germany",
-    "copyrightTitle": "Copyright & Usage",
-    "copyright1": "© 2026 Mohamed Brohani. All rights reserved.",
-    "copyright2": "All content on this website is protected by copyright.",
-    "copyright3": "Unauthorized use, reproduction or distribution is not permitted without prior written consent.",
-    "back": "← Back to Home"
-  }
+        "title": "Legal Notice",
+
+     "intro1": "This portfolio has been created to showcase my skills, projects, and experience as a Fullstack Developer.",
+
+  "intro2": "Some projects were developed as part of my training, educational programs, or personal learning journey.",
+
+  "disclaimerTitle": "Disclaimer",
+
+  "disclaimerText": "The content presented on this website is intended for informational and portfolio purposes only. References to technologies, projects, and experiences reflect my personal and professional development and do not constitute commercial offers or services.",
+
+  "contactTitle": "Contact",
+
+  "contactText": "Email: mohabroha@mail.de | Location: Frankfurt, Germany",
+
+  "copyrightTitle": "Copyright & Usage",
+
+  "copyright1": "© 2026 Mohamed Brohani. All rights reserved.",
+
+  "copyright2": "All content, source code, images, and project descriptions published on this website are protected by applicable copyright laws.",
+
+  "copyright3": "Unauthorized reproduction, distribution, or commercial use of any materials without prior written permission is prohibited.",
+    "back": "← Back to Home",
+    
+  "privacyTitle": "Privacy Policy",
+
+  "generalTitle": "1. General Information",
+  "generalText": "The protection of your personal data is important to me. This website is operated in accordance with the applicable data protection regulations, in particular the General Data Protection Regulation (GDPR).",
+
+  "responsibleTitle": "2. Responsible Person",
+  "responsibleText1": "Responsible for data processing on this website:",
+  "responsibleText2": "Brohani, Mohamed",
+  "responsibleText3": "65929 Frankfurt",
+  "responsibleText4": "Email: mohabroha@mail.de",
+
+  "hostingTitle": "3. Hosting",
+  "hostingText1": "This website is hosted by Hetzner Online GmbH.",
+  "hostingText2": "Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Germany.",
+  "hostingText3": "When visiting this website, server log files may be collected automatically by the hosting provider.",
+
+  "logsTitle": "4. Server Log Files",
+  "logsText": "The hosting provider may automatically collect and store information in server log files, including IP address, date and time of access, browser type and version, operating system, referrer URL, and requested pages. These data are processed solely to ensure the secure and stable operation of the website and are not combined with other data sources.",
+
+  "contactFormTitle": "5. Contact Form",
+  "contactFormText": "If you contact me via the contact form, the information you provide (e.g., name, email address, and message) will be stored and processed solely for the purpose of responding to your inquiry. The processing of this data is based on Art. 6(1)(b) GDPR and Art. 6(1)(f) GDPR.",
+
+  "emailTitle": "6. Email Contact",
+  "emailText": "If you contact me via email, the information transmitted will be stored for the purpose of processing your request. The data will not be shared with third parties unless required by law.",
+
+  "externalTitle": "7. External Links",
+  "externalText": "This website contains links to external websites, including GitHub and LinkedIn. Please note that I have no influence over the content or privacy practices of external websites. The respective operators are solely responsible for their content.",
+
+  "sslTitle": "8. SSL/TLS Encryption",
+  "sslText": "For security reasons and to protect the transmission of confidential information, this website uses SSL/TLS encryption.",
+
+  "rightsTitle": "9. Your Rights",
+  "rightsText": "Under the GDPR, you have the following rights: right of access, right to rectification, right to erasure, right to restriction of processing, right to data portability, and right to object to processing.",
+
+  "complaintTitle": "10. Right to Lodge a Complaint",
+  "complaintText": "You have the right to lodge a complaint with a supervisory authority if you believe that the processing of your personal data violates applicable data protection laws.",
+
+  "changesTitle": "11. Changes to this Privacy Policy",
+  "changesText": "I reserve the right to amend this Privacy Policy at any time to ensure compliance with current legal requirements or to reflect changes to this website."
 }
+  }
+

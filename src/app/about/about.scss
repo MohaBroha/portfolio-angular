@@ -190,7 +190,7 @@
     left: 130%;
   }
 }
-@media (max-width: $laptop) {
+@media  (max-width: $tablet-xl) {
   .about {
     flex-direction: column;
     gap: 50px;
@@ -225,6 +225,8 @@
     align-self: center;
   }
 }
+
+
 
 @media (max-width: $tablet) {
   .about {

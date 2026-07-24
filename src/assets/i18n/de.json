@@ -115,18 +115,86 @@
     "legal": "Impressum",
     "copyright": "© 2026 Mohamed Brohani"
   },
+  
   "legal": {
     "title": "Impressum",
-    "intro1": "Dieses Portfolio dient ausschließlich zu Demonstrationszwecken im Rahmen einer Bewerbung.",
-    "intro2": "Alle Inhalte und Projekte sind zu Ausbildungszwecken erstellt.",
-    "disclaimerTitle": "Disclaimer",
-    "disclaimerText": "Dieses Portfolio ist ein Showcase-Projekt. Alle Inhalte sind nicht kommerziell.",
-    "contactTitle": "Kontakt",
-    "contactText": "E-Mail: mohabroha@mail.de | Frankfurt, Deutschland",
-    "copyrightTitle": "Copyright & Nutzung",
-    "copyright1": "© 2026 Mohamed Brohani",
-    "copyright2": "Alle Inhalte sind urheberrechtlich geschützt.",
-    "copyright3": "Keine Nutzung ohne Erlaubnis.",
-    "back": "← Zurück zur Startseite"
-  }
+
+  "intro1": "Dieses Portfolio wurde erstellt, um meine Fähigkeiten, Projekte und Erfahrungen als Fullstack-Entwickler zu präsentieren.",
+
+  "intro2": "Einige Projekte wurden im Rahmen meiner Ausbildung, von Bildungsprogrammen oder meiner persönlichen Lernreise entwickelt.",
+
+  "disclaimerTitle": "Haftungsausschluss",
+
+  "disclaimerText": "Die auf dieser Website dargestellten Inhalte dienen ausschließlich Informations- und Portfoliozwecken. Verweise auf Technologien, Projekte und Erfahrungen spiegeln meine persönliche und berufliche Entwicklung wider und stellen keine kommerziellen Angebote oder Dienstleistungen dar.",
+
+  "contactTitle": "Kontakt",
+
+  "contactText": "E-Mail: mohabroha@mail.de | Standort: Frankfurt, Deutschland",
+
+  "copyrightTitle": "Urheberrecht & Nutzung",
+
+  "copyright1": "© 2026 Mohamed Brohani. Alle Rechte vorbehalten.",
+
+  "copyright2": "Alle auf dieser Website veröffentlichten Inhalte, Quellcodes, Bilder und Projektbeschreibungen sind durch die geltenden Urheberrechtsgesetze geschützt.",
+
+  "copyright3": "Die unbefugte Vervielfältigung, Verbreitung oder kommerzielle Nutzung jeglicher Materialien ohne vorherige schriftliche Genehmigung ist untersagt.",
+
+  "back": "← Zurück zur Startseite",
+
+  "privacyTitle": "Datenschutzerklärung",
+
+  "generalTitle": "1. Allgemeine Informationen",
+
+  "generalText": "Der Schutz Ihrer personenbezogenen Daten ist mir ein wichtiges Anliegen. Diese Website wird im Einklang mit den geltenden Datenschutzbestimmungen, insbesondere der Datenschutz-Grundverordnung (DSGVO), betrieben.",
+
+  "responsibleTitle": "2. Verantwortliche Person",
+
+  "responsibleText1": "Verantwortlich für die Datenverarbeitung auf dieser Website ist:",
+
+  "responsibleText2": "Brohani, Mohamed",
+
+  "responsibleText3": "65929 Frankfurt",
+
+  "responsibleText4": "E-Mail: mohabroha@mail.de",
+
+  "hostingTitle": "3. Hosting",
+
+  "hostingText1": "Diese Website wird bei der Hetzner Online GmbH gehostet.",
+
+  "hostingText2": "Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Deutschland.",
+
+  "hostingText3": "Beim Besuch dieser Website können durch den Hosting-Anbieter automatisch Server-Logdateien erfasst werden.",
+
+  "logsTitle": "4. Server-Logdateien",
+
+  "logsText": "Der Hosting-Anbieter kann automatisch Informationen in sogenannten Server-Logdateien erheben und speichern. Dazu gehören unter anderem die IP-Adresse, Datum und Uhrzeit des Zugriffs, Browsertyp und -version, Betriebssystem, Referrer-URL sowie die aufgerufenen Seiten. Diese Daten werden ausschließlich zur Gewährleistung eines sicheren und stabilen Betriebs der Website verarbeitet und nicht mit anderen Datenquellen zusammengeführt.",
+
+  "contactFormTitle": "5. Kontaktformular",
+
+  "contactFormText": "Wenn Sie mich über das Kontaktformular kontaktieren, werden die von Ihnen angegebenen Daten (z. B. Name, E-Mail-Adresse und Nachricht) ausschließlich zum Zweck der Bearbeitung Ihrer Anfrage gespeichert und verarbeitet. Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO und Art. 6 Abs. 1 lit. f DSGVO.",
+
+  "emailTitle": "6. Kontakt per E-Mail",
+
+  "emailText": "Wenn Sie mich per E-Mail kontaktieren, werden die übermittelten Informationen zum Zweck der Bearbeitung Ihrer Anfrage gespeichert. Eine Weitergabe der Daten an Dritte erfolgt nicht, sofern keine gesetzliche Verpflichtung hierzu besteht.",
+
+  "externalTitle": "7. Externe Links",
+
+  "externalText": "Diese Website enthält Links zu externen Websites, darunter GitHub und LinkedIn. Bitte beachten Sie, dass ich keinen Einfluss auf die Inhalte oder Datenschutzpraktiken externer Websites habe. Für deren Inhalte sind ausschließlich die jeweiligen Betreiber verantwortlich.",
+
+  "sslTitle": "8. SSL-/TLS-Verschlüsselung",
+
+  "sslText": "Aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte nutzt diese Website eine SSL-/TLS-Verschlüsselung.",
+
+  "rightsTitle": "9. Ihre Rechte",
+
+  "rightsText": "Nach der DSGVO stehen Ihnen folgende Rechte zu: Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten.",
+
+  "complaintTitle": "10. Beschwerderecht",
+
+  "complaintText": "Sie haben das Recht, sich bei einer zuständigen Datenschutzaufsichtsbehörde zu beschweren, wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen geltende Datenschutzgesetze verstößt.",
+
+  "changesTitle": "11. Änderungen dieser Datenschutzerklärung",
+
+  "changesText": "Ich behalte mir das Recht vor, diese Datenschutzerklärung jederzeit anzupassen, um sie an aktuelle rechtliche Anforderungen oder Änderungen dieser Website anzupassen."
+}
 }
