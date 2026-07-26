@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { SectionAnimationDirective } from '../shared/directives/section-animation';
 
+/**
+ * Skills section component.
+ */
 @Component({
   selector: 'app-skill-set',
   standalone: true,

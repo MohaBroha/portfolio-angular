@@ -8,6 +8,9 @@ import { MyWorkComponent } from '../my-work/my-work';
 import { TeamplayerComponent } from '../teamplayer/teamplayer';
 import { ContactComponent } from '../contact/contact';
 
+/**
+ * Home page component.
+ */
 @Component({
   selector: 'app-home',
   standalone: true,

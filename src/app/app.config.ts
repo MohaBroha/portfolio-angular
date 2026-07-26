@@ -6,10 +6,19 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HomeComponent } from './home/home';
 
+/**
+ * Creates the translation loader used by Angular Translate.
+ *
+ * @param http The HTTP client used to load translation files.
+ * @returns {TranslateLoader} A translation loader configured for the application's locale files.
+ */
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
 }
 
+/**
+ * Application configuration for providers and routing.
+ */
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),

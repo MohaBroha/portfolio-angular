@@ -4,6 +4,9 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { SectionAnimationDirective } from '../shared/directives/section-animation';
 
+/**
+ * Legal notice page component.
+ */
 @Component({
   selector: 'app-legal-notice',
   standalone: true,

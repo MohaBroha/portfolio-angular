@@ -9,6 +9,9 @@ import { TeamplayerComponent } from './teamplayer/teamplayer';
 import { ContactComponent } from './contact/contact';
 import { FooterComponent } from './footer/footer';
 
+/**
+ * Root application component.
+ */
 @Component({
   selector: 'app-root',
   standalone: true,

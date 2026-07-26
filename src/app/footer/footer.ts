@@ -4,6 +4,9 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { SectionAnimationDirective } from '../shared/directives/section-animation';
 
+/**
+ * Footer component.
+ */
 @Component({
   selector: 'app-footer',
   standalone: true,
