@@ -46,11 +46,11 @@
         "description": "Join ist ein kollaboratives Kanban-Tool, das im Team entwickelt wurde. Ich habe dabei eng mit Frontend- und Backend-Entwicklung gearbeitet und Erfahrung in API-Kommunikation und Komponentenarchitektur gesammelt.",
         "button": "Live Demo"
       },
-      "bookstore": {
-        "title": "BookStore",
-        "description": "Eine moderne Webanwendung zum Durchsuchen und Verwalten von Büchern. Fokus auf sauberes UI, responsives Design und strukturierte Frontend-Architektur.",
-        "button": "Live Demo"
-      },
+    "kanmind": {
+  "title": "KanMind",
+  "description": "Eine moderne Kanban-Anwendung mit sicherer Benutzerverwaltung, REST API und dynamischer Aufgabenverwaltung. Fokus auf Fullstack-Entwicklung, Authentifizierung und Deployment.",
+  "button": "Live Demo"
+},
       "pollo": {
         "title": "El Pollo Loco",
         "description": "Ein 2D-Jump-and-Run-Spiel, entwickelt mit Vanilla JavaScript. Das Projekt beinhaltet objektorientierte Programmierung, Spielphysik, Kollisionsabfragen, Animationen sowie tastaturbasierte Steuerung. Dabei konnte ich meine Kenntnisse in der Strukturierung von Spiellogik und browserbasierter Rendering-Logik deutlich vertiefen.",
