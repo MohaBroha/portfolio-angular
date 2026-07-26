@@ -3,11 +3,14 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageService } from '../language.service';
 import { HostListener } from '@angular/core';
+import { RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule,     RouterLink,
+],
   templateUrl: './header.html',
   styleUrls: ['./header.scss'],
 })

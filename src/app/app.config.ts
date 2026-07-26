@@ -1,11 +1,9 @@
 import { ApplicationConfig, importProvidersFrom, provideZoneChangeDetection } from '@angular/core';
 import { HttpClient, provideHttpClient } from '@angular/common/http';
-import { provideRouter } from '@angular/router';
-import { AppComponent } from './app';
+import { provideRouter, withInMemoryScrolling } from '@angular/router';
 import { LegalNoticeComponent } from './legal-notice/legal-notice';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HeroComponent } from './hero/hero';
 import { HomeComponent } from './home/home';
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -26,9 +24,15 @@ export const appConfig: ApplicationConfig = {
         },
       }),
     ),
-    provideRouter([
-      { path: '', component: HomeComponent },
-      { path: 'legal-notice', component: LegalNoticeComponent },
-    ]),
+    provideRouter(
+      [
+        { path: '', component: HomeComponent },
+        { path: 'legal-notice', component: LegalNoticeComponent },
+      ],
+      withInMemoryScrolling({
+        anchorScrolling: 'enabled',
+        scrollPositionRestoration: 'enabled',
+      })
+    ),
   ],
 };
