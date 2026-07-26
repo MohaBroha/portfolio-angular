@@ -37,20 +37,20 @@ export class ContactComponent {
    * @returns {void}
    */
   sendEmail(form: NgForm): void {
-  if (this.isFormInvalid(form)) {
-    return;
+    if (this.isFormInvalid(form)) {
+      return;
+    }
+
+    const formElement = this.getContactForm();
+
+    if (!formElement) {
+      return;
+    }
+
+    this.prepareEmailRequest();
+
+    this.sendEmailRequest(formElement, form);
   }
-
-  const formElement = this.getContactForm();
-
-  if (!formElement) {
-    return;
-  }
-
-  this.prepareEmailRequest();
-
-  this.sendEmailRequest(formElement, form);
-}
 
   /**
    * Checks whether the form submission is valid and ready to send.
@@ -58,45 +58,42 @@ export class ContactComponent {
    * @param form The Angular form instance to validate.
    * @returns {boolean} True if the form is invalid or already sending.
    */
-private isFormInvalid(form: NgForm): boolean {
-  if (!form.valid || this.isSending) {
-    this.successMessage = '';
-    this.errorMessage = this.translate.instant('contact.messages.invalid');
-    return true;
-  }
+  private isFormInvalid(form: NgForm): boolean {
+    if (!form.valid || this.isSending) {
+      this.successMessage = '';
+      this.errorMessage = this.translate.instant('contact.messages.invalid');
+      return true;
+    }
 
-  return false;
-}
+    return false;
+  }
 
   /**
    * Retrieves the contact form element from the DOM.
    *
    * @returns {HTMLFormElement | null} The contact form element, if present.
    */
-private getContactForm(): HTMLFormElement | null {
- const formElement = document.getElementById(
-  'contact-form'
-) as HTMLFormElement | null;
+  private getContactForm(): HTMLFormElement | null {
+    const formElement = document.getElementById('contact-form') as HTMLFormElement | null;
 
-  if (!formElement) {
-    this.errorMessage = this.translate.instant('contact.messages.error');
-    return null;
+    if (!formElement) {
+      this.errorMessage = this.translate.instant('contact.messages.error');
+      return null;
+    }
+
+    return formElement;
   }
-
-  return formElement;
-}
-
 
   /**
    * Prepares the component state for a new email submission.
    *
    * @returns {void}
    */
-private prepareEmailRequest(): void {
-  this.isSending = true;
-  this.successMessage = '';
-  this.errorMessage = '';
-}
+  private prepareEmailRequest(): void {
+    this.isSending = true;
+    this.successMessage = '';
+    this.errorMessage = '';
+  }
 
   /**
    * Sends the submitted form data to EmailJS.
@@ -105,22 +102,19 @@ private prepareEmailRequest(): void {
    * @param form The Angular form instance to reset after success.
    * @returns {void}
    */
-private sendEmailRequest(
-  formElement: HTMLFormElement,
-  form: NgForm,
-): void {
-  emailjs
-    .sendForm(
-      environment.emailJsServiceId,
-      environment.emailJsTemplateId,
-      formElement,
-      environment.emailJsPublicKey,
-    )
-    .then(
-      () => this.handleSuccess(form),
-      (error) => this.handleError(error),
-    );
-}
+  private sendEmailRequest(formElement: HTMLFormElement, form: NgForm): void {
+    emailjs
+      .sendForm(
+        environment.emailJsServiceId,
+        environment.emailJsTemplateId,
+        formElement,
+        environment.emailJsPublicKey,
+      )
+      .then(
+        () => this.handleSuccess(form),
+        (error) => this.handleError(error),
+      );
+  }
 
   /**
    * Handles a successful email submission.
@@ -128,15 +122,13 @@ private sendEmailRequest(
    * @param form The Angular form instance to reset.
    * @returns {void}
    */
-private handleSuccess(form: NgForm): void {
-  this.successMessage = this.translate.instant(
-    'contact.messages.success',
-  );
+  private handleSuccess(form: NgForm): void {
+    this.successMessage = this.translate.instant('contact.messages.success');
 
-  this.errorMessage = '';
-  form.resetForm();
-  this.isSending = false;
-}
+    this.errorMessage = '';
+    form.resetForm();
+    this.isSending = false;
+  }
 
   /**
    * Handles a failed email submission.
@@ -144,17 +136,14 @@ private handleSuccess(form: NgForm): void {
    * @param error The error returned by EmailJS.
    * @returns {void}
    */
-private handleError(error: unknown): void {
-  console.error('EmailJS Error:', error);
+  private handleError(error: unknown): void {
+    console.error('EmailJS Error:', error);
 
-  this.errorMessage = this.translate.instant(
-    'contact.messages.error',
-  );
+    this.errorMessage = this.translate.instant('contact.messages.error');
 
-  this.successMessage = '';
-  this.isSending = false;
-}
-
+    this.successMessage = '';
+    this.isSending = false;
+  }
 
   /**
    * Scrolls the page to the top.

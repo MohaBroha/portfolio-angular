@@ -10,22 +10,22 @@
   <nav class="header__nav" [class.open]="menuOpen" (click)="closeMenu()">
     <ul (click)="$event.stopPropagation()">
       <li>
-  <a (click)="closeMenu()" routerLink="/" fragment="about">
-    {{ 'header.nav.about' | translate }}
-  </a>
-</li>
+        <a (click)="closeMenu()" routerLink="/" fragment="about">
+          {{ 'header.nav.about' | translate }}
+        </a>
+      </li>
 
-<li>
-  <a (click)="closeMenu()" routerLink="/" fragment="skills">
-    {{ 'header.nav.skills' | translate }}
-  </a>
-</li>
+      <li>
+        <a (click)="closeMenu()" routerLink="/" fragment="skills">
+          {{ 'header.nav.skills' | translate }}
+        </a>
+      </li>
 
-<li>
-  <a (click)="closeMenu()" routerLink="/" fragment="work">
-    {{ 'header.nav.work' | translate }}
-  </a>
-</li>
+      <li>
+        <a (click)="closeMenu()" routerLink="/" fragment="work">
+          {{ 'header.nav.work' | translate }}
+        </a>
+      </li>
 
       <li class="header__lang">
         <span [class.active]="currentLang === 'de'" (click)="switchLanguage('de')">DE</span>

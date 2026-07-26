@@ -5,15 +5,13 @@ import { LanguageService } from '../language.service';
 import { HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
-
 /**
  * Header component.
  */
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, TranslateModule,     RouterLink,
-],
+  imports: [CommonModule, TranslateModule, RouterLink],
   templateUrl: './header.html',
   styleUrls: ['./header.scss'],
 })

@@ -317,8 +317,6 @@
   flex-wrap: wrap;
 }
 
-
-
 @media (max-width: $tablet-xl) {
   .project {
     flex-direction: column;
@@ -377,7 +375,6 @@
   .my-work__scroll {
     display: none;
   }
-
 
   .circle--lg {
     width: 380px;

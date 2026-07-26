@@ -47,11 +47,11 @@
         "description": "Join is a collaborative Kanban tool developed as a team project. During this project, I gained practical experience working between frontend and backend systems, including APIs, component architecture, and modern Angular workflows.",
         "button": "Live Demo"
       },
-     "kanmind": {
-  "title": "KanMind",
-  "description": "A modern Kanban application with secure user authentication, REST API integration and dynamic task management. Focused on fullstack development, authentication and deployment.",
-  "button": "Live Demo"
-},
+      "kanmind": {
+        "title": "KanMind",
+        "description": "A modern Kanban application with secure user authentication, REST API integration and dynamic task management. Focused on fullstack development, authentication and deployment.",
+        "button": "Live Demo"
+      },
       "pollo": {
         "title": "El Pollo Loco",
         "description": "A 2D jump-and-run game developed with vanilla JavaScript. The project includes object-oriented programming, game physics, collision detection, animations, and keyboard-based controls. It helped me deepen my understanding of game architecture and browser-based rendering.",
@@ -119,68 +119,67 @@
   },
 
   "legal": {
-        "title": "Legal Notice",
+    "title": "Legal Notice",
 
-     "intro1": "This portfolio has been created to showcase my skills, projects, and experience as a Fullstack Developer.",
+    "intro1": "This portfolio has been created to showcase my skills, projects, and experience as a Fullstack Developer.",
 
-  "intro2": "Some projects were developed as part of my training, educational programs, or personal learning journey.",
+    "intro2": "Some projects were developed as part of my training, educational programs, or personal learning journey.",
 
-  "disclaimerTitle": "Disclaimer",
+    "disclaimerTitle": "Disclaimer",
 
-  "disclaimerText": "The content presented on this website is intended for informational and portfolio purposes only. References to technologies, projects, and experiences reflect my personal and professional development and do not constitute commercial offers or services.",
+    "disclaimerText": "The content presented on this website is intended for informational and portfolio purposes only. References to technologies, projects, and experiences reflect my personal and professional development and do not constitute commercial offers or services.",
 
-  "contactTitle": "Contact",
+    "contactTitle": "Contact",
 
-  "contactText": "Email: mohabroha@mail.de | Location: Frankfurt, Germany",
+    "contactText": "Email: mohabroha@mail.de | Location: Frankfurt, Germany",
 
-  "copyrightTitle": "Copyright & Usage",
+    "copyrightTitle": "Copyright & Usage",
 
-  "copyright1": "© 2026 Mohamed Brohani. All rights reserved.",
+    "copyright1": "© 2026 Mohamed Brohani. All rights reserved.",
 
-  "copyright2": "All content, source code, images, and project descriptions published on this website are protected by applicable copyright laws.",
+    "copyright2": "All content, source code, images, and project descriptions published on this website are protected by applicable copyright laws.",
 
-  "copyright3": "Unauthorized reproduction, distribution, or commercial use of any materials without prior written permission is prohibited.",
+    "copyright3": "Unauthorized reproduction, distribution, or commercial use of any materials without prior written permission is prohibited.",
     "back": "← Back to Home",
-    
-  "privacyTitle": "Privacy Policy",
 
-  "generalTitle": "1. General Information",
-  "generalText": "The protection of your personal data is important to me. This website is operated in accordance with the applicable data protection regulations, in particular the General Data Protection Regulation (GDPR).",
+    "privacyTitle": "Privacy Policy",
 
-  "responsibleTitle": "2. Responsible Person",
-  "responsibleText1": "Responsible for data processing on this website:",
-  "responsibleText2": "Brohani, Mohamed",
-  "responsibleText3": "65929 Frankfurt",
-  "responsibleText4": "Email: mohabroha@mail.de",
+    "generalTitle": "1. General Information",
+    "generalText": "The protection of your personal data is important to me. This website is operated in accordance with the applicable data protection regulations, in particular the General Data Protection Regulation (GDPR).",
 
-  "hostingTitle": "3. Hosting",
-  "hostingText1": "This website is hosted by Hetzner Online GmbH.",
-  "hostingText2": "Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Germany.",
-  "hostingText3": "When visiting this website, server log files may be collected automatically by the hosting provider.",
+    "responsibleTitle": "2. Responsible Person",
+    "responsibleText1": "Responsible for data processing on this website:",
+    "responsibleText2": "Brohani, Mohamed",
+    "responsibleText3": "65929 Frankfurt",
+    "responsibleText4": "Email: mohabroha@mail.de",
 
-  "logsTitle": "4. Server Log Files",
-  "logsText": "The hosting provider may automatically collect and store information in server log files, including IP address, date and time of access, browser type and version, operating system, referrer URL, and requested pages. These data are processed solely to ensure the secure and stable operation of the website and are not combined with other data sources.",
+    "hostingTitle": "3. Hosting",
+    "hostingText1": "This website is hosted by Hetzner Online GmbH.",
+    "hostingText2": "Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Germany.",
+    "hostingText3": "When visiting this website, server log files may be collected automatically by the hosting provider.",
 
-  "contactFormTitle": "5. Contact Form",
-  "contactFormText": "If you contact me via the contact form, the information you provide (e.g., name, email address, and message) will be stored and processed solely for the purpose of responding to your inquiry. The processing of this data is based on Art. 6(1)(b) GDPR and Art. 6(1)(f) GDPR.",
+    "logsTitle": "4. Server Log Files",
+    "logsText": "The hosting provider may automatically collect and store information in server log files, including IP address, date and time of access, browser type and version, operating system, referrer URL, and requested pages. These data are processed solely to ensure the secure and stable operation of the website and are not combined with other data sources.",
 
-  "emailTitle": "6. Email Contact",
-  "emailText": "If you contact me via email, the information transmitted will be stored for the purpose of processing your request. The data will not be shared with third parties unless required by law.",
+    "contactFormTitle": "5. Contact Form",
+    "contactFormText": "If you contact me via the contact form, the information you provide (e.g., name, email address, and message) will be stored and processed solely for the purpose of responding to your inquiry. The processing of this data is based on Art. 6(1)(b) GDPR and Art. 6(1)(f) GDPR.",
 
-  "externalTitle": "7. External Links",
-  "externalText": "This website contains links to external websites, including GitHub and LinkedIn. Please note that I have no influence over the content or privacy practices of external websites. The respective operators are solely responsible for their content.",
+    "emailTitle": "6. Email Contact",
+    "emailText": "If you contact me via email, the information transmitted will be stored for the purpose of processing your request. The data will not be shared with third parties unless required by law.",
 
-  "sslTitle": "8. SSL/TLS Encryption",
-  "sslText": "For security reasons and to protect the transmission of confidential information, this website uses SSL/TLS encryption.",
+    "externalTitle": "7. External Links",
+    "externalText": "This website contains links to external websites, including GitHub and LinkedIn. Please note that I have no influence over the content or privacy practices of external websites. The respective operators are solely responsible for their content.",
 
-  "rightsTitle": "9. Your Rights",
-  "rightsText": "Under the GDPR, you have the following rights: right of access, right to rectification, right to erasure, right to restriction of processing, right to data portability, and right to object to processing.",
+    "sslTitle": "8. SSL/TLS Encryption",
+    "sslText": "For security reasons and to protect the transmission of confidential information, this website uses SSL/TLS encryption.",
 
-  "complaintTitle": "10. Right to Lodge a Complaint",
-  "complaintText": "You have the right to lodge a complaint with a supervisory authority if you believe that the processing of your personal data violates applicable data protection laws.",
+    "rightsTitle": "9. Your Rights",
+    "rightsText": "Under the GDPR, you have the following rights: right of access, right to rectification, right to erasure, right to restriction of processing, right to data portability, and right to object to processing.",
 
-  "changesTitle": "11. Changes to this Privacy Policy",
-  "changesText": "I reserve the right to amend this Privacy Policy at any time to ensure compliance with current legal requirements or to reflect changes to this website."
-}
+    "complaintTitle": "10. Right to Lodge a Complaint",
+    "complaintText": "You have the right to lodge a complaint with a supervisory authority if you believe that the processing of your personal data violates applicable data protection laws.",
+
+    "changesTitle": "11. Changes to this Privacy Policy",
+    "changesText": "I reserve the right to amend this Privacy Policy at any time to ensure compliance with current legal requirements or to reflect changes to this website."
   }
-
+}

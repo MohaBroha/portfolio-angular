@@ -249,7 +249,6 @@
 
   .hero__image-placeholder {
     width: 650px;
-  
   }
 }
 
@@ -297,10 +296,6 @@
     left: -100px;
   }
 
-
-
-
-
   .hero__right {
     padding: 0 19px;
     transform: translate(-18px, -70px);
@@ -340,16 +335,12 @@
   .hero__image-placeholder {
     bottom: -60px;
   }
-
 }
 
 @media (max-height: 850px) {
   .hero__left {
     bottom: -80px;
   }
-  
-
-
 }
 
 @media (max-width: $tablet) and (min-height: 1200px) {
@@ -373,7 +364,6 @@
   .hero__role--bottom {
     font-size: clamp(80px, 10vw, 100px);
   }
- 
 
   .hero::before {
     width: 750px;
@@ -381,7 +371,7 @@
     left: -290px;
   }
 
-       .hero__right {
+  .hero__right {
     padding: 0 19px;
     transform: translate(-114px, -100px);
   }
@@ -419,7 +409,7 @@
     right: -10px;
   }
 
-     .hero__right {
+  .hero__right {
     padding: 0 19px;
     transform: translate(-214px, -140px);
   }
@@ -427,7 +417,6 @@
     width: 500px;
     bottom: -110px;
   }
-  
 }
 
 @media (max-width: $mobile) {
@@ -461,9 +450,6 @@
     transform: translate(-60px, -80px);
   }
 }
-
-
-
 
 @media (max-width: $mobile) {
   .hero {
@@ -591,13 +577,11 @@
     padding: 100px 20px 20px;
   }
 
- 
-
   .hero__scroll--mobile {
     bottom: 25px;
     right: 12px;
   }
- .hero__left {
+  .hero__left {
     order: 2;
     display: flex;
     align-items: flex-end;
@@ -606,7 +590,6 @@
   .hero__image-placeholder {
     width: 100%;
     top: 95px;
-    
   }
   .hero__scroll--mobile img {
     height: 180px;
