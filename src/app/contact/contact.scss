@@ -185,32 +185,67 @@
   font-weight: 500;
 }
 
-.contact__checkbox {
-  transition: filter 0.25s ease;
+.contact__checkbox-input {
+  display: none;
 }
 
-.contact__checkbox:hover {
-  filter: drop-shadow(0 0 4px rgba(89, 136, 255, 0.35))
-    drop-shadow(0 0 10px rgba(89, 136, 255, 0.25));
-}
+.contact__checkbox-text {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
 
-.contact__privacy-link {
-  text-decoration: underline;
-  transition:
-    color 0.25s ease,
-    text-shadow 0.25s ease;
-}
-
-.contact__checkbox:hover .contact__privacy-link {
-  color: rgba(89, 136, 255, 1);
-  text-shadow: 0 0 4px rgba(89, 136, 255, 1) 0 0 10px rgba(129, 151, 207, 0.25);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #333;
 }
 
 .contact__checkbox-label {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 120%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.contact__checkbox-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  background: url('/assets/images/check_box_outline_blank.svg') center center / contain no-repeat;
+  transition: background-image 0.2s ease;
+}
+
+.contact__checkbox-label:hover .contact__checkbox-icon {
+  background-image: url('/assets/images/Property 1=Default hover.svg');
+}
+
+.contact__checkbox-input:checked + .contact__checkbox-label .contact__checkbox-icon {
+  background-image: url('/assets/images/Property 1=Checked.svg');
+}
+
+.contact__checkbox-input:checked + .contact__checkbox-label:hover .contact__checkbox-icon {
+  background-image: url('/assets/images/Property 1=Checked hover.svg');
+}
+
+.contact__privacy-link {
+  display: inline-block;
+  width: 110px;
+  aspect-ratio: 100 / 50;
+
+  background: url('/assets/images/Property 1=Default (3).svg') center / contain no-repeat;
+
+  vertical-align: middle;
+}
+.contact__checkbox-label:hover .contact__privacy-link {
+  background-image: url('/assets/images/Property 1=Variant2.svg');
+}
+.contact__privacy-link {
+  transform: translateY(2px);
+}
+
+.contact__privacy-link:hover {
+  background-image: url('/assets/images/Property 1=Variant2.svg');
 }
 
 .contact__input:-webkit-autofill,

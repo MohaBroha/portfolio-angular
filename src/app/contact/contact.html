@@ -142,13 +142,19 @@
         />
 
         <label for="privacy" class="contact__checkbox-label">
-          {{ 'contact.form.privacyText' | translate }}
+          <span class="contact__checkbox-icon"></span>
 
-          <a routerLink="/legal-notice" class="contact__privacy-link">
-            {{ 'contact.form.privacyLink' | translate }}
-          </a>
+          <span class="contact__checkbox-text">
+            {{ 'contact.form.privacyText' | translate }}
 
-          {{ 'contact.form.privacySuffix' | translate }}
+            <a
+              routerLink="/legal-notice"
+              class="contact__privacy-link"
+              aria-label="Privacy Policy"
+            ></a>
+
+            {{ 'contact.form.privacySuffix' | translate }}
+          </span>
         </label>
       </div>
 
