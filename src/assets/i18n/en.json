@@ -97,7 +97,7 @@
       "message": "Your message",
       "privacyText": "I've read the",
       "privacyLink": "privacy policy",
-      "privacySuffix": "and agree to the processing of my data as outlined",
+      "privacySuffix": "and agree.",
       "submit": "Send a Message"
     },
     "validation": {

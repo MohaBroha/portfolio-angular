@@ -96,7 +96,7 @@
       "message": "Deine Nachricht",
       "privacyText": "Ich habe die",
       "privacyLink": "Datenschutzerklärung",
-      "privacySuffix": "gelesen und stimme der Verarbeitung meiner Daten zu",
+      "privacySuffix": "gelesen und stimme zu.",
       "submit": "Nachricht senden"
     },
     "validation": {
