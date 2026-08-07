@@ -5,12 +5,27 @@
 .about {
   position: relative;
   overflow: hidden;
-  display: flex;
-  gap: 60px;
-  align-items: flex-start;
-  justify-content: center;
+
   padding: 100px 60px;
   box-sizing: border-box;
+}
+
+.about__wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 60px;
+    box-sizing: border-box;
 }
 
 .about::before {
@@ -191,17 +206,23 @@
   }
 }
 @media (max-width: $tablet-xl) {
-  .about {
-    flex-direction: column;
-    gap: 50px;
-    padding: 80px 40px;
-  }
 
-  .about__left,
-  .about__right {
-    width: 100%;
-    text-align: left;
-  }
+    .about {
+        padding: 80px 40px;
+    }
+
+    .about__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .about__left,
+    .about__right {
+        width: 100%;
+    }
+
 
   .about__iam {
     text-align: center;

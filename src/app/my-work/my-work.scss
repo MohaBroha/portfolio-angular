@@ -25,6 +25,11 @@
   margin-right: auto;
 }
 
+.projects__header {
+    max-width: 1200px;
+    margin: 0 auto 70px;
+} 
+
 .projects__title {
   font-family: 'Baloo 2', cursive;
   font-size: 96px;
@@ -315,6 +320,10 @@
   gap: 16px;
   margin-top: 24px;
   flex-wrap: wrap;
+}
+@media (max-width: $desktop) {
+
+  
 }
 
 @media (max-width: $tablet-xl) {
