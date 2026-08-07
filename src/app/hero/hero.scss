@@ -23,16 +23,11 @@
 }
 
 .hero__right {
-  width: clamp(450px, 50vw, 700px);
   min-width: 50%;
-
-  padding: 0 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  transform: translateY(-40px);
-
+  transform: translateY(-100px);
   position: relative;
   z-index: 2;
 }
@@ -147,7 +142,7 @@
   &::after {
     content: '';
     width: 2px;
-    height: 210px;
+    height: 280px;
     background: rgba(89, 136, 255, 1);
   }
 }
@@ -282,7 +277,7 @@
     min-width: 0;
     padding: 0;
   }
-  
+
   .hero::before {
     width: clamp(350px, 60vw, 450px);
     height: clamp(350px, 60vw, 450px);
