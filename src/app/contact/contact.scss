@@ -399,19 +399,18 @@
     align-self: center;
   }
   .contact__checkbox-text {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 10px;
-  line-height: 0.1;
-  color: #333;
-}
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    line-height: 0.1;
+    color: #333;
+  }
 
-.contact__privacy-link {
-  display: inline-block;
-  width: 100px;
-  aspect-ratio: 100 / 30;
-  vertical-align: middle;
-  position: relative;
-  top: -2px;
-}
-
+  .contact__privacy-link {
+    display: inline-block;
+    width: 100px;
+    aspect-ratio: 100 / 30;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+  }
 }

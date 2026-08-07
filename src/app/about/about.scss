@@ -11,21 +11,21 @@
 }
 
 .about__wrapper {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 
-    display: flex;
-    gap: 60px;
-    align-items: flex-start;
-    justify-content: center;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .about {
-    position: relative;
-    overflow: hidden;
-    padding: 100px 60px;
-    box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 60px;
+  box-sizing: border-box;
 }
 
 .about::before {
@@ -206,23 +206,21 @@
   }
 }
 @media (max-width: $tablet-xl) {
+  .about {
+    padding: 80px 40px;
+  }
 
-    .about {
-        padding: 80px 40px;
-    }
+  .about__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
 
-    .about__wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        align-items: center;
-    }
-
-    .about__left,
-    .about__right {
-        width: 100%;
-    }
-
+  .about__left,
+  .about__right {
+    width: 100%;
+  }
 
   .about__iam {
     text-align: center;

@@ -29,19 +29,9 @@
         </li>
 
         <li class="header__lang">
-          <span
-            [class.active]="currentLang === 'de'"
-            (click)="switchLanguage('de')"
-          >
-            DE
-          </span>
+          <span [class.active]="currentLang === 'de'" (click)="switchLanguage('de')"> DE </span>
           /
-          <span
-            [class.active]="currentLang === 'en'"
-            (click)="switchLanguage('en')"
-          >
-            EN
-          </span>
+          <span [class.active]="currentLang === 'en'" (click)="switchLanguage('en')"> EN </span>
         </li>
       </ul>
     </nav>
