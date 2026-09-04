@@ -250,3 +250,29 @@
     transform: translateY(0);
   }
 }
+
+@media (min-width: 3000px) {
+  .header {
+    padding: 20px 0;
+  }
+
+  .header__wrapper {
+    max-width: 2100px;
+    padding-inline: 0;
+  }
+
+  .header__nav ul {
+    gap: 16px;
+  }
+
+  .header__nav li {
+    min-width: 152px;
+    font-size: 20px;
+  }
+
+  .header__lang {
+    gap: 8px;
+    margin-left: 4px;
+    font-size: 20px;
+  }
+}
