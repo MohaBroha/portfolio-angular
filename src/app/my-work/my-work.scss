@@ -8,7 +8,7 @@
   isolation: isolate;
   box-sizing: border-box;
   padding: 100px clamp(24px, 5vw, 90px) 100px;
-  background: #eef3ff;
+  background: #1d212a;
 }
 
 .project:first-of-type {
@@ -23,6 +23,7 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  color: #b7bdc8;
 }
 
 .projects__header {
@@ -36,7 +37,7 @@
   font-weight: 800;
   line-height: 100%;
   letter-spacing: 0.01em;
-  color: #6c8ef0;
+  color: #59c09d;
   position: relative;
   z-index: 2;
   margin: 0 0 50px;
@@ -52,14 +53,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #5988ff;
+  color: #59c09d;
   font-size: 23px;
   font-weight: 500;
   &::before {
     content: '';
     width: 2px;
     height: 300px;
-    background: #5988ff;
+    background: #59c09d;
   }
 }
 
@@ -70,7 +71,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 120%;
-  color: #111;
+  color: #b7bdc8;
   position: relative;
   z-index: 2;
   text-align: left;
@@ -93,9 +94,9 @@
 
   background: radial-gradient(
     74.22% 74.22% at 19.79% 22.42%,
-    #5988ff 6.25%,
-    #5988ff 51.56%,
-    #0043f0 100%
+    #59c09d 6.25%,
+    #59c09d 51.56%,
+    #4fa8d6 100%
   );
 }
 
@@ -176,8 +177,8 @@
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
-  color: #6c8ef0;
-  text-shadow: 0 2px 10px rgba(68, 11, 239, 0.18);
+  color: #59c09d;
+  text-shadow: 0 2px 10px rgba(89, 192, 157, 0.18);
   font-family: 'Baloo 2', cursive;
   font-size: 45px;
   font-weight: 600;
@@ -190,11 +191,11 @@
 }
 
 .project__title:hover {
-  color: #4583e0;
+  color: #4fa8d6;
   transform: translateX(4px);
   text-shadow:
-    0 0 8px rgba(69, 131, 224, 0.4),
-    0 0 18px rgba(69, 131, 224, 0.25);
+    0 0 8px rgba(79, 168, 214, 0.4),
+    0 0 18px rgba(79, 168, 214, 0.25);
 }
 
 .project__stack {
@@ -202,11 +203,11 @@
   font-size: 23px;
   font-weight: 400;
   line-height: 120%;
-  color: #440bef;
+  color: #59c09d;
   opacity: 0.9;
   margin: 0 0 16px;
   letter-spacing: 0.8px;
-  text-shadow: 0 2px 10px rgba(68, 11, 239, 0.18);
+  text-shadow: 0 2px 10px rgba(89, 192, 157, 0.18);
   display: block;
   padding: 2px 6px;
   border-radius: 6px;
@@ -218,6 +219,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 120%;
+  color: #b7bdc8;
 }
 
 .project__image {
@@ -243,7 +245,7 @@
 
 .project__image:hover {
   transform: scale(1.03);
-  box-shadow: 0 25px 60px rgba(4, 14, 75, 0.25);
+  box-shadow: 0 25px 60px rgba(29, 33, 42, 0.25);
 }
 
 .work__container {
@@ -276,6 +278,10 @@
 .project__btn {
   @include button;
 
+  color: #59c09d;
+  background: #1d212a;
+  border-color: #59c09d;
+
   margin-top: 24px;
   margin-right: 12px;
 
@@ -286,20 +292,31 @@
 
   &::before {
     @include button-fill;
+    background: radial-gradient(
+      74.22% 74.22% at 19.79% 22.42%,
+      #59c09d 6.25%,
+      #59c09d 51.56%,
+      #4fa8d6 100%
+    );
   }
 
   &:hover {
     @include button-hover;
 
+    box-shadow:
+      0 12px 20px rgba(29, 33, 42, 0.18),
+      0 4px 8px rgba(29, 33, 42, 0.12),
+      0 0 24px rgba(89, 192, 157, 0.25);
+
     background: radial-gradient(
       74.22% 74.22% at 19.79% 22.42%,
-      #5988ff 6.25%,
-      #5988ff 51.56%,
-      #0043f0 100%
+      #59c09d 6.25%,
+      #59c09d 51.56%,
+      #4fa8d6 100%
     );
 
-    color: white;
-    border-color: #0043f0;
+    color: #1d212a;
+    border-color: #59c09d;
   }
 
   &:hover::before {

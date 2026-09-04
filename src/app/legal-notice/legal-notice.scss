@@ -8,6 +8,7 @@
   padding: 40px 60px;
   min-height: auto;
   box-sizing: border-box;
+  background-color: #1d212a;
 }
 
 .legal-notice__container {
@@ -23,7 +24,7 @@
   font-size: 90px;
   font-weight: 800;
   line-height: 120%;
-  color: #6c8ef0;
+  color: #59c09d;
   @include section-title-animation;
 }
 
@@ -32,7 +33,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 120%;
-  color: #333;
+  color: #b7bdc8;
 }
 
 .legal-notice__section {
@@ -46,7 +47,7 @@
     font-size: 45px;
     font-weight: 600;
     line-height: 120%;
-    color: #6c8ef0;
+    color: #59c09d;
     margin: 0;
   }
 
@@ -55,7 +56,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
-    color: #444;
+    color: #b7bdc8;
     margin: 0;
   }
 }
@@ -71,7 +72,7 @@
     font-size: 45px;
     font-weight: 600;
     line-height: 120%;
-    color: #6c8ef0;
+    color: #59c09d;
     margin: 0;
   }
 
@@ -80,7 +81,7 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 120%;
-    color: #6c8ef0;
+    color: #59c09d;
     margin: 24px 0 8px;
   }
 
@@ -89,13 +90,13 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
-    color: #444;
+    color: #b7bdc8;
     margin: 0;
   }
 }
 
 .legal-notice__back {
-  color: #3f56e6;
+  color: #59c09d;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -103,7 +104,7 @@
 }
 
 .legal-notice__link {
-  color: #3f56e6;
+  color: #59c09d;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -125,9 +126,9 @@
 
   background: radial-gradient(
     74.22% 74.22% at 19.79% 22.42%,
-    #5988ff 6.25%,
-    #5988ff 51.56%,
-    #0043f0 100%
+    #59c09d 6.25%,
+    #59c09d 51.56%,
+    #4fa8d6 100%
   );
 }
 
