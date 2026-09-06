@@ -36,33 +36,48 @@
   "work": {
     "title": "My Work",
     "intro": "Here are some projects I completed during my software development training. Most of them were developed independently, while Join was created in a collaborative team environment. These projects helped me gain practical experience in frontend development, backend development, and modern web technologies.",
-    "projects": {
-      "coderr": {
-        "title": "Coderr",
-        "description": "A fully developed full-stack freelancer platform built from planning and architecture to production deployment. Developed with Angular, Django REST Framework, and PostgreSQL. Features include REST APIs, authentication, role-based permissions, offer, review, and order management, as well as deployment on an Ubuntu server using Gunicorn, Nginx, and Cloudflare.",
-        "button": "Live Demo"
-      },
-      "join": {
-        "title": "Join",
-        "description": "Join is a collaborative Kanban tool developed as a team project. During this project, I gained practical experience working between frontend and backend systems, including APIs, component architecture, and modern Angular workflows.",
-        "button": "Live Demo"
-      },
-      "kanmind": {
-        "title": "KanMind",
-        "description": "A modern Kanban application with secure user authentication, REST API integration and dynamic task management. Focused on fullstack development, authentication and deployment.",
-        "button": "Live Demo"
-      },
-      "pollo": {
-        "title": "El Pollo Loco",
-        "description": "A 2D jump-and-run game developed with vanilla JavaScript. The project includes object-oriented programming, game physics, collision detection, animations, and keyboard-based controls. It helped me deepen my understanding of game architecture and browser-based rendering.",
-        "button": "Live Demo"
-      },
-      "pokedex": {
-        "title": "DexHub",
-        "description": "An interactive DexHub application connected to an external API. The project improved my understanding of asynchronous data handling, dynamic rendering, and structured API integration.",
-        "button": "Live Demo"
-      }
-    }
+"projects": {
+  "videoflix": {
+    "title": "Videoflix",
+    "description": "A fully developed video streaming platform built with Django REST Framework and a modern media processing pipeline. Videos are managed through Django Admin, processed in the background with Redis and Django RQ, and automatically converted with FFmpeg into HLS streams for 480p, 720p and 1080p. PostgreSQL, JWT authentication, Docker, and a production-oriented deployment with Gunicorn and Nginx form the technical foundation.",
+    "button": "Live Demo"
+  },
+  "quizly": {
+    "title": "Quizly",
+    "description": "An AI-powered quiz platform that automatically creates interactive quizzes from YouTube videos. The Django REST backend processes video content with yt-dlp and Whisper, generates transcripts, and uses Google Gemini to create customized quiz questions. JWT authentication, quiz CRUD operations, and user-specific data management complete the REST API workflow.",
+    "button": "Live Demo"
+  },
+  "coderr": {
+    "title": "Coderr",
+    "description": "A fully developed full-stack freelancer platform built from planning and architecture to production deployment. Developed with Angular, Django REST Framework, and PostgreSQL. Features include REST APIs, authentication, role-based permissions, offer, review, and order management, as well as deployment on an Ubuntu server using Gunicorn, Nginx, and Cloudflare.",
+    "button": "Live Demo"
+  },
+  "kanmind": {
+    "title": "KanMind",
+    "description": "A modern Kanban application with secure user authentication, REST API integration and dynamic task management. Focused on fullstack development, authentication and deployment.",
+    "button": "Live Demo"
+  },
+  "join": {
+    "title": "Join",
+    "description": "Join is a collaborative Kanban tool developed as a team project. During this project, I gained practical experience working between frontend and backend systems, including APIs, component architecture, and modern Angular workflows.",
+    "button": "Live Demo"
+  },
+  "memory": {
+    "title": "Memory",
+    "description": "A responsive two-player memory card game featuring multiple board sizes and selectable visual themes. TypeScript handles the game mechanics, scoring and state management, while SCSS provides responsive layouts, animations and different game views. Dedicated Game Over, Winner and Draw screens complete the interactive experience.",
+    "button": "Live Demo"
+  },
+  "pollo": {
+    "title": "El Pollo Loco",
+    "description": "A 2D jump-and-run game developed with vanilla JavaScript. The project includes object-oriented programming, game physics, collision detection, animations, and keyboard-based controls. It helped me deepen my understanding of game architecture and browser-based rendering.",
+    "button": "Live Demo"
+  },
+  "pokedex": {
+    "title": "DexHub",
+    "description": "An interactive DexHub application connected to an external API. The project improved my understanding of asynchronous data handling, dynamic rendering, and structured API integration.",
+    "button": "Live Demo"
+  }
+}
   },
   "team": {
     "title": "Looking for a team player?",
